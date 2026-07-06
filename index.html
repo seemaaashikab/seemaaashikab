@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seema Aashikab · AI/ML Engineer · Data Analyst · AI Strategist</title>
+<meta name="description" content="Seema Aashikab Anees Ahmed — IEEE-published AI/ML Engineer, Data Analyst and AI Transformation Strategist in Dubai. MSc Data Science, Heriot-Watt University (2026).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAFAF8;
+  --ink:#16152E;
+  --ink-soft:#4B4A66;
+  --indigo:#4F46E5;
+  --violet:#7C3AED;
+  --mist:#ECEBFF;
+  --amber:#F59E0B;
+  --card:#FFFFFF;
+  --line:#E4E3F0;
+  --radius:18px;
+  --font-display:'Space Grotesk',sans-serif;
+  --font-body:'Inter',sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--indigo);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--violet);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+.eyebrow{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--violet);display:block;margin-bottom:14px}
+h2{font-family:var(--font-display);font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:700;letter-spacing:-.02em;margin-bottom:36px}
+
+/* ---------- NAV ---------- */
+nav{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--font-display);font-weight:700;font-size:1.05rem;color:var(--ink)}
+.logo span{color:var(--indigo)}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{color:var(--ink-soft);font-size:.9rem;font-weight:500}
+.nav-links a:hover{color:var(--indigo);text-decoration:none}
+@media(max-width:760px){.nav-links{display:none}}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;padding:96px 0 72px;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none}
+.hero-content{position:relative;z-index:1;max-width:800px}
+.hero .eyebrow{color:var(--indigo)}
+.hero h1{font-family:var(--font-display);font-size:clamp(2.4rem,5.6vw,4rem);font-weight:700;letter-spacing:-.03em;line-height:1.06;margin-bottom:22px}
+.hero h1 .grad{background:linear-gradient(100deg,var(--indigo),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lede{font-size:1.12rem;color:var(--ink-soft);max-width:680px;margin-bottom:32px}
+.hero p.lede b{color:var(--ink)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:600;font-size:.95rem;padding:13px 26px;border-radius:999px;transition:transform .15s ease,box-shadow .15s ease}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(100deg,var(--indigo),var(--violet));color:#fff;box-shadow:0 6px 20px rgba(79,70,229,.28)}
+.btn-primary:hover{box-shadow:0 10px 26px rgba(79,70,229,.36)}
+.btn-ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card)}
+
+/* ---------- NOW STRIP ---------- */
+.now{position:relative;z-index:1;margin-top:44px;background:var(--card);border:1.5px solid var(--line);border-radius:var(--radius);padding:18px 24px;display:flex;gap:10px 28px;flex-wrap:wrap;align-items:center;box-shadow:0 8px 26px rgba(22,21,46,.06)}
+.now .pulse{width:9px;height:9px;border-radius:50%;background:#22C55E;box-shadow:0 0 0 4px rgba(34,197,94,.18);flex:none}
+.now span{font-size:.87rem;color:var(--ink-soft)}
+.now span b{color:var(--ink);font-weight:600}
+.now .sep{color:var(--line)}
+
+/* ---------- FIT (role cards) ---------- */
+.fit{padding-top:72px}
+.fit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.role{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;position:relative;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
+.role:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(22,21,46,.09)}
+.role::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--indigo),var(--violet))}
+.role .r-icon{font-size:1.5rem;margin-bottom:12px;display:block}
+.role h3{font-family:var(--font-display);font-size:1.14rem;font-weight:700;margin-bottom:10px;letter-spacing:-.01em}
+.role p{font-size:.9rem;color:var(--ink-soft);margin-bottom:14px}
+.role ul{list-style:none}
+.role li{font-size:.85rem;color:var(--ink-soft);padding-left:20px;position:relative;margin-bottom:7px}
+.role li::before{content:"→";position:absolute;left:0;color:var(--violet);font-weight:600}
+.role li b{color:var(--ink);font-weight:600}
+
+/* ---------- KPI ---------- */
+.kpis{padding:72px 0}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;transition:transform .18s ease,box-shadow .18s ease}
+.kpi:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(22,21,46,.08)}
+.kpi b{display:block;font-family:var(--font-display);font-size:2rem;font-weight:700;background:linear-gradient(100deg,var(--indigo),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.kpi small{color:var(--ink-soft);font-size:.85rem;line-height:1.4;display:block;margin-top:6px}
+
+/* ---------- LAB / GRAPH ---------- */
+.lab{background:linear-gradient(180deg,var(--mist) 0%,var(--bg) 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.lab-hint{font-family:var(--font-mono);font-size:.8rem;color:var(--ink-soft);margin-bottom:26px}
+.skill-group{margin-bottom:20px}
+.skill-group h4{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px}
+.skill-cloud{display:flex;flex-wrap:wrap;gap:9px}
+.chip{font-family:var(--font-mono);font-size:.8rem;padding:7px 15px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;transition:all .15s ease;user-select:none}
+.chip:hover,.chip:focus-visible{border-color:var(--violet);color:var(--violet)}
+.chip.active{background:linear-gradient(100deg,var(--indigo),var(--violet));color:#fff;border-color:transparent;box-shadow:0 4px 14px rgba(124,58,237,.3)}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px;margin-top:40px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:12px;transition:all .22s ease;position:relative}
+.proj.dim{opacity:.28;filter:saturate(.4)}
+.proj.lit{border-color:var(--violet);box-shadow:0 12px 30px rgba(124,58,237,.16);transform:translateY(-3px)}
+.proj h3{font-family:var(--font-display);font-size:1.06rem;font-weight:600;letter-spacing:-.01em;padding-right:76px}
+.proj p{font-size:.89rem;color:var(--ink-soft);flex:1}
+.badge{position:absolute;top:20px;right:20px;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.08em;padding:4px 10px;border-radius:999px;font-weight:500}
+.badge-ieee{background:#EEF0FF;color:var(--indigo);border:1px solid #D6D9FF}
+.badge-award{background:#FEF3D7;color:#92610A;border:1px solid #F7DFA5}
+.badge-msc{background:#F1EBFF;color:var(--violet);border:1px solid #E2D5FF}
+.badge-live{background:#DCFCE7;color:#15803D;border:1px solid #B5F0C9}
+.tag-row{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-family:var(--font-mono);font-size:.67rem;padding:3px 9px;border-radius:6px;background:var(--mist);color:var(--ink-soft)}
+.more-label{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin:38px 0 14px}
+.mini-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.mini{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:all .22s ease}
+.mini.dim{opacity:.28;filter:saturate(.4)}
+.mini.lit{border-color:var(--violet);box-shadow:0 8px 22px rgba(124,58,237,.14)}
+.mini h3{font-family:var(--font-display);font-size:.94rem;font-weight:600;margin-bottom:4px}
+.mini p{font-size:.8rem;color:var(--ink-soft)}
+
+/* ---------- EXPERIENCE ---------- */
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--indigo),var(--violet))}
+.job{position:relative;padding-bottom:44px}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-32px;top:7px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--indigo)}
+.job-head{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;margin-bottom:4px}
+.job h3{font-family:var(--font-display);font-size:1.15rem;font-weight:600}
+.job .co{color:var(--indigo);font-weight:600;font-size:.95rem}
+.job .when{font-family:var(--font-mono);font-size:.76rem;color:var(--ink-soft)}
+.job ul{margin:10px 0 0 18px;color:var(--ink-soft);font-size:.93rem}
+.job li{margin-bottom:7px}
+.job li b{color:var(--ink);font-weight:600}
+
+/* ---------- EDUCATION ---------- */
+.edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.edu{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;position:relative}
+.edu.featured{border:2px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(120deg,var(--indigo),var(--violet)) border-box;box-shadow:0 12px 30px rgba(79,70,229,.12)}
+.edu .live-tag{position:absolute;top:-11px;left:22px;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em;padding:4px 12px;border-radius:999px;background:linear-gradient(100deg,var(--indigo),var(--violet));color:#fff;font-weight:500}
+.edu h3{font-family:var(--font-display);font-size:1.02rem;font-weight:600;margin-bottom:4px}
+.edu .sub{color:var(--indigo);font-size:.88rem;font-weight:500}
+.edu p{font-size:.86rem;color:var(--ink-soft);margin-top:8px}
+.cred-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.cred{font-family:var(--font-mono);font-size:.78rem;padding:9px 16px;border-radius:999px;background:var(--card);border:1.5px solid var(--line);color:var(--ink-soft)}
+.cred b{color:var(--ink);font-weight:500}
+
+/* ---------- CONTACT ---------- */
+.contact{text-align:center;background:linear-gradient(180deg,var(--bg),var(--mist))}
+.contact h2{margin-bottom:14px}
+.contact p{color:var(--ink-soft);max-width:540px;margin:0 auto 32px}
+.contact-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.74rem;color:var(--ink-soft);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top">seema<span>.ai</span></a>
+    <ul class="nav-links">
+      <li><a href="#fit">Where I Fit</a></li>
+      <li><a href="#lab">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="wrap hero-content">
+    <span class="eyebrow">Seema Aashikab Anees Ahmed · Dubai, UAE</span>
+    <h1>From raw data to deployed models to <span class="grad">adopted AI.</span></h1>
+    <p class="lede">I work across the full AI value chain: <b>engineering ML models</b> that reach production, <b>analysing data</b> that drives decisions, and <b>leading the transformation</b> that gets organisations to actually use them. 2× IEEE-published. National hackathon winner. Proven in banking.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#lab">See the work ↓</a>
+      <a class="btn btn-ghost" href="mailto:seemaaashikab@gmail.com">Get in touch</a>
+    </div>
+    <div class="now" role="status">
+      <span class="pulse" aria-hidden="true"></span>
+      <span><b>Now:</b> MSc Data Science @ Heriot-Watt University Dubai — graduating <b>July 2026</b></span>
+      <span class="sep">|</span>
+      <span>Freelance Data Analyst, Dubai</span>
+      <span class="sep">|</span>
+      <span><b>Open to full-time AI/ML &amp; Data roles</b> · UAE resident</span>
+    </div>
+  </div>
+</header>
+
+<section class="fit" id="fit">
+  <div class="wrap">
+    <span class="eyebrow">Where I Fit</span>
+    <h2>Three roles. One profile.</h2>
+    <div class="fit-grid">
+      <div class="role">
+        <span class="r-icon" aria-hidden="true">⚙️</span>
+        <h3>AI / ML Engineer</h3>
+        <p>I take models from notebook to production — and prove they work.</p>
+        <ul>
+          <li>Deployed ML via <b>Flask APIs + Docker on AWS</b> with live model monitoring</li>
+          <li><b>2 IEEE publications</b> — deep learning &amp; intelligent systems</li>
+          <li>Multimodal AI: fused <b>70K clinical records + cardiac MRI</b> with 3D-CNNs</li>
+          <li>Time-series forecasting with <b>XGBoost &amp; CNN-LSTM</b> (MSc dissertation)</li>
+        </ul>
+      </div>
+      <div class="role">
+        <span class="r-icon" aria-hidden="true">📊</span>
+        <h3>Data Analyst</h3>
+        <p>I turn messy data into dashboards leadership actually uses.</p>
+        <ul>
+          <li>Cleaned &amp; validated <b>500K+ records</b> with SQL and Python at IIT Kharagpur</li>
+          <li><b>Power BI dashboards for 5+ business units</b> at Emirates Islamic Bank</li>
+          <li>Cut reporting time by <b>40%</b>, pipeline runtime by <b>30%</b></li>
+          <li>Interactive <b>D3.js data storytelling</b> — 5 linked cross-filtering charts</li>
+        </ul>
+      </div>
+      <div class="role">
+        <span class="r-icon" aria-hidden="true">🧭</span>
+        <h3>AI Strategist &amp; Transformation</h3>
+        <p>I get humans to adopt what the machines produce.</p>
+        <ul>
+          <li>Owned a bank's transformation initiative <b>end-to-end</b>: design → deploy → adopt</li>
+          <li>Trained finance &amp; ops teams across <b>3 departments</b> through change</li>
+          <li>Translated governance frameworks into <b>executive decisions</b></li>
+          <li>Agile delivery under deadline via <b>Jira-managed programs</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="kpis">
+  <div class="wrap kpi-grid">
+    <div class="kpi"><b>2×</b><small>IEEE publications — deep learning &amp; intelligent diagnostic systems</small></div>
+    <div class="kpi"><b>40%</b><small>reporting time cut via Power BI automation across 5+ business units</small></div>
+    <div class="kpi"><b>97.5%</b><small>accuracy on published diagnostic system, 616 unit tests</small></div>
+    <div class="kpi"><b>500K+</b><small>research records queried, profiled &amp; cleaned with SQL + Python</small></div>
+    <div class="kpi"><b>1st</b><small>place, Smart India Hackathon 2023 — AI drone crop-disease prediction</small></div>
+  </div>
+</div>
+
+<section class="lab" id="lab">
+  <div class="wrap">
+    <span class="eyebrow">The Lab</span>
+    <h2>Skills × Projects</h2>
+    <p class="lab-hint">▸ Tap or hover a skill — every project built with it lights up. Tap again to reset.</p>
+
+    <div class="skill-group">
+      <h4>Machine Learning &amp; AI</h4>
+      <div class="skill-cloud">
+        <button class="chip" data-skill="python">Python</button>
+        <button class="chip" data-skill="pytorch">PyTorch</button>
+        <button class="chip" data-skill="tensorflow">TensorFlow / Keras</button>
+        <button class="chip" data-skill="sklearn">Scikit-learn</button>
+        <button class="chip" data-skill="xgboost">XGBoost</button>
+        <button class="chip" data-skill="deeplearning">Deep Learning / CNN</button>
+        <button class="chip" data-skill="timeseries">Time-Series Forecasting</button>
+        <button class="chip" data-skill="recsys">Recommender Systems</button>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Data Engineering &amp; Analytics</h4>
+      <div class="skill-cloud">
+        <button class="chip" data-skill="sql">SQL</button>
+        <button class="chip" data-skill="etl">ETL Pipelines</button>
+        <button class="chip" data-skill="stats">Statistical Modelling</button>
+        <button class="chip" data-skill="governance">Data Governance</button>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Visualisation &amp; BI</h4>
+      <div class="skill-cloud">
+        <button class="chip" data-skill="powerbi">Power BI</button>
+        <button class="chip" data-skill="tableau">Tableau</button>
+        <button class="chip" data-skill="d3">D3.js</button>
+        <button class="chip" data-skill="dashboards">KPI Dashboards</button>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>MLOps &amp; Engineering</h4>
+      <div class="skill-cloud">
+        <button class="chip" data-skill="docker">Docker</button>
+        <button class="chip" data-skill="aws">AWS / SageMaker</button>
+        <button class="chip" data-skill="flask">Flask APIs</button>
+        <button class="chip" data-skill="devops">DevOps / Jenkins</button>
+        <button class="chip" data-skill="csharp">C# / .NET</button>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Strategy &amp; Delivery</h4>
+      <div class="skill-cloud">
+        <button class="chip" data-skill="agile">Agile / Scrum / Jira</button>
+        <button class="chip" data-skill="change">Change Management</button>
+        <button class="chip" data-skill="stakeholder">Stakeholder Management</button>
+        <button class="chip" data-skill="exec">Executive Communication</button>
+      </div>
+    </div>
+
+    <div class="proj-grid" id="projects">
+      <article class="proj" data-skills="python recsys deeplearning sklearn">
+        <span class="badge badge-live">IN PROGRESS</span>
+        <h3>AI Stylist — Outfit Recommendation App</h3>
+        <p>Personal-styling AI that recommends outfits tailored to the individual — recommendation modelling applied to fashion. Currently in active development.</p>
+        <div class="tag-row"><span class="tag">Recommenders</span><span class="tag">Python</span><span class="tag">ML</span></div>
+      </article>
+
+      <article class="proj" data-skills="python xgboost deeplearning timeseries dashboards stats">
+        <span class="badge badge-msc">MSC DISSERTATION · 2026</span>
+        <h3>ML Energy Demand Forecasting</h3>
+        <p>Multi-step time-series forecasting on the UK-DALE dataset with XGBoost and CNN-LSTM, plus MILP-based scheduling optimisation and KPI dashboards. Methodology transfers directly to logistics and demand planning.</p>
+        <div class="tag-row"><span class="tag">XGBoost</span><span class="tag">CNN-LSTM</span><span class="tag">MILP</span></div>
+      </article>
+
+      <article class="proj" data-skills="python pytorch sklearn deeplearning stats">
+        <span class="badge badge-msc">MSC · HERIOT-WATT</span>
+        <h3>Multimodal Cardiac Disease Prediction</h3>
+        <p>Hybrid health-AI system fusing 70,000 clinical records with ACDC cardiac MRI volumes. Benchmarked ML classifiers against 3D-CNNs across single and multimodal pipelines for earlier CVD detection.</p>
+        <div class="tag-row"><span class="tag">PyTorch</span><span class="tag">3D-CNN</span><span class="tag">Medical AI</span></div>
+      </article>
+
+      <article class="proj" data-skills="d3 dashboards sql stats python">
+        <span class="badge badge-msc">MSC · HERIOT-WATT</span>
+        <h3>Does Wealth Make Countries Happy?</h3>
+        <p>Interactive D3.js data story: five bidirectionally-linked visualisations — scatter, choropleth map, bar, trend lines (1990–2023, 9K+ rows), radar — with full cross-chart filtering, built on World Bank, WHO &amp; World Happiness data.</p>
+        <div class="tag-row"><span class="tag">D3.js v7</span><span class="tag">TopoJSON</span><span class="tag">Data Storytelling</span></div>
+      </article>
+
+      <article class="proj" data-skills="python tensorflow deeplearning">
+        <span class="badge badge-ieee">IEEE · 2022</span>
+        <h3>Face Mask &amp; Temperature Audit System</h3>
+        <p>Real-time COVID compliance monitor: MobileNetV2 CNN for mask detection (93% accuracy, benchmarked against KNN and SVM) with contactless temperature sensing via NI myDAQ and LabVIEW.</p>
+        <div class="tag-row"><span class="tag">MobileNetV2</span><span class="tag">OpenCV</span><span class="tag">LabVIEW</span></div>
+      </article>
+
+      <article class="proj" data-skills="stats">
+        <span class="badge badge-ieee">IEEE · 2024</span>
+        <h3>Neuro-Fuzzy Anaemia Diagnosis</h3>
+        <p>Fuzzy-logic diagnostic application predicting anaemia presence, type, and severity from Complete Blood Count parameters — validated by 616 automated unit tests at 97.5% accuracy, with interactive GUI and patient database.</p>
+        <div class="tag-row"><span class="tag">Fuzzy Logic</span><span class="tag">LabVIEW</span><span class="tag">Unit Testing</span></div>
+      </article>
+
+      <article class="proj" data-skills="python deeplearning">
+        <span class="badge badge-award">🏆 SIH 2023 WINNER</span>
+        <h3>Drone-Based Cotton Disease Prediction</h3>
+        <p>National first place at Smart India Hackathon 2023: AI system combining drone imagery with environmental data for early crop-disease prediction — intervention before visible spread.</p>
+        <div class="tag-row"><span class="tag">Computer Vision</span><span class="tag">Drones</span><span class="tag">Env. Data</span></div>
+      </article>
+
+      <article class="proj" data-skills="python sql recsys stats etl">
+        <h3>Book &amp; Movie Analytics Engine</h3>
+        <p>Complete analytics and recommendation system in Python — consumption patterns by country and continent, end-to-end from data cleaning through analysis to recommendation logic.</p>
+        <div class="tag-row"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Recommenders</span></div>
+      </article>
+    </div>
+
+    <p class="more-label">Also built</p>
+    <div class="mini-grid" id="minis">
+      <div class="mini" data-skills="csharp sql">
+        <h3>Custom Web Browser in C#</h3>
+        <p>Manual HTTP handling, async/await, Entity Framework + LINQ persistence, SOLID architecture.</p>
+      </div>
+      <div class="mini" data-skills="etl sql">
+        <h3>Auction Inventory System</h3>
+        <p>Inventory management for auction operations — item cataloguing and status tracking through listing and sale.</p>
+      </div>
+      <div class="mini" data-skills="etl">
+        <h3>RFID Inventory Management</h3>
+        <p>Automated tracking with real-time sync — cut manual errors, improved shipping accuracy.</p>
+      </div>
+      <div class="mini" data-skills="sql python dashboards">
+        <h3>Wonders of Rock · IIT Kharagpur</h3>
+        <p>Raw geological data → structured databases → analytical dashboard and web page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <span class="eyebrow">Track Record</span>
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="job">
+        <div class="job-head"><h3>Freelance Data Analyst &amp; Programming Tutor</h3><span class="co">Self-Employed · Dubai</span><span class="when">APR 2025 — FEB 2026</span></div>
+        <ul>
+          <li>Delivered data analysis and visualisation projects for UAE clients alongside MSc studies.</li>
+          <li>Mentored clients through 1:1 analytics and programming tutoring.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><h3>Data &amp; Digital Transformation Consultant</h3><span class="co">Emirates Islamic Bank · Dubai</span><span class="when">SEP 2024 — FEB 2025</span></div>
+        <ul>
+          <li>Owned a transformation initiative end-to-end, automating procurement reporting across <b>5+ business units</b> with Power BI — cutting reporting time by <b>40%</b>.</li>
+          <li>Built SQL/Python data pipelines feeding performance models and BI tools; statistical trend modelling directly shaped procurement strategy at leadership level.</li>
+          <li>Drove change management and digital adoption, training finance and operations teams across <b>3 departments</b> as manual processes went digital.</li>
+          <li>Presented executive-ready insights, translating data governance frameworks into actionable recommendations.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><h3>Project Engineer Intern</h3><span class="co">Soliton Technologies · India</span><span class="when">JUN 2023 — MAY 2024</span></div>
+        <ul>
+          <li>Modernised a legacy manual validation process into an automated ETL pipeline — <b>30% faster</b>, from 4 hours to under 3.</li>
+          <li>Built and tuned classification and regression models with Scikit-learn; deployed via <b>Flask APIs and Docker on AWS</b> with live model monitoring.</li>
+          <li>Presented statistical findings and transformation recommendations to senior stakeholders across a multinational engineering organisation.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><h3>Data Analyst Intern</h3><span class="co">Indian Institute of Technology Kharagpur</span><span class="when">JUN 2022 — SEP 2022</span></div>
+        <ul>
+          <li>Queried, profiled, and cleaned <b>500K+ research records</b> using SQL and Python, producing validated datasets behind published research.</li>
+          <li>Applied regression and classification techniques; presented findings to project leads to support strategic research decisions.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" style="background:var(--mist);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow">Foundations</span>
+    <h2>Education &amp; Credentials</h2>
+    <div class="edu-grid">
+      <div class="edu featured">
+        <span class="live-tag">● IN PROGRESS — CLASS OF 2026</span>
+        <h3>MSc Data Science</h3>
+        <div class="sub">Heriot-Watt University, Dubai · 2025–2026</div>
+        <p>Graduating <b>July 2026</b>. Modules: AI &amp; Machine Learning, Big Data Management &amp; Governance, Statistical Modelling &amp; Analysis, DevOps. Dissertation: ML-driven energy demand forecasting.</p>
+      </div>
+      <div class="edu">
+        <h3>B.E. Electronics &amp; Communication</h3>
+        <div class="sub">Anna University · 2020–2024</div>
+        <p>Sri Ramakrishna Engineering College. IoT specialisation. First Class with Distinction — 8.82 CGPA.</p>
+      </div>
+      <div class="edu">
+        <h3>Google Data Analytics Certificate</h3>
+        <div class="sub">Coursera · Google</div>
+        <p>Professional certification covering the full analytics lifecycle — data cleaning through visualisation and stakeholder communication.</p>
+      </div>
+    </div>
+    <div class="cred-row">
+      <span class="cred"><b>IELTS 7.5</b> · CEFR C1 Academic</span>
+      <span class="cred"><b>BEC</b> · Cambridge Business English</span>
+      <span class="cred"><b>Winner</b> · Smart India Hackathon 2023</span>
+      <span class="cred"><b>2× IEEE</b> · Published Author</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Let's Build</span>
+    <h2>Hiring for AI/ML or Data?</h2>
+    <p>UAE resident, based in Dubai. Whether you need models built, data decoded, or an AI strategy people will actually adopt — let's talk.</p>
+    <div class="contact-links">
+      <a class="btn btn-primary" href="mailto:seemaaashikab@gmail.com">seemaaashikab@gmail.com</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/seema-aashikab-anees-ahmed" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn btn-ghost" href="https://github.com/seemaaashikab" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Seema Aashikab Anees Ahmed · Designed &amp; built with intent</footer>
+
+<script>
+/* ---- Skill ↔ Project interaction (covers both card sizes) ---- */
+(function(){
+  const chips = document.querySelectorAll('.chip');
+  const cards = document.querySelectorAll('[data-skills]');
+  let locked = null;
+
+  function apply(skill){
+    cards.forEach(c=>{
+      const has = c.dataset.skills.split(' ').includes(skill);
+      c.classList.toggle('lit', has);
+      c.classList.toggle('dim', !has);
+    });
+  }
+  function clearCards(){ cards.forEach(c=>c.classList.remove('lit','dim')); }
+  function reset(){
+    clearCards();
+    chips.forEach(c=>c.classList.remove('active'));
+    locked = null;
+  }
+  chips.forEach(chip=>{
+    const skill = chip.dataset.skill;
+    chip.addEventListener('mouseenter',()=>{ if(!locked) apply(skill); });
+    chip.addEventListener('mouseleave',()=>{ if(!locked) clearCards(); });
+    chip.addEventListener('click',()=>{
+      if(locked===skill){ reset(); return; }
+      chips.forEach(c=>c.classList.remove('active'));
+      chip.classList.add('active');
+      locked = skill;
+      apply(skill);
+    });
+  });
+})();
+
+/* ---- Hero particle network ---- */
+(function(){
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const canvas = document.getElementById('net');
+  const ctx = canvas.getContext('2d');
+  let w,h,nodes=[],raf;
+  const N = 42, LINK = 130;
+
+  function size(){
+    const r = canvas.parentElement.getBoundingClientRect();
+    w = canvas.width = r.width * devicePixelRatio;
+    h = canvas.height = r.height * devicePixelRatio;
+  }
+  function init(){
+    nodes = Array.from({length:N},()=>({
+      x:Math.random()*w, y:Math.random()*h,
+      vx:(Math.random()-.5)*.35*devicePixelRatio,
+      vy:(Math.random()-.5)*.35*devicePixelRatio
+    }));
+  }
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    for(const n of nodes){
+      n.x+=n.vx; n.y+=n.vy;
+      if(n.x<0||n.x>w) n.vx*=-1;
+      if(n.y<0||n.y>h) n.vy*=-1;
+    }
+    for(let i=0;i<N;i++){
+      for(let j=i+1;j<N;j++){
+        const a=nodes[i],b=nodes[j];
+        const d=Math.hypot(a.x-b.x,a.y-b.y)/devicePixelRatio;
+        if(d<LINK){
+          ctx.strokeStyle=`rgba(124,58,237,${(1-d/LINK)*.28})`;
+          ctx.lineWidth=devicePixelRatio;
+          ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();
+        }
+      }
+    }
+    for(const n of nodes){
+      ctx.fillStyle='rgba(79,70,229,.5)';
+      ctx.beginPath();ctx.arc(n.x,n.y,2.2*devicePixelRatio,0,Math.PI*2);ctx.fill();
+    }
+    if(!reduce) raf = requestAnimationFrame(draw);
+  }
+  size(); init(); draw();
+  window.addEventListener('resize',()=>{cancelAnimationFrame(raf);size();init();draw();});
+})();
+</script>
+</body>
+</html>
