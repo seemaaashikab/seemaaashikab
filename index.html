@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seema Aashikab · AI/ML Engineer · Data Analyst · AI Strategist</title>
-<meta name="description" content="Seema Aashikab Anees Ahmed — IEEE-published AI/ML Engineer, Data Analyst and AI Transformation Strategist in Dubai. MSc Data Science, Heriot-Watt University (2026).">
+<title>Seema Aashikab · AI/ML · Data · Transformation</title>
+<meta name="description" content="Seema Aashikab Anees Ahmed: IEEE-published AI/ML engineer, data analyst and AI transformation consultant in Dubai. MSc Data Science, Heriot-Watt University, 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#FAFAF8;
@@ -19,132 +19,144 @@
   --amber:#F59E0B;
   --card:#FFFFFF;
   --line:#E4E3F0;
-  --radius:18px;
-  --font-display:'Space Grotesk',sans-serif;
+  --radius:16px;
+  --font-display:'Sora',sans-serif;
   --font-body:'Inter',sans-serif;
   --font-mono:'JetBrains Mono',monospace;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
-body{background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.6;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:var(--indigo);text-decoration:none}
 a:hover{text-decoration:underline}
 :focus-visible{outline:3px solid var(--violet);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-section{padding:88px 0}
-.eyebrow{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--violet);display:block;margin-bottom:14px}
-h2{font-family:var(--font-display);font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:700;letter-spacing:-.02em;margin-bottom:36px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+section{padding:92px 0}
+.eyebrow{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--violet);display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.eyebrow::after{content:"";height:1px;width:56px;background:linear-gradient(90deg,var(--violet),transparent)}
+h2{font-family:var(--font-display);font-size:clamp(1.6rem,3.2vw,2.2rem);font-weight:700;letter-spacing:-.02em;margin-bottom:34px}
 
 /* ---------- NAV ---------- */
-nav{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font-family:var(--font-display);font-weight:700;font-size:1.05rem;color:var(--ink)}
-.logo span{color:var(--indigo)}
-.nav-links{display:flex;gap:24px;list-style:none}
-.nav-links a{color:var(--ink-soft);font-size:.9rem;font-weight:500}
+nav{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:var(--font-display);font-weight:800;font-size:1rem;color:var(--ink);letter-spacing:-.01em}
+.logo span{background:linear-gradient(100deg,var(--indigo),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;gap:22px;list-style:none;align-items:center}
+.nav-links a{color:var(--ink-soft);font-size:.88rem;font-weight:500}
 .nav-links a:hover{color:var(--indigo);text-decoration:none}
-@media(max-width:760px){.nav-links{display:none}}
+.nav-cta{font-family:var(--font-mono);font-size:.75rem;padding:7px 15px;border-radius:999px;background:var(--ink);color:#fff!important;letter-spacing:.02em}
+.nav-cta:hover{background:var(--indigo)}
+@media(max-width:820px){.nav-links li:not(:last-child){display:none}}
 
 /* ---------- HERO ---------- */
-.hero{position:relative;padding:96px 0 72px;overflow:hidden}
-#net{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none}
-.hero-content{position:relative;z-index:1;max-width:800px}
-.hero .eyebrow{color:var(--indigo)}
-.hero h1{font-family:var(--font-display);font-size:clamp(2.4rem,5.6vw,4rem);font-weight:700;letter-spacing:-.03em;line-height:1.06;margin-bottom:22px}
+.hero{position:relative;padding:104px 0 80px;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%;opacity:.45;pointer-events:none}
+.hero-content{position:relative;z-index:1;max-width:840px}
+.hero .kicker{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:20px}
+.hero .kicker b{color:var(--indigo);font-weight:500}
+.hero h1{font-family:var(--font-display);font-size:clamp(2.3rem,5.4vw,3.8rem);font-weight:800;letter-spacing:-.03em;line-height:1.07;margin-bottom:24px}
 .hero h1 .grad{background:linear-gradient(100deg,var(--indigo),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p.lede{font-size:1.12rem;color:var(--ink-soft);max-width:680px;margin-bottom:32px}
-.hero p.lede b{color:var(--ink)}
+.hero p.lede{font-size:1.1rem;color:var(--ink-soft);max-width:640px;margin-bottom:14px}
+.hero p.lede b{color:var(--ink);font-weight:600}
+.hero .proof{font-family:var(--font-mono);font-size:.8rem;color:var(--ink-soft);display:flex;gap:8px 20px;flex-wrap:wrap;margin-bottom:34px}
+.hero .proof span::before{content:"·";margin-right:20px;color:var(--line)}
+.hero .proof span:first-child::before{content:"";margin:0}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:600;font-size:.95rem;padding:13px 26px;border-radius:999px;transition:transform .15s ease,box-shadow .15s ease}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:600;font-size:.92rem;padding:13px 26px;border-radius:999px;transition:transform .15s ease,box-shadow .15s ease}
 .btn:hover{text-decoration:none;transform:translateY(-2px)}
 .btn-primary{background:linear-gradient(100deg,var(--indigo),var(--violet));color:#fff;box-shadow:0 6px 20px rgba(79,70,229,.28)}
 .btn-primary:hover{box-shadow:0 10px 26px rgba(79,70,229,.36)}
 .btn-ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card)}
 
 /* ---------- NOW STRIP ---------- */
-.now{position:relative;z-index:1;margin-top:44px;background:var(--card);border:1.5px solid var(--line);border-radius:var(--radius);padding:18px 24px;display:flex;gap:10px 28px;flex-wrap:wrap;align-items:center;box-shadow:0 8px 26px rgba(22,21,46,.06)}
+.now{position:relative;z-index:1;margin-top:46px;background:var(--card);border:1.5px solid var(--line);border-radius:var(--radius);padding:16px 22px;display:flex;gap:10px 26px;flex-wrap:wrap;align-items:center;box-shadow:0 8px 26px rgba(22,21,46,.06)}
 .now .pulse{width:9px;height:9px;border-radius:50%;background:#22C55E;box-shadow:0 0 0 4px rgba(34,197,94,.18);flex:none}
-.now span{font-size:.87rem;color:var(--ink-soft)}
+.now span{font-size:.86rem;color:var(--ink-soft)}
 .now span b{color:var(--ink);font-weight:600}
 .now .sep{color:var(--line)}
 
-/* ---------- FIT (role cards) ---------- */
-.fit{padding-top:72px}
-.fit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
-.role{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;position:relative;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
+/* ---------- ROLES (compact band) ---------- */
+.fit{padding-top:76px}
+.fit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.role{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;position:relative;transition:transform .18s ease,box-shadow .18s ease}
 .role:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(22,21,46,.09)}
-.role::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--indigo),var(--violet))}
-.role .r-icon{font-size:1.5rem;margin-bottom:12px;display:block}
-.role h3{font-family:var(--font-display);font-size:1.14rem;font-weight:700;margin-bottom:10px;letter-spacing:-.01em}
-.role p{font-size:.9rem;color:var(--ink-soft);margin-bottom:14px}
-.role ul{list-style:none}
-.role li{font-size:.85rem;color:var(--ink-soft);padding-left:20px;position:relative;margin-bottom:7px}
-.role li::before{content:"→";position:absolute;left:0;color:var(--violet);font-weight:600}
-.role li b{color:var(--ink);font-weight:600}
+.role .r-num{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;color:var(--violet);display:block;margin-bottom:10px}
+.role h3{font-family:var(--font-display);font-size:1.12rem;font-weight:700;letter-spacing:-.01em;margin-bottom:14px}
+.role .proof-chips{display:flex;flex-wrap:wrap;gap:7px}
+.role .pc{font-family:var(--font-mono);font-size:.72rem;padding:5px 11px;border-radius:8px;background:var(--mist);color:var(--ink-soft);border:1px solid transparent}
+.role .pc b{color:var(--ink);font-weight:500}
+.fit-note{margin-top:22px;font-size:.88rem;color:var(--ink-soft)}
+.fit-note a{font-weight:500}
 
 /* ---------- KPI ---------- */
-.kpis{padding:72px 0}
-.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.kpis{padding:70px 0}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
 .kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;transition:transform .18s ease,box-shadow .18s ease}
 .kpi:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(22,21,46,.08)}
-.kpi b{display:block;font-family:var(--font-display);font-size:2rem;font-weight:700;background:linear-gradient(100deg,var(--indigo),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
-.kpi small{color:var(--ink-soft);font-size:.85rem;line-height:1.4;display:block;margin-top:6px}
+.kpi b{display:block;font-family:var(--font-display);font-size:2rem;font-weight:800;letter-spacing:-.02em;background:linear-gradient(100deg,var(--indigo),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.kpi small{color:var(--ink-soft);font-size:.84rem;line-height:1.45;display:block;margin-top:6px}
 
-/* ---------- LAB / GRAPH ---------- */
+/* ---------- LAB ---------- */
 .lab{background:linear-gradient(180deg,var(--mist) 0%,var(--bg) 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.lab-hint{font-family:var(--font-mono);font-size:.8rem;color:var(--ink-soft);margin-bottom:26px}
-.skill-group{margin-bottom:20px}
-.skill-group h4{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px}
-.skill-cloud{display:flex;flex-wrap:wrap;gap:9px}
-.chip{font-family:var(--font-mono);font-size:.8rem;padding:7px 15px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;transition:all .15s ease;user-select:none}
+.lab-hint{font-family:var(--font-mono);font-size:.78rem;color:var(--ink-soft);margin-bottom:26px}
+.skill-group{margin-bottom:18px}
+.skill-group h4{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:9px}
+.skill-cloud{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--font-mono);font-size:.78rem;padding:7px 15px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;transition:all .15s ease;user-select:none}
 .chip:hover,.chip:focus-visible{border-color:var(--violet);color:var(--violet)}
 .chip.active{background:linear-gradient(100deg,var(--indigo),var(--violet));color:#fff;border-color:transparent;box-shadow:0 4px 14px rgba(124,58,237,.3)}
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px;margin-top:40px}
 .proj{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:12px;transition:all .22s ease;position:relative}
 .proj.dim{opacity:.28;filter:saturate(.4)}
 .proj.lit{border-color:var(--violet);box-shadow:0 12px 30px rgba(124,58,237,.16);transform:translateY(-3px)}
-.proj h3{font-family:var(--font-display);font-size:1.06rem;font-weight:600;letter-spacing:-.01em;padding-right:76px}
-.proj p{font-size:.89rem;color:var(--ink-soft);flex:1}
-.badge{position:absolute;top:20px;right:20px;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.08em;padding:4px 10px;border-radius:999px;font-weight:500}
+.proj h3{font-family:var(--font-display);font-size:1.04rem;font-weight:700;letter-spacing:-.01em;padding-right:80px}
+.proj p{font-size:.88rem;color:var(--ink-soft);flex:1}
+.badge{position:absolute;top:20px;right:20px;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.08em;padding:4px 10px;border-radius:999px;font-weight:500}
 .badge-ieee{background:#EEF0FF;color:var(--indigo);border:1px solid #D6D9FF}
 .badge-award{background:#FEF3D7;color:#92610A;border:1px solid #F7DFA5}
 .badge-msc{background:#F1EBFF;color:var(--violet);border:1px solid #E2D5FF}
 .badge-live{background:#DCFCE7;color:#15803D;border:1px solid #B5F0C9}
 .tag-row{display:flex;flex-wrap:wrap;gap:6px}
-.tag{font-family:var(--font-mono);font-size:.67rem;padding:3px 9px;border-radius:6px;background:var(--mist);color:var(--ink-soft)}
-.more-label{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin:38px 0 14px}
+.tag{font-family:var(--font-mono);font-size:.66rem;padding:3px 9px;border-radius:6px;background:var(--mist);color:var(--ink-soft)}
+.takeaway{font-size:.78rem;color:var(--ink-soft);border-left:3px solid var(--violet);padding:2px 0 2px 10px;background:linear-gradient(90deg,rgba(124,58,237,.05),transparent)}
+.takeaway b{color:var(--violet);font-weight:600;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:1px}
+.proj.flagship{border:2px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(120deg,var(--indigo),var(--violet)) border-box;box-shadow:0 12px 30px rgba(79,70,229,.12)}
+.more-label{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:38px 0 14px}
 .mini-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
 .mini{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:all .22s ease}
 .mini.dim{opacity:.28;filter:saturate(.4)}
 .mini.lit{border-color:var(--violet);box-shadow:0 8px 22px rgba(124,58,237,.14)}
-.mini h3{font-family:var(--font-display);font-size:.94rem;font-weight:600;margin-bottom:4px}
-.mini p{font-size:.8rem;color:var(--ink-soft)}
+.mini h3{font-family:var(--font-display);font-size:.92rem;font-weight:600;margin-bottom:4px}
+.mini p{font-size:.79rem;color:var(--ink-soft)}
 
-/* ---------- EXPERIENCE ---------- */
-.timeline{position:relative;padding-left:32px}
-.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--indigo),var(--violet))}
-.job{position:relative;padding-bottom:44px}
+/* ---------- EXPERIENCE (compact timeline) ---------- */
+.timeline{position:relative;padding-left:34px;max-width:760px}
+.timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--indigo),var(--violet))}
+.job{position:relative;padding-bottom:36px}
 .job:last-child{padding-bottom:0}
-.job::before{content:"";position:absolute;left:-32px;top:7px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--indigo)}
-.job-head{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;margin-bottom:4px}
-.job h3{font-family:var(--font-display);font-size:1.15rem;font-weight:600}
-.job .co{color:var(--indigo);font-weight:600;font-size:.95rem}
-.job .when{font-family:var(--font-mono);font-size:.76rem;color:var(--ink-soft)}
-.job ul{margin:10px 0 0 18px;color:var(--ink-soft);font-size:.93rem}
-.job li{margin-bottom:7px}
+.job::before{content:"";position:absolute;left:-33px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:3px solid var(--indigo)}
+.job.current::before{border-color:#22C55E;box-shadow:0 0 0 4px rgba(34,197,94,.15)}
+.job .when{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;color:var(--violet);display:block;margin-bottom:3px}
+.job h3{font-family:var(--font-display);font-size:1.1rem;font-weight:700;letter-spacing:-.01em}
+.job .co{color:var(--ink-soft);font-size:.95rem;margin-top:3px}
+.job .co b{color:var(--ink);font-weight:700;font-family:var(--font-display);font-size:1rem;letter-spacing:-.01em}
+.job ul{margin:10px 0 0 18px;color:var(--ink-soft);font-size:.9rem;max-width:640px}
+.job li{margin-bottom:6px}
 .job li b{color:var(--ink);font-weight:600}
+.exp-note{margin-top:30px;font-size:.88rem;color:var(--ink-soft)}
 
 /* ---------- EDUCATION ---------- */
+.edu-wrap{background:var(--mist);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
 .edu{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;position:relative}
 .edu.featured{border:2px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(120deg,var(--indigo),var(--violet)) border-box;box-shadow:0 12px 30px rgba(79,70,229,.12)}
-.edu .live-tag{position:absolute;top:-11px;left:22px;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em;padding:4px 12px;border-radius:999px;background:linear-gradient(100deg,var(--indigo),var(--violet));color:#fff;font-weight:500}
-.edu h3{font-family:var(--font-display);font-size:1.02rem;font-weight:600;margin-bottom:4px}
-.edu .sub{color:var(--indigo);font-size:.88rem;font-weight:500}
-.edu p{font-size:.86rem;color:var(--ink-soft);margin-top:8px}
+.edu .live-tag{position:absolute;top:-11px;left:22px;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.1em;padding:4px 12px;border-radius:999px;background:linear-gradient(100deg,var(--indigo),var(--violet));color:#fff;font-weight:500}
+.edu h3{font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:4px}
+.edu .sub{color:var(--indigo);font-size:.86rem;font-weight:500}
+.edu p{font-size:.85rem;color:var(--ink-soft);margin-top:8px}
 .cred-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.cred{font-family:var(--font-mono);font-size:.78rem;padding:9px 16px;border-radius:999px;background:var(--card);border:1.5px solid var(--line);color:var(--ink-soft)}
+.cred{font-family:var(--font-mono);font-size:.76rem;padding:9px 16px;border-radius:999px;background:var(--card);border:1.5px solid var(--line);color:var(--ink-soft)}
 .cred b{color:var(--ink);font-weight:500}
 
 /* ---------- CONTACT ---------- */
@@ -152,7 +164,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.86);backdrop-f
 .contact h2{margin-bottom:14px}
 .contact p{color:var(--ink-soft);max-width:540px;margin:0 auto 32px}
 .contact-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
-footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.74rem;color:var(--ink-soft);border-top:1px solid var(--line)}
+footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.72rem;color:var(--ink-soft);border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
@@ -165,7 +177,7 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
       <li><a href="#lab">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a class="nav-cta" href="mailto:seemaaashikab@gmail.com">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -173,20 +185,25 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
 <header class="hero" id="top">
   <canvas id="net" aria-hidden="true"></canvas>
   <div class="wrap hero-content">
-    <span class="eyebrow">Seema Aashikab Anees Ahmed · Dubai, UAE</span>
+    <p class="kicker">Seema Aashikab Anees Ahmed · <b>Dubai, UAE</b></p>
     <h1>From raw data to deployed models to <span class="grad">adopted AI.</span></h1>
-    <p class="lede">I work across the full AI value chain: <b>engineering ML models</b> that reach production, <b>analysing data</b> that drives decisions, and <b>leading the transformation</b> that gets organisations to actually use them. 2× IEEE-published. National hackathon winner. Proven in banking.</p>
+    <p class="lede">I work across the full AI value chain: <b>engineering ML models</b> that reach production, <b>analysing data</b> that drives decisions, and <b>supporting the transformation</b> that gets organisations to actually use them.</p>
+    <p class="proof">
+      <span>2x IEEE-published</span>
+      <span>National hackathon winner</span>
+      <span>Banking-sector experience</span>
+    </p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="#lab">See the work ↓</a>
+      <a class="btn btn-primary" href="#lab">See the work</a>
       <a class="btn btn-ghost" href="mailto:seemaaashikab@gmail.com">Get in touch</a>
     </div>
     <div class="now" role="status">
       <span class="pulse" aria-hidden="true"></span>
-      <span><b>Now:</b> MSc Data Science @ Heriot-Watt University Dubai — graduating <b>July 2026</b></span>
+      <span><b>Now:</b> MSc Data Science at Heriot-Watt University Dubai, graduating <b>July 2026</b></span>
       <span class="sep">|</span>
       <span>Freelance Data Analyst, Dubai</span>
       <span class="sep">|</span>
-      <span><b>Open to full-time AI/ML &amp; Data roles</b> · UAE resident</span>
+      <span><b>Open to full-time AI/ML and Data roles</b> · UAE resident</span>
     </div>
   </div>
 </header>
@@ -197,37 +214,35 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
     <h2>Three roles. One profile.</h2>
     <div class="fit-grid">
       <div class="role">
-        <span class="r-icon" aria-hidden="true">⚙️</span>
+        <span class="r-num">01</span>
         <h3>AI / ML Engineer</h3>
-        <p>I take models from notebook to production — and prove they work.</p>
-        <ul>
-          <li>Deployed ML via <b>Flask APIs + Docker on AWS</b> with live model monitoring</li>
-          <li><b>2 IEEE publications</b> — deep learning &amp; intelligent systems</li>
-          <li>Multimodal AI: fused <b>70K clinical records + cardiac MRI</b> with 3D-CNNs</li>
-          <li>Time-series forecasting with <b>XGBoost &amp; CNN-LSTM</b> (MSc dissertation)</li>
-        </ul>
+        <div class="proof-chips">
+          <span class="pc"><b>Flask + Docker on AWS</b>, live monitoring</span>
+          <span class="pc"><b>2 IEEE papers</b>, deep learning</span>
+          <span class="pc"><b>70K records + MRI</b>, 3D-CNN fusion</span>
+          <span class="pc"><b>XGBoost / CNN-LSTM</b> forecasting</span>
+          <span class="pc"><b>LangChain / LangGraph</b> agent build</span>
+        </div>
       </div>
       <div class="role">
-        <span class="r-icon" aria-hidden="true">📊</span>
+        <span class="r-num">02</span>
         <h3>Data Analyst</h3>
-        <p>I turn messy data into dashboards leadership actually uses.</p>
-        <ul>
-          <li>Cleaned &amp; validated <b>500K+ records</b> with SQL and Python at IIT Kharagpur</li>
-          <li><b>Power BI dashboards for 5+ business units</b> at Emirates Islamic Bank</li>
-          <li>Cut reporting time by <b>40%</b>, pipeline runtime by <b>30%</b></li>
-          <li>Interactive <b>D3.js data storytelling</b> — 5 linked cross-filtering charts</li>
-        </ul>
+        <div class="proof-chips">
+          <span class="pc"><b>500K+ records</b> validated, IIT Kharagpur</span>
+          <span class="pc"><b>Power BI, 5+ business units</b>, banking</span>
+          <span class="pc"><b>40% reporting time</b> saved</span>
+          <span class="pc"><b>D3.js</b> cross-filtering data stories</span>
+        </div>
       </div>
       <div class="role">
-        <span class="r-icon" aria-hidden="true">🧭</span>
-        <h3>AI Strategist &amp; Transformation</h3>
-        <p>I get humans to adopt what the machines produce.</p>
-        <ul>
-          <li>Owned a bank's transformation initiative <b>end-to-end</b>: design → deploy → adopt</li>
-          <li>Trained finance &amp; ops teams across <b>3 departments</b> through change</li>
-          <li>Translated governance frameworks into <b>executive decisions</b></li>
-          <li>Agile delivery under deadline via <b>Jira-managed programs</b></li>
-        </ul>
+        <span class="r-num">03</span>
+        <h3>AI Transformation</h3>
+        <div class="proof-chips">
+          <span class="pc"><b>Design to adoption</b> in a live bank</span>
+          <span class="pc"><b>3 departments</b> trained through change</span>
+          <span class="pc"><b>Governance</b> turned into decisions</span>
+          <span class="pc"><b>Agile / Jira</b> delivery</span>
+        </div>
       </div>
     </div>
   </div>
@@ -235,19 +250,18 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
 
 <div class="kpis">
   <div class="wrap kpi-grid">
-    <div class="kpi"><b>2×</b><small>IEEE publications — deep learning &amp; intelligent diagnostic systems</small></div>
-    <div class="kpi"><b>40%</b><small>reporting time cut via Power BI automation across 5+ business units</small></div>
-    <div class="kpi"><b>97.5%</b><small>accuracy on published diagnostic system, 616 unit tests</small></div>
-    <div class="kpi"><b>500K+</b><small>research records queried, profiled &amp; cleaned with SQL + Python</small></div>
-    <div class="kpi"><b>1st</b><small>place, Smart India Hackathon 2023 — AI drone crop-disease prediction</small></div>
+    <div class="kpi"><b>2x</b><small>IEEE publications in deep learning and intelligent diagnostic systems</small></div>
+    <div class="kpi"><b>40%</b><small>reporting time cut through Power BI automation across 5+ business units</small></div>
+    <div class="kpi"><b>500K+</b><small>research records queried, profiled and cleaned with SQL and Python</small></div>
+    <div class="kpi"><b>1st</b><small>place, Smart India Hackathon 2023, AI drone crop-disease prediction</small></div>
   </div>
 </div>
 
 <section class="lab" id="lab">
   <div class="wrap">
     <span class="eyebrow">The Lab</span>
-    <h2>Skills × Projects</h2>
-    <p class="lab-hint">▸ Tap or hover a skill — every project built with it lights up. Tap again to reset.</p>
+    <h2>Skills x Projects</h2>
+    <p class="lab-hint">Tap or hover a skill and every project built with it lights up. Tap again to reset. <span id="exp-skill-note" hidden style="color:var(--violet);font-weight:500">This one comes from professional work. <a href="#experience">See Experience.</a></span></p>
 
     <div class="skill-group">
       <h4>Machine Learning &amp; AI</h4>
@@ -259,6 +273,7 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
         <button class="chip" data-skill="xgboost">XGBoost</button>
         <button class="chip" data-skill="deeplearning">Deep Learning / CNN</button>
         <button class="chip" data-skill="timeseries">Time-Series Forecasting</button>
+        <button class="chip" data-skill="llm">LLM Agents / LangChain</button>
         <button class="chip" data-skill="recsys">Recommender Systems</button>
       </div>
     </div>
@@ -297,63 +312,88 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
         <button class="chip" data-skill="change">Change Management</button>
         <button class="chip" data-skill="stakeholder">Stakeholder Management</button>
         <button class="chip" data-skill="exec">Executive Communication</button>
+        <button class="chip" data-skill="research">Market &amp; Strategy Research</button>
       </div>
     </div>
 
     <div class="proj-grid" id="projects">
-      <article class="proj" data-skills="python recsys deeplearning sklearn">
-        <span class="badge badge-live">IN PROGRESS</span>
-        <h3>AI Stylist — Outfit Recommendation App</h3>
-        <p>Personal-styling AI that recommends outfits tailored to the individual — recommendation modelling applied to fashion. Currently in active development.</p>
-        <div class="tag-row"><span class="tag">Recommenders</span><span class="tag">Python</span><span class="tag">ML</span></div>
+      <article class="proj flagship" data-skills="stats dashboards stakeholder exec governance research">
+        <span class="badge badge-live">FREELANCE · 2026</span>
+        <h3>NVOCC Partner Selection for TranzOcean</h3>
+        <p>Strategic partner-selection analysis for a vessel operator on the India-UAE-Gulf corridor. Researched three NVOCC candidates from scratch, built a weighted scoring model across 6 criteria, and delivered a primary and secondary partner recommendation with a 90-day action plan.</p>
+        <div class="takeaway"><b>Why it matters</b>Consulting-grade research turned into a decision leadership can act on, not just a report.</div>
+        <div class="tag-row"><span class="tag">Market Research</span><span class="tag">Weighted Scoring</span><span class="tag">Strategy</span></div>
+      </article>
+
+      <article class="proj" data-skills="python llm timeseries stats etl">
+        <span class="badge badge-live">ONGOING</span>
+        <h3>Power Price Analyst Agent</h3>
+        <p>LLM agent that reads unstructured market news alongside European day-ahead electricity prices. Pandas and NumPy analytics (z-score spike detection, intraday shape, cross-zone spreads) exposed to the agent as five LangChain tools, orchestrated with LangGraph.</p>
+        <div class="takeaway"><b>Why it matters</b>Agentic AI on real market data: tool design, orchestration, and quantitative analysis in one build.</div>
+        <div class="tag-row"><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">Pandas / NumPy</span></div>
       </article>
 
       <article class="proj" data-skills="python xgboost deeplearning timeseries dashboards stats">
         <span class="badge badge-msc">MSC DISSERTATION · 2026</span>
         <h3>ML Energy Demand Forecasting</h3>
-        <p>Multi-step time-series forecasting on the UK-DALE dataset with XGBoost and CNN-LSTM, plus MILP-based scheduling optimisation and KPI dashboards. Methodology transfers directly to logistics and demand planning.</p>
+        <p>Multi-step time-series forecasting on the UK-DALE dataset with XGBoost and CNN-LSTM, plus MILP-based scheduling optimisation and KPI dashboards.</p>
+        <div class="takeaway"><b>Why it matters</b>Forecasting plus optimisation on real-world data; the method transfers to logistics and demand planning.</div>
         <div class="tag-row"><span class="tag">XGBoost</span><span class="tag">CNN-LSTM</span><span class="tag">MILP</span></div>
       </article>
 
       <article class="proj" data-skills="python pytorch sklearn deeplearning stats">
         <span class="badge badge-msc">MSC · HERIOT-WATT</span>
         <h3>Multimodal Cardiac Disease Prediction</h3>
-        <p>Hybrid health-AI system fusing 70,000 clinical records with ACDC cardiac MRI volumes. Benchmarked ML classifiers against 3D-CNNs across single and multimodal pipelines for earlier CVD detection.</p>
+        <p>Hybrid health-AI system fusing 70,000 clinical records with ACDC cardiac MRI volumes. Benchmarked ML classifiers against 3D-CNNs across single and multimodal pipelines.</p>
+        <div class="takeaway"><b>Why it matters</b>Deep learning at scale on messy, multimodal medical data, with honest benchmarking.</div>
         <div class="tag-row"><span class="tag">PyTorch</span><span class="tag">3D-CNN</span><span class="tag">Medical AI</span></div>
       </article>
 
       <article class="proj" data-skills="d3 dashboards sql stats python">
         <span class="badge badge-msc">MSC · HERIOT-WATT</span>
         <h3>Does Wealth Make Countries Happy?</h3>
-        <p>Interactive D3.js data story: five bidirectionally-linked visualisations — scatter, choropleth map, bar, trend lines (1990–2023, 9K+ rows), radar — with full cross-chart filtering, built on World Bank, WHO &amp; World Happiness data.</p>
+        <p>Interactive D3.js data story: five bidirectionally-linked visualisations (scatter, choropleth map, bar, trend lines, radar) over 9K+ rows of World Bank, WHO and World Happiness data.</p>
+        <div class="takeaway"><b>Why it matters</b>Data storytelling a hiring manager can click and explore, not just read about.</div>
         <div class="tag-row"><span class="tag">D3.js v7</span><span class="tag">TopoJSON</span><span class="tag">Data Storytelling</span></div>
       </article>
 
-      <article class="proj" data-skills="python tensorflow deeplearning">
-        <span class="badge badge-ieee">IEEE · 2022</span>
-        <h3>Face Mask &amp; Temperature Audit System</h3>
-        <p>Real-time COVID compliance monitor: MobileNetV2 CNN for mask detection (93% accuracy, benchmarked against KNN and SVM) with contactless temperature sensing via NI myDAQ and LabVIEW.</p>
-        <div class="tag-row"><span class="tag">MobileNetV2</span><span class="tag">OpenCV</span><span class="tag">LabVIEW</span></div>
-      </article>
-
       <article class="proj" data-skills="stats">
-        <span class="badge badge-ieee">IEEE · 2024</span>
+        <span class="badge badge-ieee">IEEE · PUBLISHED</span>
         <h3>Neuro-Fuzzy Anaemia Diagnosis</h3>
-        <p>Fuzzy-logic diagnostic application predicting anaemia presence, type, and severity from Complete Blood Count parameters — validated by 616 automated unit tests at 97.5% accuracy, with interactive GUI and patient database.</p>
+        <p>Fuzzy-logic diagnostic application predicting anaemia presence, type, and severity from Complete Blood Count parameters. Validated by 616 automated unit tests at 97.5% accuracy.</p>
+        <div class="takeaway"><b>Why it matters</b>Peer-reviewed and test-validated, engineering rigour beyond a class project.</div>
         <div class="tag-row"><span class="tag">Fuzzy Logic</span><span class="tag">LabVIEW</span><span class="tag">Unit Testing</span></div>
       </article>
 
+      <article class="proj" data-skills="python tensorflow deeplearning">
+        <span class="badge badge-ieee">IEEE · PUBLISHED</span>
+        <h3>Face Mask &amp; Temperature Audit System</h3>
+        <p>Real-time COVID compliance monitor: MobileNetV2 CNN for mask detection at 93% accuracy, benchmarked against KNN and SVM, with contactless temperature sensing.</p>
+        <div class="takeaway"><b>Why it matters</b>Peer-reviewed computer vision with proper model benchmarking, deployed on real hardware.</div>
+        <div class="tag-row"><span class="tag">MobileNetV2</span><span class="tag">OpenCV</span><span class="tag">LabVIEW</span></div>
+      </article>
+
       <article class="proj" data-skills="python deeplearning">
-        <span class="badge badge-award">🏆 SIH 2023 WINNER</span>
+        <span class="badge badge-award">SIH 2023 WINNER</span>
         <h3>Drone-Based Cotton Disease Prediction</h3>
-        <p>National first place at Smart India Hackathon 2023: AI system combining drone imagery with environmental data for early crop-disease prediction — intervention before visible spread.</p>
+        <p>National first place at Smart India Hackathon 2023: AI system combining drone imagery with environmental data to predict crop disease before visible spread.</p>
+        <div class="takeaway"><b>Why it matters</b>Won first place against national competition, built and pitched under deadline.</div>
         <div class="tag-row"><span class="tag">Computer Vision</span><span class="tag">Drones</span><span class="tag">Env. Data</span></div>
       </article>
 
       <article class="proj" data-skills="python sql recsys stats etl">
         <h3>Book &amp; Movie Analytics Engine</h3>
-        <p>Complete analytics and recommendation system in Python — consumption patterns by country and continent, end-to-end from data cleaning through analysis to recommendation logic.</p>
+        <p>Complete analytics and recommendation system in Python: consumption patterns by country and continent, from data cleaning through analysis to recommendation logic.</p>
+        <div class="takeaway"><b>Why it matters</b>End-to-end ownership of an analytics pipeline, no hand-offs.</div>
         <div class="tag-row"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Recommenders</span></div>
+      </article>
+
+      <article class="proj" data-skills="python recsys deeplearning sklearn">
+        <span class="badge badge-live">IN PROGRESS</span>
+        <h3>AI Stylist, Outfit Recommendation App</h3>
+        <p>Personal-styling AI that recommends outfits tailored to the individual. Recommendation modelling applied to fashion, currently in active development.</p>
+        <div class="takeaway"><b>Why it matters</b>Product thinking: taking recommender systems from theory toward a usable app.</div>
+        <div class="tag-row"><span class="tag">Recommenders</span><span class="tag">Python</span><span class="tag">ML</span></div>
       </article>
     </div>
 
@@ -361,19 +401,19 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
     <div class="mini-grid" id="minis">
       <div class="mini" data-skills="csharp sql">
         <h3>Custom Web Browser in C#</h3>
-        <p>Manual HTTP handling, async/await, Entity Framework + LINQ persistence, SOLID architecture.</p>
+        <p>Manual HTTP handling, async/await, Entity Framework and LINQ persistence, SOLID architecture.</p>
       </div>
       <div class="mini" data-skills="etl sql">
         <h3>Auction Inventory System</h3>
-        <p>Inventory management for auction operations — item cataloguing and status tracking through listing and sale.</p>
+        <p>Inventory management for auction operations: item cataloguing and status tracking through listing and sale.</p>
       </div>
       <div class="mini" data-skills="etl">
         <h3>RFID Inventory Management</h3>
-        <p>Automated tracking with real-time sync — cut manual errors, improved shipping accuracy.</p>
+        <p>Automated tracking with real-time sync. Cut manual errors and improved shipping accuracy.</p>
       </div>
       <div class="mini" data-skills="sql python dashboards">
         <h3>Wonders of Rock · IIT Kharagpur</h3>
-        <p>Raw geological data → structured databases → analytical dashboard and web page.</p>
+        <p>Raw geological data turned into structured databases, an analytical dashboard, and a web page.</p>
       </div>
     </div>
   </div>
@@ -384,68 +424,57 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
     <span class="eyebrow">Track Record</span>
     <h2>Experience</h2>
     <div class="timeline">
-      <div class="job">
-        <div class="job-head"><h3>Freelance Data Analyst &amp; Programming Tutor</h3><span class="co">Self-Employed · Dubai</span><span class="when">APR 2025 — FEB 2026</span></div>
-        <ul>
-          <li>Delivered data analysis and visualisation projects for UAE clients alongside MSc studies.</li>
-          <li>Mentored clients through 1:1 analytics and programming tutoring.</li>
-        </ul>
+      <div class="job current">
+        <span class="when">APR 2025 · FEB 2026</span>
+        <h3>Freelance Data Analyst &amp; Programming Tutor</h3>
+        <p class="co"><b>Self-Employed</b> · Dubai</p>
       </div>
       <div class="job">
-        <div class="job-head"><h3>Data &amp; Digital Transformation Consultant</h3><span class="co">Emirates Islamic Bank · Dubai</span><span class="when">SEP 2024 — FEB 2025</span></div>
-        <ul>
-          <li>Owned a transformation initiative end-to-end, automating procurement reporting across <b>5+ business units</b> with Power BI — cutting reporting time by <b>40%</b>.</li>
-          <li>Built SQL/Python data pipelines feeding performance models and BI tools; statistical trend modelling directly shaped procurement strategy at leadership level.</li>
-          <li>Drove change management and digital adoption, training finance and operations teams across <b>3 departments</b> as manual processes went digital.</li>
-          <li>Presented executive-ready insights, translating data governance frameworks into actionable recommendations.</li>
-        </ul>
+        <span class="when">SEP 2024 · FEB 2025</span>
+        <h3>Data &amp; Digital Transformation Consultant</h3>
+        <p class="co"><b>Emirates Islamic Bank</b> · Dubai</p>
       </div>
       <div class="job">
-        <div class="job-head"><h3>Project Engineer Intern</h3><span class="co">Soliton Technologies · India</span><span class="when">JUN 2023 — MAY 2024</span></div>
-        <ul>
-          <li>Modernised a legacy manual validation process into an automated ETL pipeline — <b>30% faster</b>, from 4 hours to under 3.</li>
-          <li>Built and tuned classification and regression models with Scikit-learn; deployed via <b>Flask APIs and Docker on AWS</b> with live model monitoring.</li>
-          <li>Presented statistical findings and transformation recommendations to senior stakeholders across a multinational engineering organisation.</li>
-        </ul>
+        <span class="when">JUN 2023 · MAY 2024</span>
+        <h3>Project Engineer Intern</h3>
+        <p class="co"><b>Soliton Technologies</b> · India</p>
       </div>
       <div class="job">
-        <div class="job-head"><h3>Data Analyst Intern</h3><span class="co">Indian Institute of Technology Kharagpur</span><span class="when">JUN 2022 — SEP 2022</span></div>
-        <ul>
-          <li>Queried, profiled, and cleaned <b>500K+ research records</b> using SQL and Python, producing validated datasets behind published research.</li>
-          <li>Applied regression and classification techniques; presented findings to project leads to support strategic research decisions.</li>
-        </ul>
+        <span class="when">JUN 2022 · SEP 2022</span>
+        <h3>Data Analyst Intern</h3>
+        <p class="co"><b>Indian Institute of Technology Kharagpur</b> · India</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="education" style="background:var(--mist);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<section class="edu-wrap" id="education">
   <div class="wrap">
     <span class="eyebrow">Foundations</span>
     <h2>Education &amp; Credentials</h2>
     <div class="edu-grid">
       <div class="edu featured">
-        <span class="live-tag">● IN PROGRESS — CLASS OF 2026</span>
+        <span class="live-tag">IN PROGRESS · CLASS OF 2026</span>
         <h3>MSc Data Science</h3>
-        <div class="sub">Heriot-Watt University, Dubai · 2025–2026</div>
-        <p>Graduating <b>July 2026</b>. Modules: AI &amp; Machine Learning, Big Data Management &amp; Governance, Statistical Modelling &amp; Analysis, DevOps. Dissertation: ML-driven energy demand forecasting.</p>
+        <div class="sub">Heriot-Watt University, Dubai · 2025 to 2026</div>
+        <p>Graduating <b>July 2026</b>. Modules: AI and Machine Learning, Big Data Management and Governance, Statistical Modelling and Analysis, DevOps. Dissertation: ML-driven energy demand forecasting.</p>
       </div>
       <div class="edu">
         <h3>B.E. Electronics &amp; Communication</h3>
-        <div class="sub">Anna University · 2020–2024</div>
-        <p>Sri Ramakrishna Engineering College. IoT specialisation. First Class with Distinction — 8.82 CGPA.</p>
+        <div class="sub">Anna University · 2020 to 2024</div>
+        <p>Sri Ramakrishna Engineering College. IoT specialisation. First Class with Distinction, 8.82 CGPA.</p>
       </div>
       <div class="edu">
         <h3>Google Data Analytics Certificate</h3>
         <div class="sub">Coursera · Google</div>
-        <p>Professional certification covering the full analytics lifecycle — data cleaning through visualisation and stakeholder communication.</p>
+        <p>Professional certification covering the full analytics lifecycle, from data cleaning through visualisation and stakeholder communication.</p>
       </div>
     </div>
     <div class="cred-row">
       <span class="cred"><b>IELTS 7.5</b> · CEFR C1 Academic</span>
       <span class="cred"><b>BEC</b> · Cambridge Business English</span>
       <span class="cred"><b>Winner</b> · Smart India Hackathon 2023</span>
-      <span class="cred"><b>2× IEEE</b> · Published Author</span>
+      <span class="cred"><b>2x IEEE</b> · Published Author</span>
     </div>
   </div>
 </section>
@@ -454,32 +483,41 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
   <div class="wrap">
     <span class="eyebrow">Let's Build</span>
     <h2>Hiring for AI/ML or Data?</h2>
-    <p>UAE resident, based in Dubai. Whether you need models built, data decoded, or an AI strategy people will actually adopt — let's talk.</p>
+    <p>UAE resident, based in Dubai. Whether you need models built, data decoded, or an AI rollout people will actually adopt, let's talk.</p>
     <div class="contact-links">
       <a class="btn btn-primary" href="mailto:seemaaashikab@gmail.com">seemaaashikab@gmail.com</a>
-      <a class="btn btn-ghost" href="https://linkedin.com/in/seema-aashikab-anees-ahmed" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a class="btn btn-ghost" href="https://github.com/seemaaashikab" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/seema-aashikab-anees-ahmed" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/seemaaashikab" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
 </section>
 
-<footer>© 2026 Seema Aashikab Anees Ahmed · Designed &amp; built with intent</footer>
+<footer>© 2026 Seema Aashikab Anees Ahmed · Designed and built with intent</footer>
 
 <script>
-/* ---- Skill ↔ Project interaction (covers both card sizes) ---- */
+/* ---- Skill to project interaction ---- */
 (function(){
   const chips = document.querySelectorAll('.chip');
   const cards = document.querySelectorAll('[data-skills]');
   let locked = null;
 
+  const note = document.getElementById('exp-skill-note');
   function apply(skill){
+    let matches = 0;
+    cards.forEach(c=>{ if(c.dataset.skills.split(' ').includes(skill)) matches++; });
+    if(matches===0){
+      cards.forEach(c=>c.classList.remove('lit','dim'));
+      note.hidden = false;
+      return;
+    }
+    note.hidden = true;
     cards.forEach(c=>{
       const has = c.dataset.skills.split(' ').includes(skill);
       c.classList.toggle('lit', has);
       c.classList.toggle('dim', !has);
     });
   }
-  function clearCards(){ cards.forEach(c=>c.classList.remove('lit','dim')); }
+  function clearCards(){ cards.forEach(c=>c.classList.remove('lit','dim')); note.hidden = true; }
   function reset(){
     clearCards();
     chips.forEach(c=>c.classList.remove('active'));
