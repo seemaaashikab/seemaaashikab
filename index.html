@@ -325,12 +325,12 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
         <div class="tag-row"><span class="tag">Market Research</span><span class="tag">Weighted Scoring</span><span class="tag">Strategy</span></div>
       </article>
 
-      <article class="proj" data-skills="python llm timeseries stats etl">
+      <article class="proj" data-skills="python llm timeseries stats">
         <span class="badge badge-live">ONGOING</span>
         <h3>Power Price Analyst Agent</h3>
-        <p>LLM agent that reads unstructured market news alongside European day-ahead electricity prices. Pandas and NumPy analytics (z-score spike detection, intraday shape, cross-zone spreads) exposed to the agent as five LangChain tools, orchestrated with LangGraph.</p>
-        <div class="takeaway"><b>Why it matters</b>Agentic AI on real market data: tool design, orchestration, and quantitative analysis in one build.</div>
-        <div class="tag-row"><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">Pandas / NumPy</span></div>
+        <p>LLM agent over structured and unstructured energy market data. Seven LangChain tools expose pandas and NumPy analytics (rolling z-score spike detection, intraday seasonality, cross-zone spreads), plus from-scratch TF-IDF retrieval and a fusion tool that explains price spikes by joining same-day news. Runs on a free local LLM via Ollama, with a pluggable architecture that supports cloud models for comparison.</p>
+        <div class="takeaway"><b>Why it matters</b>Agentic AI built end to end: tool design, retrieval from scratch, and a swappable local-to-cloud LLM backend.</div>
+        <div class="tag-row"><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">Ollama</span><span class="tag">Pandas / NumPy</span></div>
       </article>
 
       <article class="proj" data-skills="python xgboost deeplearning timeseries dashboards stats">
