@@ -1,6 +1,6 @@
 # Hi, I'm Seema Aashikab 👋
 
-**Data Scientist & AI/ML Engineer** | MSc Data Science, Heriot-Watt University Dubai | Based in Dubai, UAE 🇦🇪
+**Data Scientist & AI/ML Engineer** | MSc Data Science, Heriot-Watt University Dubai | Based in Dubai, UAE
 
 I take machine learning from raw, messy data all the way to deployed, monitored models, and I make the results legible to the people who fund them. 2x IEEE-published, national hackathon winner, and battle-tested in a production banking environment at Emirates Islamic Bank.
 
@@ -52,7 +52,9 @@ Interactive single-page **D3.js data story** exploring wealth, health, and happi
 ## 🎓 Education & Credentials
 
 **MSc Data Science**, Heriot-Watt University, Dubai *(2025 to 2026)*
+
 **BEng Electronics & Communication**, Anna University. First Class with Distinction, **8.82 CGPA**
+
 Google Data Analytics Professional Certificate · IELTS 7.5 (C1) · Cambridge Business English
 
 ---
