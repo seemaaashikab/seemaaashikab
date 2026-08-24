@@ -1,62 +1,72 @@
 # Hi, I'm Seema Aashikab 👋
 
-**Data Scientist & AI/ML Engineer** | MSc Data Science, Heriot-Watt University Dubai | Based in Dubai, UAE
+### Data Scientist · Analytics & Strategy · ML depth, business impact
 
-I take machine learning from raw, messy data all the way to deployed, monitored models, and I make the results legible to the people who fund them. 2x IEEE-published, national hackathon winner, and battle-tested in a production banking environment at Emirates Islamic Bank.
+I build ML that reaches production **and** turn analysis into decisions the business acts on, spanning data science, analytics, and strategy/operations. I diagnose where value leaks, quantify it, and drive the change that captures it.
 
-📫 [seemaaashikab@gmail.com](mailto:seemaaashikab@gmail.com) · [LinkedIn](https://linkedin.com/in/seema-aashikab-anees-ahmed) · [Portfolio](https://seemaaashikab.github.io/seemaaashikab)
+`Banking-sector experience` · `2× IEEE-published` · `National hackathon winner`
 
----
+📍 Dubai, UAE · 🎓 MSc Data Science, Heriot-Watt University Dubai (course completed, graduating **November 2026**)
+💼 **Open to Data Science, Analytics, and Strategy/Operations roles**
 
-## 🔧 What I work with
-
-**ML & AI:** Python, PyTorch, TensorFlow/Keras, Scikit-learn, XGBoost, Deep Learning / CNN, Time-Series Forecasting
-**MLOps & Engineering:** Docker, AWS / SageMaker, Flask APIs, DevOps / Jenkins, Git
-**Data & Analytics:** SQL, ETL pipelines, statistical modelling, Power BI, Tableau, D3.js, data governance
-**Domains:** Banking & Fintech, Healthcare AI, Energy, Research analytics
+🌐 [Portfolio](https://seemaaashikab.github.io/seemaaashikab) · [LinkedIn](https://linkedin.com/in/seema-aashikab-anees-ahmed) · ✉️ seemaaashikab@gmail.com
 
 ---
 
 ## 🚀 Featured Projects
 
-### [Multimodal Cardiac Disease Prediction](https://github.com/seemaaashikab)
-Hybrid health-AI system fusing **70,000 clinical records** with ACDC cardiac MRI volumes. Benchmarked classical ML classifiers against 3D-CNNs across single- and multi-modal pipelines for earlier CVD detection.
-`PyTorch` `3D-CNN` `Scikit-learn`
+**[Where Do People Quietly Give Up?](https://seemaaashikab.github.io/seemaaashikab/#lab)** · Funnel & revenue-at-risk analytics
+End-to-end pipeline turning 42M+ e-commerce events into a business decision. Traced a view → cart → purchase funnel across 9.2M sessions and quantified **AED 99.4M in recoverable cart-abandonment revenue**, isolating the cart→purchase step as the highest-value leak. Built as a tested data platform (Python ETL → Postgres → versioned dbt models → Power BI) with 36 automated tests, including a data-grain bug that had inflated the headline metric ~20× and the reasonableness tests added so it couldn't recur.
+`Python` `SQL/Postgres` `dbt` `Power BI`
 
-### ML Energy Demand Forecasting *(MSc Dissertation)*
-Multi-step time-series forecasting on the UK-DALE dataset with **XGBoost and CNN-LSTM**, plus MILP-based scheduling optimisation and KPI dashboards. Methodology transfers directly to logistics and demand planning.
+**Can You See a Customer Leaving Before They Do?** · Churn early-warning + revenue protection
+Recommendation-first: protect at-risk revenue by targeting high-value churners *before* they leave. Backed by a churn model (logistic regression / random forest / XGBoost) surfaced in a Power BI dashboard that quantifies revenue-at-risk, tied to my banking-sector experience.
+`Python` `scikit-learn` `XGBoost` `SQL` `Power BI`
+
+**[Airline Customer 360](https://github.com/seemaaashikab/airline-customer-360)** · Strategy & analytics
+Unifies fragmented airline booking, loyalty, and profile data (~130K records) into a single Customer 360 view, defines four actionable segments each mapped to a business action, and ships the BA artefacts (data mappings, user stories, journey maps) behind them.
+`Python` `Pandas` `Segmentation` `BA Artefacts`
+
+**ML Energy Demand Forecasting** (MSc Dissertation) · Multi-step time-series forecasting on UK-DALE with XGBoost and CNN-LSTM, plus MILP scheduling optimisation and KPI dashboards.
 `XGBoost` `CNN-LSTM` `MILP`
 
-### [Global Well-Being Explorer](https://github.com/seemaaashikab/Global-Well-Being-Explorer)
-Interactive single-page **D3.js data story** exploring wealth, health, and happiness across **157 countries (2015 to 2019)**. Five bidirectionally-linked visualisations over 9K+ rows of World Bank, WHO and World Happiness data with full cross-chart filtering.
-`D3.js` `TopoJSON` `Data Storytelling`
+**Multimodal Cardiac Disease Prediction** · Fusing 70,000 clinical records with ACDC cardiac MRI; ML classifiers benchmarked against 3D-CNNs across single and multimodal pipelines.
+`PyTorch` `3D-CNN` `Medical AI`
 
 ---
 
-## 🏆 Publications & Awards
+## 🏆 Achievements
 
-- **Face Mask & Temperature Audit System** *(IEEE-published)*: Real-time COVID-compliance monitor; MobileNetV2 CNN mask detection at **93% accuracy** (benchmarked vs KNN & SVM) with contactless temperature sensing.
-- **Neuro-Fuzzy Anaemia Diagnosis** *(IEEE-published)*: Fuzzy-logic diagnostic tool predicting anaemia type and severity from CBC parameters, validated by **616 automated unit tests at 97.5% accuracy**.
-- **Winner, Smart India Hackathon 2023:** National 1st place for a drone plus computer-vision crop-disease prediction system.
+- **National First Place, Smart India Hackathon 2023** for a drone-based cotton disease prediction system, built and pitched under deadline.
+- **IEEE Published Author** · [Neuro-Fuzzy Anaemia Diagnosis](https://www.researchgate.net/publication/383172910_Neuro-fuzzy_based_Anaemia_diagnosis_using_LabVIEW), a fuzzy-logic diagnostic system validated by 616 automated unit tests at 97.5% accuracy.
+- **IEEE Published Author** · [Face Mask & Temperature Audit System](https://www.researchgate.net/publication/367142030_Human_Body_Temperature_and_Face_Mask_Audit_System_for_COVID_Protocol), a real-time COVID-compliance monitor using MobileNetV2 at 93% accuracy.
+- **McKinsey.org Forward Program** covering problem-solving, communication, adaptability, and the digital toolkit.
+- **Innovation Chair, Young Indians** (CII youth wing).
+- **First Class with Distinction**, 8.82 CGPA, B.E. Electronics & Communication.
 
 ---
 
-## 💼 Experience Snapshot
+## 🛠️ Tech Stack
 
-- **Emirates Islamic Bank**, Data & Digital Transformation Consultant. Built SQL/Python pipelines and Power BI dashboards in a production banking environment; cut reporting time **40%** across 5+ business units.
-- **Soliton Technologies**, Project Engineer Intern. Built and deployed ML models via Flask + Docker on AWS with live monitoring; modernised a legacy validation process into an ETL pipeline **30% faster**.
-- **IIT Kharagpur**, Data Analyst Intern. Queried, profiled and cleaned **500K+ research records** behind published research.
+**Data & Analytics** &nbsp; `SQL / Postgres` · `ETL Pipelines` · `dbt` · `Power BI` · `Statistical Modelling` · `Structured Problem-Solving`
+
+**ML & AI** &nbsp; `Python` · `PyTorch` · `TensorFlow / Keras` · `scikit-learn` · `XGBoost` · `Deep Learning / CNN` · `Time-Series` · `LangChain / LangGraph`
+
+**MLOps & Engineering** &nbsp; `Docker` · `AWS / SageMaker` · `Flask` · `Jenkins` · `C# / .NET`
+
+**Visualisation** &nbsp; `Power BI` · `Tableau` · `D3.js`
+
+**Strategy & Delivery** &nbsp; `Agile / Scrum / Jira` · `Change Management` · `Stakeholder Management` · `Executive Communication`
 
 ---
 
 ## 🎓 Education & Credentials
 
-**MSc Data Science**, Heriot-Watt University, Dubai *(2025 to 2026)*
-
-**BEng Electronics & Communication**, Anna University. First Class with Distinction, **8.82 CGPA**
-
-Google Data Analytics Professional Certificate · IELTS 7.5 (C1) · Cambridge Business English
+- **MSc Data Science**, Heriot-Watt University, Dubai (course completed, graduating November 2026)
+- **B.E. Electronics & Communication**, Anna University · First Class with Distinction, 8.82 CGPA
+- **Google Data Analytics Professional Certificate**, Coursera
+- 2× IEEE Published Author · Winner, Smart India Hackathon 2023 · IELTS 7.5 (CEFR C1)
 
 ---
 
-<sub>Open to Data Scientist / AI-ML Engineer roles in the UAE and remote. Let's build something measurable.</sub>
+<sub>Data science with real ML depth, turned into business impact. Let's build something that pays off.</sub>
