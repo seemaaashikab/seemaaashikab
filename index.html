@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seema Aashikab · AI/ML · Data · Transformation</title>
-<meta name="description" content="Seema Aashikab Anees Ahmed: IEEE-published AI/ML engineer, data analyst and AI transformation consultant in Dubai. MSc Data Science, Heriot-Watt University, 2026.">
+<title>Seema Aashikab · Data Science · Analytics · Strategy</title>
+<meta name="description" content="Seema Aashikab Anees Ahmed: IEEE-published data scientist and analytics consultant in Dubai. Real ML depth turned into business decisions. MSc Data Science, Heriot-Watt University; course completed, graduating November 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -23,6 +23,7 @@
   --font-display:'Sora',sans-serif;
   --font-body:'Inter',sans-serif;
   --font-mono:'JetBrains Mono',monospace;
+  --icon-tint:#6B6A85;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -76,13 +77,16 @@ nav{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.88);backdrop-f
 .now span b{color:var(--ink);font-weight:600}
 .now .sep{color:var(--line)}
 
-/* ---------- ROLES (compact band) ---------- */
+/* ---------- VALUE / POSITIONING ---------- */
 .fit{padding-top:76px}
+.value-lead{font-size:1.15rem;color:var(--ink-soft);max-width:720px;margin-bottom:38px}
+.value-lead b{color:var(--ink);font-weight:600}
 .fit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
 .role{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;position:relative;transition:transform .18s ease,box-shadow .18s ease}
 .role:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(22,21,46,.09)}
 .role .r-num{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;color:var(--violet);display:block;margin-bottom:10px}
-.role h3{font-family:var(--font-display);font-size:1.12rem;font-weight:700;letter-spacing:-.01em;margin-bottom:14px}
+.role h3{font-family:var(--font-display);font-size:1.12rem;font-weight:700;letter-spacing:-.01em;margin-bottom:10px}
+.role p.r-desc{font-size:.9rem;color:var(--ink-soft);margin-bottom:14px}
 .role .proof-chips{display:flex;flex-wrap:wrap;gap:7px}
 .role .pc{font-family:var(--font-mono);font-size:.72rem;padding:5px 11px;border-radius:8px;background:var(--mist);color:var(--ink-soft);border:1px solid transparent}
 .role .pc b{color:var(--ink);font-weight:500}
@@ -103,9 +107,13 @@ nav{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.88);backdrop-f
 .skill-group{margin-bottom:18px}
 .skill-group h4{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:9px}
 .skill-cloud{display:flex;flex-wrap:wrap;gap:8px}
-.chip{font-family:var(--font-mono);font-size:.78rem;padding:7px 15px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;transition:all .15s ease;user-select:none}
+.chip{font-family:var(--font-mono);font-size:.78rem;padding:7px 15px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;transition:all .15s ease;user-select:none;display:inline-flex;align-items:center;gap:7px}
 .chip:hover,.chip:focus-visible{border-color:var(--violet);color:var(--violet)}
 .chip.active{background:linear-gradient(100deg,var(--indigo),var(--violet));color:#fff;border-color:transparent;box-shadow:0 4px 14px rgba(124,58,237,.3)}
+.chip .ti{width:14px;height:14px;flex:none;opacity:.85}
+.chip.active .ti{filter:brightness(0) invert(1);opacity:1}
+.skill-group.priority h4{color:var(--violet)}
+.skill-group.priority .chip{border-color:#D6D9FF}
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px;margin-top:40px}
 .proj{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:12px;transition:all .22s ease;position:relative}
 .proj.dim{opacity:.28;filter:saturate(.4)}
@@ -118,7 +126,8 @@ nav{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.88);backdrop-f
 .badge-msc{background:#F1EBFF;color:var(--violet);border:1px solid #E2D5FF}
 .badge-live{background:#DCFCE7;color:#15803D;border:1px solid #B5F0C9}
 .tag-row{display:flex;flex-wrap:wrap;gap:6px}
-.tag{font-family:var(--font-mono);font-size:.66rem;padding:3px 9px;border-radius:6px;background:var(--mist);color:var(--ink-soft)}
+.tag{font-family:var(--font-mono);font-size:.66rem;padding:3px 9px;border-radius:6px;background:var(--mist);color:var(--ink-soft);display:inline-flex;align-items:center;gap:5px}
+.tag .ti{width:12px;height:12px;flex:none;opacity:.8}
 .takeaway{font-size:.78rem;color:var(--ink-soft);border-left:3px solid var(--violet);padding:2px 0 2px 10px;background:linear-gradient(90deg,rgba(124,58,237,.05),transparent)}
 .takeaway b{color:var(--violet);font-weight:600;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:1px}
 .proj.flagship{border:2px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(120deg,var(--indigo),var(--violet)) border-box;box-shadow:0 12px 30px rgba(79,70,229,.12)}
@@ -130,7 +139,22 @@ nav{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.88);backdrop-f
 .mini h3{font-family:var(--font-display);font-size:.92rem;font-weight:600;margin-bottom:4px}
 .mini p{font-size:.79rem;color:var(--ink-soft)}
 
-/* ---------- EXPERIENCE (compact timeline) ---------- */
+.proj .paper-link{font-family:var(--font-mono);font-size:.72rem;font-weight:500;color:var(--indigo);display:inline-flex;align-items:center;gap:5px;margin-top:2px}
+.proj .paper-link::before{content:"↗";font-size:.8rem}
+.proj .paper-link:hover{text-decoration:underline}
+
+/* ---------- ACHIEVEMENTS ---------- */
+.ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.ach{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;position:relative;transition:transform .18s ease,box-shadow .18s ease;display:flex;flex-direction:column;gap:8px}
+.ach:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(22,21,46,.08)}
+.ach .ach-icon{font-size:1.4rem;line-height:1}
+.ach h3{font-family:var(--font-display);font-size:1rem;font-weight:700;letter-spacing:-.01em}
+.ach p{font-size:.85rem;color:var(--ink-soft)}
+.ach .ach-meta{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--violet)}
+.ach a.ach-link{font-family:var(--font-mono);font-size:.72rem;font-weight:500;display:inline-flex;align-items:center;gap:5px;margin-top:auto}
+.ach a.ach-link::before{content:"↗";font-size:.8rem}
+
+/* ---------- EXPERIENCE ---------- */
 .timeline{position:relative;padding-left:34px;max-width:760px}
 .timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--indigo),var(--violet))}
 .job{position:relative;padding-bottom:36px}
@@ -165,6 +189,20 @@ nav{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.88);backdrop-f
 .contact p{color:var(--ink-soft);max-width:540px;margin:0 auto 32px}
 .contact-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
 footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.72rem;color:var(--ink-soft);border-top:1px solid var(--line)}
+
+/* ---------- DARK MODE ---------- */
+@media(prefers-color-scheme:dark){
+  :root{
+    --bg:#0F0E1A;--ink:#F3F2FA;--ink-soft:#A9A7C4;--mist:#1C1A33;
+    --card:#17162A;--line:#2B2947;--icon-tint:#B8B6D6;
+  }
+  .badge-ieee{background:#20223F;color:#A9A7FF;border-color:#33356A}
+  .badge-award{background:#3A2E12;color:#F5C871;border-color:#5C4A1F}
+  .badge-msc{background:#2A1F45;color:#C4A6FF;border-color:#443066}
+  .badge-live{background:#12331F;color:#6FE39A;border-color:#1F5C36}
+  .nav-cta{background:var(--indigo)}
+  .btn-ghost{background:var(--card)}
+}
 </style>
 </head>
 <body>
@@ -173,8 +211,9 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
   <div class="wrap nav-inner">
     <a class="logo" href="#top">seema<span>.ai</span></a>
     <ul class="nav-links">
-      <li><a href="#fit">Where I Fit</a></li>
+      <li><a href="#fit">What I Do</a></li>
       <li><a href="#lab">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
       <li><a class="nav-cta" href="mailto:seemaaashikab@gmail.com">Contact</a></li>
@@ -186,8 +225,8 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
   <canvas id="net" aria-hidden="true"></canvas>
   <div class="wrap hero-content">
     <p class="kicker">Seema Aashikab Anees Ahmed · <b>Dubai, UAE</b></p>
-    <h1>From raw data to deployed models to <span class="grad">adopted AI.</span></h1>
-    <p class="lede">I work across the full AI value chain: <b>engineering ML models</b> that reach production, <b>analysing data</b> that drives decisions, and <b>supporting the transformation</b> that gets organisations to actually use them.</p>
+    <h1>I build ML, then I make it <span class="grad">pay off for the business.</span></h1>
+    <p class="lede">I'm a data scientist with real ML depth <b>and</b> a structured problem-solver who turns analysis into decisions the business acts on. I diagnose where value leaks, quantify it, and drive the change that captures it.</p>
     <p class="proof">
       <span>2x IEEE-published</span>
       <span>National hackathon winner</span>
@@ -199,44 +238,48 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
     </div>
     <div class="now" role="status">
       <span class="pulse" aria-hidden="true"></span>
-      <span><b>Now:</b> MSc Data Science at Heriot-Watt University Dubai, graduating <b>July 2026</b></span>
+      <span><b>Now:</b> MSc Data Science, Heriot-Watt University Dubai: course completed, graduating <b>November 2026</b></span>
       <span class="sep">|</span>
-      <span>Freelance Data Analyst, Dubai</span>
+      <span>Freelance Data &amp; Analytics Consultant, Dubai</span>
       <span class="sep">|</span>
-      <span><b>Open to full-time AI/ML and Data roles</b> · UAE resident</span>
+      <span><b>Open to Data Science, Analytics, and Strategy/Operations roles</b> · UAE resident</span>
     </div>
   </div>
 </header>
 
 <section class="fit" id="fit">
   <div class="wrap">
-    <span class="eyebrow">Where I Fit</span>
-    <h2>Three roles. One profile.</h2>
+    <span class="eyebrow">What I Do</span>
+    <h2>Diagnose. Build. Get it adopted.</h2>
+    <p class="value-lead">I trace fuzzy business problems down to a number, <b>build the ML or analytics that moves it</b>, and drive the rollout so the fix actually sticks across teams. ML depth is the engine; business impact is the point.</p>
     <div class="fit-grid">
       <div class="role">
         <span class="r-num">01</span>
-        <h3>AI / ML Engineer</h3>
+        <h3>Data Science &amp; ML</h3>
+        <p class="r-desc">Production-grade models on messy, real-world data, not notebooks that die on a laptop.</p>
         <div class="proof-chips">
-          <span class="pc"><b>Flask + Docker on AWS</b>, live monitoring</span>
           <span class="pc"><b>2 IEEE papers</b>, deep learning</span>
           <span class="pc"><b>70K records + MRI</b>, 3D-CNN fusion</span>
           <span class="pc"><b>XGBoost / CNN-LSTM</b> forecasting</span>
+          <span class="pc"><b>Flask + Docker on AWS</b>, live monitoring</span>
           <span class="pc"><b>LangChain / LangGraph</b> agent build</span>
         </div>
       </div>
       <div class="role">
         <span class="r-num">02</span>
-        <h3>Data Analyst</h3>
+        <h3>Analytics That Decides</h3>
+        <p class="r-desc">Raw event data turned into revenue-weighted decisions: analytics engineering, not toy dashboards.</p>
         <div class="proof-chips">
+          <span class="pc"><b>42M+ events</b> to one decision</span>
+          <span class="pc"><b>AED 99.4M</b> recoverable revenue found</span>
           <span class="pc"><b>500K+ records</b> validated, IIT Kharagpur</span>
-          <span class="pc"><b>Power BI, 5+ business units</b>, banking</span>
-          <span class="pc"><b>40% reporting time</b> saved</span>
-          <span class="pc"><b>D3.js</b> cross-filtering data stories</span>
+          <span class="pc"><b>Power BI, 5+ units</b>, 40% time cut</span>
         </div>
       </div>
       <div class="role">
         <span class="r-num">03</span>
-        <h3>AI Transformation</h3>
+        <h3>Turning Ambiguity into Decisions</h3>
+        <p class="r-desc">I take poorly-defined problems, structure them into decisions, and drive the human side of adoption in a live bank.</p>
         <div class="proof-chips">
           <span class="pc"><b>Design to adoption</b> in a live bank</span>
           <span class="pc"><b>3 departments</b> trained through change</span>
@@ -250,9 +293,9 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
 
 <div class="kpis">
   <div class="wrap kpi-grid">
-    <div class="kpi"><b>2x</b><small>IEEE publications in deep learning and intelligent diagnostic systems</small></div>
+    <div class="kpi"><b>AED 99.4M</b><small>recoverable cart-abandonment revenue isolated from 42M+ e-commerce events</small></div>
     <div class="kpi"><b>40%</b><small>reporting time cut through Power BI automation across 5+ business units</small></div>
-    <div class="kpi"><b>500K+</b><small>research records queried, profiled and cleaned with SQL and Python</small></div>
+    <div class="kpi"><b>2x</b><small>IEEE publications in deep learning and intelligent diagnostic systems</small></div>
     <div class="kpi"><b>1st</b><small>place, Smart India Hackathon 2023, AI drone crop-disease prediction</small></div>
   </div>
 </div>
@@ -263,52 +306,55 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
     <h2>Skills x Projects</h2>
     <p class="lab-hint">Tap or hover a skill and every project built with it lights up. Tap again to reset. <span id="exp-skill-note" hidden style="color:var(--violet);font-weight:500">This one comes from professional work. <a href="#experience">See Experience.</a></span></p>
 
-    <div class="skill-group">
-      <h4>Machine Learning &amp; AI</h4>
+    <div class="skill-group priority">
+      <h4>Data Engineering &amp; Analytics</h4>
       <div class="skill-cloud">
-        <button class="chip" data-skill="python">Python</button>
-        <button class="chip" data-skill="pytorch">PyTorch</button>
-        <button class="chip" data-skill="tensorflow">TensorFlow / Keras</button>
-        <button class="chip" data-skill="sklearn">Scikit-learn</button>
-        <button class="chip" data-skill="xgboost">XGBoost</button>
-        <button class="chip" data-skill="deeplearning">Deep Learning / CNN</button>
-        <button class="chip" data-skill="timeseries">Time-Series Forecasting</button>
-        <button class="chip" data-skill="llm">LLM Agents / LangChain</button>
-        <button class="chip" data-skill="recsys">Recommender Systems</button>
+        <button class="chip" data-skill="sql"><img class="ti" src="https://cdn.simpleicons.org/postgresql/6B6A85" alt="" aria-hidden="true">SQL</button>
+        <button class="chip" data-skill="etl">ETL Pipelines</button>
+        <button class="chip" data-skill="dbt"><img class="ti" src="https://cdn.simpleicons.org/dbt/6B6A85" alt="" aria-hidden="true">dbt</button>
+        <button class="chip" data-skill="powerbi">Power BI</button>
+        <button class="chip" data-skill="probsolve">Structured Problem-Solving</button>
+        <button class="chip" data-skill="stats">Statistical Modelling</button>
+        <button class="chip" data-skill="governance">Data Governance</button>
       </div>
     </div>
     <div class="skill-group">
-      <h4>Data Engineering &amp; Analytics</h4>
+      <h4>Machine Learning &amp; AI</h4>
       <div class="skill-cloud">
-        <button class="chip" data-skill="sql">SQL</button>
-        <button class="chip" data-skill="etl">ETL Pipelines</button>
-        <button class="chip" data-skill="stats">Statistical Modelling</button>
-        <button class="chip" data-skill="governance">Data Governance</button>
+        <button class="chip" data-skill="python"><img class="ti" src="https://cdn.simpleicons.org/python/6B6A85" alt="" aria-hidden="true">Python</button>
+        <button class="chip" data-skill="pytorch"><img class="ti" src="https://cdn.simpleicons.org/pytorch/6B6A85" alt="" aria-hidden="true">PyTorch</button>
+        <button class="chip" data-skill="tensorflow"><img class="ti" src="https://cdn.simpleicons.org/tensorflow/6B6A85" alt="" aria-hidden="true">TensorFlow / Keras</button>
+        <button class="chip" data-skill="sklearn"><img class="ti" src="https://cdn.simpleicons.org/scikitlearn/6B6A85" alt="" aria-hidden="true">Scikit-learn</button>
+        <button class="chip" data-skill="xgboost"><img class="ti" src="https://cdn.simpleicons.org/xgboost/6B6A85" alt="" aria-hidden="true">XGBoost</button>
+        <button class="chip" data-skill="deeplearning">Deep Learning / CNN</button>
+        <button class="chip" data-skill="timeseries">Time-Series Forecasting</button>
+        <button class="chip" data-skill="llm"><img class="ti" src="https://cdn.simpleicons.org/langchain/6B6A85" alt="" aria-hidden="true">LLM Agents / LangChain</button>
+        <button class="chip" data-skill="recsys">Recommender Systems</button>
       </div>
     </div>
     <div class="skill-group">
       <h4>Visualisation &amp; BI</h4>
       <div class="skill-cloud">
         <button class="chip" data-skill="powerbi">Power BI</button>
-        <button class="chip" data-skill="tableau">Tableau</button>
-        <button class="chip" data-skill="d3">D3.js</button>
+        <button class="chip" data-skill="tableau"><img class="ti" src="https://cdn.simpleicons.org/tableau/6B6A85" alt="" aria-hidden="true">Tableau</button>
+        <button class="chip" data-skill="d3"><img class="ti" src="https://cdn.simpleicons.org/d3dotjs/6B6A85" alt="" aria-hidden="true">D3.js</button>
         <button class="chip" data-skill="dashboards">KPI Dashboards</button>
       </div>
     </div>
     <div class="skill-group">
       <h4>MLOps &amp; Engineering</h4>
       <div class="skill-cloud">
-        <button class="chip" data-skill="docker">Docker</button>
-        <button class="chip" data-skill="aws">AWS / SageMaker</button>
-        <button class="chip" data-skill="flask">Flask APIs</button>
-        <button class="chip" data-skill="devops">DevOps / Jenkins</button>
-        <button class="chip" data-skill="csharp">C# / .NET</button>
+        <button class="chip" data-skill="docker"><img class="ti" src="https://cdn.simpleicons.org/docker/6B6A85" alt="" aria-hidden="true">Docker</button>
+        <button class="chip" data-skill="aws"><img class="ti" src="https://cdn.simpleicons.org/amazonwebservices/6B6A85" alt="" aria-hidden="true">AWS / SageMaker</button>
+        <button class="chip" data-skill="flask"><img class="ti" src="https://cdn.simpleicons.org/flask/6B6A85" alt="" aria-hidden="true">Flask APIs</button>
+        <button class="chip" data-skill="devops"><img class="ti" src="https://cdn.simpleicons.org/jenkins/6B6A85" alt="" aria-hidden="true">DevOps / Jenkins</button>
+        <button class="chip" data-skill="csharp"><img class="ti" src="https://cdn.simpleicons.org/dotnet/6B6A85" alt="" aria-hidden="true">C# / .NET</button>
       </div>
     </div>
     <div class="skill-group">
       <h4>Strategy &amp; Delivery</h4>
       <div class="skill-cloud">
-        <button class="chip" data-skill="agile">Agile / Scrum / Jira</button>
+        <button class="chip" data-skill="agile"><img class="ti" src="https://cdn.simpleicons.org/jira/6B6A85" alt="" aria-hidden="true">Agile / Scrum / Jira</button>
         <button class="chip" data-skill="change">Change Management</button>
         <button class="chip" data-skill="stakeholder">Stakeholder Management</button>
         <button class="chip" data-skill="exec">Executive Communication</button>
@@ -317,7 +363,32 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
     </div>
 
     <div class="proj-grid" id="projects">
-      <article class="proj flagship" data-skills="stats dashboards stakeholder exec governance research">
+
+      <article class="proj flagship" data-skills="sql python etl dbt dashboards stats governance probsolve">
+        <span class="badge badge-live">FLAGSHIP · ANALYTICS ENG</span>
+        <h3>Where Do People Quietly Give Up?</h3>
+        <p>End-to-end pipeline turning 42M+ e-commerce events into a business decision. Traced a view → cart → purchase funnel across 9.2M sessions and quantified <b>AED 99.4M in recoverable cart-abandonment revenue</b>, isolating the cart→purchase step (281K sessions) as the highest-value leak. Built as a tested data platform: Python ETL → Postgres → versioned dbt models (staging → intermediate → marts) → Power BI, with 36 automated tests. Caught and fixed a headline metric inflated ~20× by a data-grain bug that passed every schema test, then added reasonableness tests so it couldn't recur.</p>
+        <div class="takeaway"><b>Why it matters</b>Raw event data turned into a defensible, revenue-weighted decision: analytics engineering, not a toy dashboard.</div>
+        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/postgresql/6B6A85" alt="" aria-hidden="true">SQL · Postgres</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/python/6B6A85" alt="" aria-hidden="true">Python · Pandas</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/dbt/6B6A85" alt="" aria-hidden="true">dbt</span><span class="tag">Python ETL</span><span class="tag">Power BI</span></div>
+      </article>
+
+      <article class="proj flagship" data-skills="sql python sklearn xgboost dashboards stats probsolve">
+        <span class="badge badge-live">FLAGSHIP · BANKING</span>
+        <h3>Can You See a Customer Leaving Before They Do?</h3>
+        <p>The recommendation comes first: protect the at-risk revenue by targeting the highest-value churners flagged <b>before</b> they leave, not after. Backing it, a churn early-warning model (logistic regression, random forest, XGBoost) scores bank customers by likelihood to leave, surfaced in a Power BI dashboard that quantifies revenue-at-risk, connecting directly to my banking-sector experience.</p>
+        <div class="takeaway"><b>Why it matters</b>Early warning plus revenue protection: a retention and operations lever, not just a model.</div>
+        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/postgresql/6B6A85" alt="" aria-hidden="true">SQL</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/python/6B6A85" alt="" aria-hidden="true">Python</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/scikitlearn/6B6A85" alt="" aria-hidden="true">scikit-learn</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/xgboost/6B6A85" alt="" aria-hidden="true">XGBoost</span><span class="tag">Power BI</span></div>
+      </article>
+
+      <article class="proj" data-skills="python sql stats dashboards probsolve research">
+        <span class="badge badge-live">STRATEGY · ANALYTICS</span>
+        <h3>Airline Customer 360</h3>
+        <p>Consolidated fragmented airline booking, loyalty, and profile data (~130K passenger records) into a single Customer 360 view (one clean row per customer), then turned it into four actionable segments (Frequent Business, Dissatisfied Loyal, At-Risk, Standard), each mapped to a business action. Shipped with BA artefacts: data mappings, user stories with acceptance criteria, and journey maps.</p>
+        <div class="takeaway"><b>Why it matters</b>Fragmented data unified into decisions, with BA artefacts: commercial and operational thinking, not just code.</div>
+        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/python/6B6A85" alt="" aria-hidden="true">Python</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/pandas/6B6A85" alt="" aria-hidden="true">Pandas</span><span class="tag">Segmentation</span><span class="tag">BA Artefacts</span></div>
+      </article>
+
+      <article class="proj" data-skills="stats dashboards stakeholder exec governance research probsolve">
         <span class="badge badge-live">FREELANCE · 2026</span>
         <h3>NVOCC Partner Selection for TranzOcean</h3>
         <p>Strategic partner-selection analysis for a vessel operator on the India-UAE-Gulf corridor. Researched three NVOCC candidates from scratch, built a weighted scoring model across 6 criteria, and delivered a primary and secondary partner recommendation with a 90-day action plan.</p>
@@ -330,7 +401,7 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
         <h3>Power Price Analyst Agent</h3>
         <p>LLM agent over structured and unstructured energy market data. Seven LangChain tools expose pandas and NumPy analytics (rolling z-score spike detection, intraday seasonality, cross-zone spreads), plus from-scratch TF-IDF retrieval and a fusion tool that explains price spikes by joining same-day news. Runs on a free local LLM via Ollama, with a pluggable architecture that supports cloud models for comparison.</p>
         <div class="takeaway"><b>Why it matters</b>Agentic AI built end to end: tool design, retrieval from scratch, and a swappable local-to-cloud LLM backend.</div>
-        <div class="tag-row"><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">Ollama</span><span class="tag">Pandas / NumPy</span></div>
+        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/langchain/6B6A85" alt="" aria-hidden="true">LangChain</span><span class="tag">LangGraph</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/ollama/6B6A85" alt="" aria-hidden="true">Ollama</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/numpy/6B6A85" alt="" aria-hidden="true">Pandas / NumPy</span></div>
       </article>
 
       <article class="proj" data-skills="python xgboost deeplearning timeseries dashboards stats">
@@ -338,7 +409,7 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
         <h3>ML Energy Demand Forecasting</h3>
         <p>Multi-step time-series forecasting on the UK-DALE dataset with XGBoost and CNN-LSTM, plus MILP-based scheduling optimisation and KPI dashboards.</p>
         <div class="takeaway"><b>Why it matters</b>Forecasting plus optimisation on real-world data; the method transfers to logistics and demand planning.</div>
-        <div class="tag-row"><span class="tag">XGBoost</span><span class="tag">CNN-LSTM</span><span class="tag">MILP</span></div>
+        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/xgboost/6B6A85" alt="" aria-hidden="true">XGBoost</span><span class="tag">CNN-LSTM</span><span class="tag">MILP</span></div>
       </article>
 
       <article class="proj" data-skills="python pytorch sklearn deeplearning stats">
@@ -346,7 +417,7 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
         <h3>Multimodal Cardiac Disease Prediction</h3>
         <p>Hybrid health-AI system fusing 70,000 clinical records with ACDC cardiac MRI volumes. Benchmarked ML classifiers against 3D-CNNs across single and multimodal pipelines.</p>
         <div class="takeaway"><b>Why it matters</b>Deep learning at scale on messy, multimodal medical data, with honest benchmarking.</div>
-        <div class="tag-row"><span class="tag">PyTorch</span><span class="tag">3D-CNN</span><span class="tag">Medical AI</span></div>
+        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/pytorch/6B6A85" alt="" aria-hidden="true">PyTorch</span><span class="tag">3D-CNN</span><span class="tag">Medical AI</span></div>
       </article>
 
       <article class="proj" data-skills="d3 dashboards sql stats python">
@@ -354,7 +425,7 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
         <h3>Does Wealth Make Countries Happy?</h3>
         <p>Interactive D3.js data story: five bidirectionally-linked visualisations (scatter, choropleth map, bar, trend lines, radar) over 9K+ rows of World Bank, WHO and World Happiness data.</p>
         <div class="takeaway"><b>Why it matters</b>Data storytelling a hiring manager can click and explore, not just read about.</div>
-        <div class="tag-row"><span class="tag">D3.js v7</span><span class="tag">TopoJSON</span><span class="tag">Data Storytelling</span></div>
+        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/d3dotjs/6B6A85" alt="" aria-hidden="true">D3.js v7</span><span class="tag">TopoJSON</span><span class="tag">Data Storytelling</span></div>
       </article>
 
       <article class="proj" data-skills="stats">
@@ -363,6 +434,7 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
         <p>Fuzzy-logic diagnostic application predicting anaemia presence, type, and severity from Complete Blood Count parameters. Validated by 616 automated unit tests at 97.5% accuracy.</p>
         <div class="takeaway"><b>Why it matters</b>Peer-reviewed and test-validated, engineering rigour beyond a class project.</div>
         <div class="tag-row"><span class="tag">Fuzzy Logic</span><span class="tag">LabVIEW</span><span class="tag">Unit Testing</span></div>
+        <a class="paper-link" href="https://www.researchgate.net/publication/383172910_Neuro-fuzzy_based_Anaemia_diagnosis_using_LabVIEW" target="_blank" rel="noopener">Read the IEEE paper</a>
       </article>
 
       <article class="proj" data-skills="python tensorflow deeplearning">
@@ -370,7 +442,8 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
         <h3>Face Mask &amp; Temperature Audit System</h3>
         <p>Real-time COVID compliance monitor: MobileNetV2 CNN for mask detection at 93% accuracy, benchmarked against KNN and SVM, with contactless temperature sensing.</p>
         <div class="takeaway"><b>Why it matters</b>Peer-reviewed computer vision with proper model benchmarking, deployed on real hardware.</div>
-        <div class="tag-row"><span class="tag">MobileNetV2</span><span class="tag">OpenCV</span><span class="tag">LabVIEW</span></div>
+        <div class="tag-row"><span class="tag">MobileNetV2</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/opencv/6B6A85" alt="" aria-hidden="true">OpenCV</span><span class="tag">LabVIEW</span></div>
+        <a class="paper-link" href="https://www.researchgate.net/publication/367142030_Human_Body_Temperature_and_Face_Mask_Audit_System_for_COVID_Protocol" target="_blank" rel="noopener">Read the IEEE paper</a>
       </article>
 
       <article class="proj" data-skills="python deeplearning">
@@ -385,7 +458,7 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
         <h3>Book &amp; Movie Analytics Engine</h3>
         <p>Complete analytics and recommendation system in Python: consumption patterns by country and continent, from data cleaning through analysis to recommendation logic.</p>
         <div class="takeaway"><b>Why it matters</b>End-to-end ownership of an analytics pipeline, no hand-offs.</div>
-        <div class="tag-row"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Recommenders</span></div>
+        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/python/6B6A85" alt="" aria-hidden="true">Python</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/pandas/6B6A85" alt="" aria-hidden="true">Pandas</span><span class="tag">Recommenders</span></div>
       </article>
 
       <article class="proj" data-skills="python recsys deeplearning sklearn">
@@ -393,7 +466,7 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
         <h3>AI Stylist, Outfit Recommendation App</h3>
         <p>Personal-styling AI that recommends outfits tailored to the individual. Recommendation modelling applied to fashion, currently in active development.</p>
         <div class="takeaway"><b>Why it matters</b>Product thinking: taking recommender systems from theory toward a usable app.</div>
-        <div class="tag-row"><span class="tag">Recommenders</span><span class="tag">Python</span><span class="tag">ML</span></div>
+        <div class="tag-row"><span class="tag">Recommenders</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/python/6B6A85" alt="" aria-hidden="true">Python</span><span class="tag">ML</span></div>
       </article>
     </div>
 
@@ -419,6 +492,53 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
   </div>
 </section>
 
+<section id="achievements">
+  <div class="wrap">
+    <span class="eyebrow">Recognition</span>
+    <h2>Achievements</h2>
+    <div class="ach-grid">
+      <div class="ach">
+        <span class="ach-icon" aria-hidden="true">🏆</span>
+        <span class="ach-meta">Smart India Hackathon 2023</span>
+        <h3>National First Place</h3>
+        <p>Won first place against national competition for a drone-based cotton disease prediction system, built and pitched under deadline.</p>
+      </div>
+      <div class="ach">
+        <span class="ach-icon" aria-hidden="true">📄</span>
+        <span class="ach-meta">IEEE · Published Author</span>
+        <h3>Neuro-Fuzzy Anaemia Diagnosis</h3>
+        <p>Peer-reviewed fuzzy-logic diagnostic system predicting anaemia type and severity from CBC parameters, validated by 616 automated unit tests at 97.5% accuracy.</p>
+        <a class="ach-link" href="https://www.researchgate.net/publication/383172910_Neuro-fuzzy_based_Anaemia_diagnosis_using_LabVIEW" target="_blank" rel="noopener">Read the paper</a>
+      </div>
+      <div class="ach">
+        <span class="ach-icon" aria-hidden="true">📄</span>
+        <span class="ach-meta">IEEE · Published Author</span>
+        <h3>Face Mask &amp; Temperature Audit System</h3>
+        <p>Peer-reviewed real-time COVID-compliance monitor using a MobileNetV2 CNN for mask detection at 93% accuracy, benchmarked against KNN and SVM, with contactless temperature sensing.</p>
+        <a class="ach-link" href="https://www.researchgate.net/publication/367142030_Human_Body_Temperature_and_Face_Mask_Audit_System_for_COVID_Protocol" target="_blank" rel="noopener">Read the paper</a>
+      </div>
+      <div class="ach">
+        <span class="ach-icon" aria-hidden="true">🎓</span>
+        <span class="ach-meta">McKinsey.org</span>
+        <h3>Forward Program</h3>
+        <p>Completed McKinsey's professional development program covering problem-solving, communication, adaptability, and the digital toolkit.</p>
+      </div>
+      <div class="ach">
+        <span class="ach-icon" aria-hidden="true">🌱</span>
+        <span class="ach-meta">Young Indians · CII Youth Wing</span>
+        <h3>Innovation Chair</h3>
+        <p>Leadership role driving innovation initiatives within Young Indians, the youth wing of the Confederation of Indian Industry.</p>
+      </div>
+      <div class="ach">
+        <span class="ach-icon" aria-hidden="true">🎖️</span>
+        <span class="ach-meta">Academic</span>
+        <h3>First Class with Distinction</h3>
+        <p>Graduated B.E. Electronics &amp; Communication with an 8.82 CGPA and an IoT specialisation from Anna University.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="experience">
   <div class="wrap">
     <span class="eyebrow">Track Record</span>
@@ -426,7 +546,7 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
     <div class="timeline">
       <div class="job current">
         <span class="when">APR 2025 · FEB 2026</span>
-        <h3>Freelance Data Analyst &amp; Programming Tutor</h3>
+        <h3>Freelance Data &amp; Analytics Consultant</h3>
         <p class="co"><b>Self-Employed</b> · Dubai</p>
       </div>
       <div class="job">
@@ -454,10 +574,10 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
     <h2>Education &amp; Credentials</h2>
     <div class="edu-grid">
       <div class="edu featured">
-        <span class="live-tag">IN PROGRESS · CLASS OF 2026</span>
+        <span class="live-tag">COMPLETED · GRADUATING NOV 2026</span>
         <h3>MSc Data Science</h3>
         <div class="sub">Heriot-Watt University, Dubai · 2025 to 2026</div>
-        <p>Graduating <b>July 2026</b>. Modules: AI and Machine Learning, Big Data Management and Governance, Statistical Modelling and Analysis, DevOps. Dissertation: ML-driven energy demand forecasting.</p>
+        <p>Course completed; graduating <b>November 2026</b>. Modules: AI and Machine Learning, Big Data Management and Governance, Statistical Modelling and Analysis, DevOps. Dissertation: ML-driven energy demand forecasting.</p>
       </div>
       <div class="edu">
         <h3>B.E. Electronics &amp; Communication</h3>
@@ -471,6 +591,8 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
       </div>
     </div>
     <div class="cred-row">
+      <span class="cred"><b>McKinsey.org</b> · Forward Program</span>
+      <span class="cred"><b>Innovation Chair</b> · Young Indians (CII)</span>
       <span class="cred"><b>IELTS 7.5</b> · CEFR C1 Academic</span>
       <span class="cred"><b>BEC</b> · Cambridge Business English</span>
       <span class="cred"><b>Winner</b> · Smart India Hackathon 2023</span>
@@ -482,8 +604,8 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
 <section class="contact" id="contact">
   <div class="wrap">
     <span class="eyebrow">Let's Build</span>
-    <h2>Hiring for AI/ML or Data?</h2>
-    <p>UAE resident, based in Dubai. Whether you need models built, data decoded, or an AI rollout people will actually adopt, let's talk.</p>
+    <h2>Hiring for Data Science, Analytics or Strategy?</h2>
+    <p>UAE resident, based in Dubai. Whether you need models built, data turned into decisions, or an AI rollout people will actually adopt, let's talk.</p>
     <div class="contact-links">
       <a class="btn btn-primary" href="mailto:seemaaashikab@gmail.com">seemaaashikab@gmail.com</a>
       <a class="btn btn-ghost" href="https://linkedin.com/in/seema-aashikab-anees-ahmed" target="_blank" rel="noopener">LinkedIn</a>
@@ -535,6 +657,19 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
       apply(skill);
     });
   });
+})();
+
+/* ---- Icon tint for dark mode (Simple Icons currentColor swap) ---- */
+(function(){
+  const dark = window.matchMedia('(prefers-color-scheme: dark)');
+  function tint(){
+    const hex = dark.matches ? 'B8B6D6' : '6B6A85';
+    document.querySelectorAll('img.ti').forEach(img=>{
+      img.src = img.src.replace(/\/([0-9A-Fa-f]{6})(?=$|\?)/, '/'+hex);
+    });
+  }
+  tint();
+  dark.addEventListener('change', tint);
 })();
 
 /* ---- Hero particle network ---- */
