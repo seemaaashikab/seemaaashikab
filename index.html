@@ -3,205 +3,231 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seema Aashikab · Data Science · Analytics · Strategy</title>
-<meta name="description" content="Seema Aashikab Anees Ahmed: IEEE-published data scientist and analytics consultant in Dubai. Real ML depth turned into business decisions. MSc Data Science, Heriot-Watt University; course completed, graduating November 2026.">
+<title>Seema Aashikab · Data Science, Analytics & Strategy</title>
+<meta name="description" content="Seema Aashikab Anees Ahmed: IEEE-published data scientist and analytics consultant in Dubai. Deep ML turned into business decisions. MSc Data Science, Heriot-Watt University; course completed, graduating November 2026.">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4MTZE0SPSR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4MTZE0SPSR');
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#FAFAF8;
-  --ink:#16152E;
-  --ink-soft:#4B4A66;
-  --indigo:#4F46E5;
-  --violet:#7C3AED;
-  --mist:#ECEBFF;
-  --amber:#F59E0B;
+  --paper:#F8F7F3;
+  --paper-2:#F1EFE8;
+  --ink:#16130F;
+  --dim:#6B665C;
+  --body:#3A362E;
+  --line:#1A1712;
+  --hair:#D8D3C6;
+  --red:#D33A2C;
+  --blue:#20407A;
   --card:#FFFFFF;
-  --line:#E4E3F0;
-  --radius:16px;
-  --font-display:'Sora',sans-serif;
-  --font-body:'Inter',sans-serif;
-  --font-mono:'JetBrains Mono',monospace;
-  --icon-tint:#6B6A85;
+  --highlight:#FBE7A1;
+  --shadow:4px 4px 0 var(--line);
+  --shadow-lg:6px 6px 0 var(--line);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
-body{background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.65;-webkit-font-smoothing:antialiased}
-a{color:var(--indigo);text-decoration:none}
+body{background:var(--paper);color:var(--ink);font-family:'Space Grotesk',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:none}
 a:hover{text-decoration:underline}
-:focus-visible{outline:3px solid var(--violet);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
-section{padding:92px 0}
-.eyebrow{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--violet);display:flex;align-items:center;gap:12px;margin-bottom:16px}
-.eyebrow::after{content:"";height:1px;width:56px;background:linear-gradient(90deg,var(--violet),transparent)}
-h2{font-family:var(--font-display);font-size:clamp(1.6rem,3.2vw,2.2rem);font-weight:700;letter-spacing:-.02em;margin-bottom:34px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 34px}
+.hand{font-family:'Caveat',cursive}
+.mono{font-family:'Space Mono',monospace}
 
 /* ---------- NAV ---------- */
-nav{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{position:sticky;top:0;z-index:50;background:rgba(248,247,243,.9);backdrop-filter:blur(8px);border-bottom:2px solid var(--line)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:62px}
-.logo{font-family:var(--font-display);font-weight:800;font-size:1rem;color:var(--ink);letter-spacing:-.01em}
-.logo span{background:linear-gradient(100deg,var(--indigo),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
-.nav-links{display:flex;gap:22px;list-style:none;align-items:center}
-.nav-links a{color:var(--ink-soft);font-size:.88rem;font-weight:500}
-.nav-links a:hover{color:var(--indigo);text-decoration:none}
-.nav-cta{font-family:var(--font-mono);font-size:.75rem;padding:7px 15px;border-radius:999px;background:var(--ink);color:#fff!important;letter-spacing:.02em}
-.nav-cta:hover{background:var(--indigo)}
-@media(max-width:820px){.nav-links li:not(:last-child){display:none}}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;letter-spacing:-.01em;color:var(--ink)}
+.logo:hover{text-decoration:none}
+.logo svg{width:26px;height:26px;flex:none}
+.nav-links{display:flex;gap:20px;list-style:none;align-items:center}
+.nav-links a{font-family:'Space Mono',monospace;color:var(--dim);font-size:.78rem;letter-spacing:.03em;text-transform:uppercase}
+.nav-links a:hover{color:var(--red);text-decoration:none}
+.nav-cta{border:1.5px solid var(--line);padding:6px 13px;color:var(--ink)!important;background:var(--card)}
+.nav-cta:hover{background:var(--ink);color:#fff!important}
+@media(max-width:880px){.nav-links li:not(:last-child){display:none}}
+
+/* ---------- SECTION SHELL ---------- */
+section{padding:78px 0}
+.sec-h{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.sec-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.5rem,3.4vw,2rem);letter-spacing:-.02em;margin-bottom:30px}
+.sec-title .hand{color:var(--red);font-size:1.3em;line-height:0}
 
 /* ---------- HERO ---------- */
-.hero{position:relative;padding:104px 0 80px;overflow:hidden}
-#net{position:absolute;inset:0;width:100%;height:100%;opacity:.45;pointer-events:none}
-.hero-content{position:relative;z-index:1;max-width:840px}
-.hero .kicker{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:20px}
-.hero .kicker b{color:var(--indigo);font-weight:500}
-.hero h1{font-family:var(--font-display);font-size:clamp(2.3rem,5.4vw,3.8rem);font-weight:800;letter-spacing:-.03em;line-height:1.07;margin-bottom:24px}
-.hero h1 .grad{background:linear-gradient(100deg,var(--indigo),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p.lede{font-size:1.1rem;color:var(--ink-soft);max-width:640px;margin-bottom:14px}
-.hero p.lede b{color:var(--ink);font-weight:600}
-.hero .proof{font-family:var(--font-mono);font-size:.8rem;color:var(--ink-soft);display:flex;gap:8px 20px;flex-wrap:wrap;margin-bottom:34px}
-.hero .proof span::before{content:"·";margin-right:20px;color:var(--line)}
-.hero .proof span:first-child::before{content:"";margin:0}
-.cta-row{display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:600;font-size:.92rem;padding:13px 26px;border-radius:999px;transition:transform .15s ease,box-shadow .15s ease}
-.btn:hover{text-decoration:none;transform:translateY(-2px)}
-.btn-primary{background:linear-gradient(100deg,var(--indigo),var(--violet));color:#fff;box-shadow:0 6px 20px rgba(79,70,229,.28)}
-.btn-primary:hover{box-shadow:0 10px 26px rgba(79,70,229,.36)}
-.btn-ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card)}
+.hero{padding:66px 0 68px;border-bottom:2px solid var(--line)}
+.hook{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(2.2rem,5vw,3.4rem);line-height:.98;color:var(--ink);margin-bottom:8px}
+.hook .tic{color:var(--red)}
+.hook-sub{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.06em;color:var(--dim);margin-bottom:44px}
+.hero-grid{display:grid;grid-template-columns:1.55fr .7fr;gap:48px;align-items:start}
+.hero .intro{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:22px}
+.reframe{max-width:100%}
+.rf-line{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.2rem,5.2vw,4rem);line-height:1.04;letter-spacing:-.035em}
+.rf-line .lead{color:var(--dim);font-weight:500}
+.rf-not .word{position:relative;color:var(--dim)}
+.rf-not .word::after{content:"";position:absolute;left:-3px;right:-3px;top:52%;height:3px;background:var(--red);transform:rotate(-2deg)}
+.rf-is .word .under{background:linear-gradient(transparent 60%,var(--highlight) 60%)}
+.hero .lede{margin-top:34px;font-size:clamp(1.2rem,1.9vw,1.5rem);color:var(--dim);max-width:44ch;line-height:1.5}
+.hero .lede b{color:var(--ink);font-weight:600}
+.credos{margin-top:32px;display:flex;gap:10px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:13px}
+.credos span{border:1.5px solid var(--line);padding:7px 13px;color:var(--ink);background:var(--card)}
+.credos span b{color:var(--red);font-weight:700}
+.cta-row{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{font-family:'Space Mono',monospace;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;padding:13px 24px;border:1.5px solid var(--line);transition:transform .12s ease,box-shadow .12s ease;display:inline-block}
+.btn:hover{text-decoration:none;transform:translate(-2px,-2px);box-shadow:var(--shadow)}
+.btn-solid{background:var(--ink);color:#fff}
+.btn-ghost{background:var(--card);color:var(--ink)}
 
-/* ---------- NOW STRIP ---------- */
-.now{position:relative;z-index:1;margin-top:46px;background:var(--card);border:1.5px solid var(--line);border-radius:var(--radius);padding:16px 22px;display:flex;gap:10px 26px;flex-wrap:wrap;align-items:center;box-shadow:0 8px 26px rgba(22,21,46,.06)}
-.now .pulse{width:9px;height:9px;border-radius:50%;background:#22C55E;box-shadow:0 0 0 4px rgba(34,197,94,.18);flex:none}
-.now span{font-size:.86rem;color:var(--ink-soft)}
-.now span b{color:var(--ink);font-weight:600}
-.now .sep{color:var(--line)}
+/* hero art */
+.hero-art{width:100%;max-width:230px;justify-self:center;margin-top:40px}
+.hero-art svg{width:100%;height:auto}
 
-/* ---------- VALUE / POSITIONING ---------- */
-.fit{padding-top:76px}
-.value-lead{font-size:1.15rem;color:var(--ink-soft);max-width:720px;margin-bottom:38px}
+.now{margin-top:36px;font-family:'Space Mono',monospace;font-size:12.5px;color:var(--dim);display:flex;gap:9px 16px;flex-wrap:wrap;align-items:center}
+.now .led{width:8px;height:8px;border-radius:50%;background:var(--red);flex:none}
+.now b{color:var(--ink);font-weight:700}
+.now .sep{color:var(--hair)}
+
+/* ---------- STATS ---------- */
+.stats{padding:54px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat{border-top:2.5px solid var(--line);padding-top:16px}
+.stat b{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:2.3rem;letter-spacing:-.03em;display:block;line-height:1}
+.stat.red b{color:var(--red)}
+.stat.blue b{color:var(--blue)}
+.stat small{color:var(--dim);font-size:.84rem;display:block;margin-top:10px;line-height:1.45}
+
+/* ---------- PRACTICE ---------- */
+.practice{background:var(--paper-2);border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
+.value-lead{font-size:1.12rem;color:var(--dim);max-width:66ch;margin-bottom:34px}
 .value-lead b{color:var(--ink);font-weight:600}
-.fit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
-.role{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;position:relative;transition:transform .18s ease,box-shadow .18s ease}
-.role:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(22,21,46,.09)}
-.role .r-num{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;color:var(--violet);display:block;margin-bottom:10px}
-.role h3{font-family:var(--font-display);font-size:1.12rem;font-weight:700;letter-spacing:-.01em;margin-bottom:10px}
-.role p.r-desc{font-size:.9rem;color:var(--ink-soft);margin-bottom:14px}
-.role .proof-chips{display:flex;flex-wrap:wrap;gap:7px}
-.role .pc{font-family:var(--font-mono);font-size:.72rem;padding:5px 11px;border-radius:8px;background:var(--mist);color:var(--ink-soft);border:1px solid transparent}
-.role .pc b{color:var(--ink);font-weight:500}
-.fit-note{margin-top:22px;font-size:.88rem;color:var(--ink-soft)}
-.fit-note a{font-weight:500}
-
-/* ---------- KPI ---------- */
-.kpis{padding:70px 0}
-.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
-.kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;transition:transform .18s ease,box-shadow .18s ease}
-.kpi:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(22,21,46,.08)}
-.kpi b{display:block;font-family:var(--font-display);font-size:2rem;font-weight:800;letter-spacing:-.02em;background:linear-gradient(100deg,var(--indigo),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
-.kpi small{color:var(--ink-soft);font-size:.84rem;line-height:1.45;display:block;margin-top:6px}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.p{background:var(--card);border:1.5px solid var(--line);padding:26px;box-shadow:var(--shadow);transition:transform .16s ease,box-shadow .16s ease}
+.p:hover{transform:translate(-3px,-3px);box-shadow:var(--shadow-lg)}
+.p .tab{font-family:'Space Mono',monospace;font-size:11px;color:var(--red);margin-bottom:12px}
+.p h3{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.18rem;letter-spacing:-.015em;margin-bottom:8px}
+.p p{font-size:.94rem;color:var(--body);line-height:1.58}
+.p .verbs{margin-top:14px;font-family:'Space Mono',monospace;font-size:11px;color:var(--blue);letter-spacing:.02em}
 
 /* ---------- LAB ---------- */
-.lab{background:linear-gradient(180deg,var(--mist) 0%,var(--bg) 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.lab-hint{font-family:var(--font-mono);font-size:.78rem;color:var(--ink-soft);margin-bottom:26px}
-.skill-group{margin-bottom:18px}
-.skill-group h4{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:9px}
+.lab-hint{font-family:'Space Mono',monospace;font-size:.78rem;color:var(--dim);margin-bottom:24px}
+.lab-hint b{color:var(--red)}
+#exp-skill-note{color:var(--red)}
+.skill-group{margin-bottom:16px}
+.skill-group h4{font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:9px}
+.skill-group.priority h4{color:var(--red)}
 .skill-cloud{display:flex;flex-wrap:wrap;gap:8px}
-.chip{font-family:var(--font-mono);font-size:.78rem;padding:7px 15px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;transition:all .15s ease;user-select:none;display:inline-flex;align-items:center;gap:7px}
-.chip:hover,.chip:focus-visible{border-color:var(--violet);color:var(--violet)}
-.chip.active{background:linear-gradient(100deg,var(--indigo),var(--violet));color:#fff;border-color:transparent;box-shadow:0 4px 14px rgba(124,58,237,.3)}
-.chip .ti{width:14px;height:14px;flex:none;opacity:.85}
-.chip.active .ti{filter:brightness(0) invert(1);opacity:1}
-.skill-group.priority h4{color:var(--violet)}
-.skill-group.priority .chip{border-color:#D6D9FF}
-.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px;margin-top:40px}
-.proj{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:12px;transition:all .22s ease;position:relative}
-.proj.dim{opacity:.28;filter:saturate(.4)}
-.proj.lit{border-color:var(--violet);box-shadow:0 12px 30px rgba(124,58,237,.16);transform:translateY(-3px)}
-.proj h3{font-family:var(--font-display);font-size:1.04rem;font-weight:700;letter-spacing:-.01em;padding-right:80px}
-.proj p{font-size:.88rem;color:var(--ink-soft);flex:1}
-.badge{position:absolute;top:20px;right:20px;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.08em;padding:4px 10px;border-radius:999px;font-weight:500}
-.badge-ieee{background:#EEF0FF;color:var(--indigo);border:1px solid #D6D9FF}
-.badge-award{background:#FEF3D7;color:#92610A;border:1px solid #F7DFA5}
-.badge-msc{background:#F1EBFF;color:var(--violet);border:1px solid #E2D5FF}
-.badge-live{background:#DCFCE7;color:#15803D;border:1px solid #B5F0C9}
-.tag-row{display:flex;flex-wrap:wrap;gap:6px}
-.tag{font-family:var(--font-mono);font-size:.66rem;padding:3px 9px;border-radius:6px;background:var(--mist);color:var(--ink-soft);display:inline-flex;align-items:center;gap:5px}
-.tag .ti{width:12px;height:12px;flex:none;opacity:.8}
-.takeaway{font-size:.78rem;color:var(--ink-soft);border-left:3px solid var(--violet);padding:2px 0 2px 10px;background:linear-gradient(90deg,rgba(124,58,237,.05),transparent)}
-.takeaway b{color:var(--violet);font-weight:600;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:1px}
-.proj.flagship{border:2px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(120deg,var(--indigo),var(--violet)) border-box;box-shadow:0 12px 30px rgba(79,70,229,.12)}
-.more-label{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:38px 0 14px}
-.mini-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
-.mini{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:all .22s ease}
-.mini.dim{opacity:.28;filter:saturate(.4)}
-.mini.lit{border-color:var(--violet);box-shadow:0 8px 22px rgba(124,58,237,.14)}
-.mini h3{font-family:var(--font-display);font-size:.92rem;font-weight:600;margin-bottom:4px}
-.mini p{font-size:.79rem;color:var(--ink-soft)}
+.chip{font-family:'Space Mono',monospace;font-size:.76rem;padding:7px 13px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;transition:all .12s ease;user-select:none;display:inline-flex;align-items:center;gap:7px}
+.chip:hover,.chip:focus-visible{background:var(--highlight)}
+.chip.active{background:var(--ink);color:#fff}
+.chip .ti{width:14px;height:14px;flex:none;color:var(--dim)}
+.chip:hover .ti,.chip:focus-visible .ti{color:var(--red)}
+.chip.active .ti{color:#fff}
+.skill-group.priority .chip{border-color:var(--red)}
 
-.proj .paper-link{font-family:var(--font-mono);font-size:.72rem;font-weight:500;color:var(--indigo);display:inline-flex;align-items:center;gap:5px;margin-top:2px}
-.proj .paper-link::before{content:"↗";font-size:.8rem}
-.proj .paper-link:hover{text-decoration:underline}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px;margin-top:38px}
+.proj{background:var(--card);border:1.5px solid var(--line);padding:26px;display:flex;flex-direction:column;gap:14px;transition:transform .16s ease,box-shadow .16s ease;position:relative;box-shadow:var(--shadow)}
+.proj:hover{transform:translate(-3px,-3px);box-shadow:var(--shadow-lg)}
+.proj.dim{opacity:.32;filter:saturate(.5)}
+.proj.dim:hover{transform:none;box-shadow:var(--shadow)}
+.proj.lit{box-shadow:var(--shadow-lg);transform:translate(-3px,-3px)}
+/* header row: badge sits ABOVE title, no overlap */
+.proj .ptop{display:flex;justify-content:flex-start}
+.badge{font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.06em;padding:4px 9px;border:1.5px solid var(--line);text-transform:uppercase;background:var(--paper);align-self:flex-start}
+.badge-flag{background:var(--ink);color:#fff}
+.badge-ieee{background:var(--blue);color:#fff;border-color:var(--blue)}
+.badge-award{background:var(--red);color:#fff;border-color:var(--red)}
+.badge-msc{background:var(--highlight)}
+.proj h3{font-family:'Space Grotesk',sans-serif;font-size:1.12rem;font-weight:700;letter-spacing:-.015em;line-height:1.2}
+.proj p{font-size:.9rem;color:var(--body);flex:1;line-height:1.62}
+.proj p b{color:var(--ink);font-weight:600}
+.tag-row{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-family:'Space Mono',monospace;font-size:.66rem;padding:3px 8px;border:1px solid var(--hair);background:var(--paper);color:#57534A;display:inline-flex;align-items:center;gap:5px}
+.tag .ti{width:12px;height:12px;flex:none;color:#8A8578}
+.stamp{border:1.5px dashed var(--hair);padding:12px 14px;background:var(--paper)}
+.stamp .l{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:6px}
+.stamp .not{color:var(--dim);text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px;font-size:.86rem}
+.stamp .is{font-weight:700;color:var(--ink);font-size:.9rem;display:block;margin-top:3px}
+.proj.flagship{border-width:2px;box-shadow:var(--shadow-lg)}
+/* churn strategy matrix */
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-family:'Space Mono',monospace;font-size:.68rem}
+.matrix .m{border:1px solid var(--hair);background:var(--paper);padding:8px 9px;line-height:1.4;color:var(--body)}
+.matrix .m b{display:block;font-size:.62rem;letter-spacing:.04em;text-transform:uppercase;color:var(--red);margin-bottom:2px}
+.matrix .m.q{color:var(--ink)}
+.paper-link{font-family:'Space Mono',monospace;font-size:.72rem;color:var(--blue);display:inline-flex;align-items:center;gap:5px}
+.paper-link::before{content:"->";font-family:'Space Mono',monospace}
+.more-label{font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin:40px 0 14px}
+.mini-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.mini{background:var(--card);border:1.5px solid var(--line);padding:18px 20px;transition:transform .16s ease,box-shadow .16s ease}
+.mini:hover{transform:translate(-2px,-2px);box-shadow:var(--shadow)}
+.mini.dim{opacity:.32;filter:saturate(.5)}
+.mini.dim:hover{transform:none;box-shadow:none}
+.mini.lit{box-shadow:var(--shadow);transform:translate(-2px,-2px)}
+.mini h3{font-family:'Space Grotesk',sans-serif;font-size:.92rem;font-weight:700;margin-bottom:4px}
+.mini p{font-size:.8rem;color:var(--body);line-height:1.5}
 
 /* ---------- ACHIEVEMENTS ---------- */
-.ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.ach{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;position:relative;transition:transform .18s ease,box-shadow .18s ease;display:flex;flex-direction:column;gap:8px}
-.ach:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(22,21,46,.08)}
-.ach .ach-icon{font-size:1.4rem;line-height:1}
-.ach h3{font-family:var(--font-display);font-size:1rem;font-weight:700;letter-spacing:-.01em}
-.ach p{font-size:.85rem;color:var(--ink-soft)}
-.ach .ach-meta{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--violet)}
-.ach a.ach-link{font-family:var(--font-mono);font-size:.72rem;font-weight:500;display:inline-flex;align-items:center;gap:5px;margin-top:auto}
-.ach a.ach-link::before{content:"↗";font-size:.8rem}
+.ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:16px}
+.ach{background:var(--card);border:1.5px solid var(--line);padding:24px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px;transition:transform .16s ease,box-shadow .16s ease}
+.ach:hover{transform:translate(-3px,-3px);box-shadow:var(--shadow-lg)}
+.ach .ico{font-size:1.5rem;line-height:1}
+.ach .m{font-family:'Space Mono',monospace;font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;color:var(--red)}
+.ach h3{font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;letter-spacing:-.01em}
+.ach p{font-size:.86rem;color:var(--body);line-height:1.55}
+.ach .paper-link{margin-top:auto}
 
-/* ---------- EXPERIENCE ---------- */
-.timeline{position:relative;padding-left:34px;max-width:760px}
-.timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--indigo),var(--violet))}
-.job{position:relative;padding-bottom:36px}
+/* ---------- EXPERIENCE (timeline only) ---------- */
+.exp{background:var(--paper-2);border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
+.timeline{position:relative;padding-left:32px;max-width:820px}
+.timeline::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.job{position:relative;padding-bottom:26px}
 .job:last-child{padding-bottom:0}
-.job::before{content:"";position:absolute;left:-33px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:3px solid var(--indigo)}
-.job.current::before{border-color:#22C55E;box-shadow:0 0 0 4px rgba(34,197,94,.15)}
-.job .when{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;color:var(--violet);display:block;margin-bottom:3px}
-.job h3{font-family:var(--font-display);font-size:1.1rem;font-weight:700;letter-spacing:-.01em}
-.job .co{color:var(--ink-soft);font-size:.95rem;margin-top:3px}
-.job .co b{color:var(--ink);font-weight:700;font-family:var(--font-display);font-size:1rem;letter-spacing:-.01em}
-.job ul{margin:10px 0 0 18px;color:var(--ink-soft);font-size:.9rem;max-width:640px}
-.job li{margin-bottom:6px}
-.job li b{color:var(--ink);font-weight:600}
-.exp-note{margin-top:30px;font-size:.88rem;color:var(--ink-soft)}
+.job::before{content:"";position:absolute;left:-32px;top:4px;width:14px;height:14px;background:var(--paper-2);border:2.5px solid var(--line)}
+.job.current::before{background:var(--red);border-color:var(--red)}
+.job .when{font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.04em;color:var(--red);display:inline-block;margin-bottom:3px}
+.job h3{font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:-.01em}
+.job .co{color:var(--dim);font-size:.92rem;margin-top:2px}
+.job .co b{color:var(--ink);font-weight:700}
 
 /* ---------- EDUCATION ---------- */
-.edu-wrap{background:var(--mist);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
-.edu{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;position:relative}
-.edu.featured{border:2px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(120deg,var(--indigo),var(--violet)) border-box;box-shadow:0 12px 30px rgba(79,70,229,.12)}
-.edu .live-tag{position:absolute;top:-11px;left:22px;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.1em;padding:4px 12px;border-radius:999px;background:linear-gradient(100deg,var(--indigo),var(--violet));color:#fff;font-weight:500}
-.edu h3{font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:4px}
-.edu .sub{color:var(--indigo);font-size:.86rem;font-weight:500}
-.edu p{font-size:.85rem;color:var(--ink-soft);margin-top:8px}
-.cred-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.cred{font-family:var(--font-mono);font-size:.76rem;padding:9px 16px;border-radius:999px;background:var(--card);border:1.5px solid var(--line);color:var(--ink-soft)}
-.cred b{color:var(--ink);font-weight:500}
+.edu{background:var(--card);border:1.5px solid var(--line);padding:26px;box-shadow:var(--shadow);position:relative;transition:transform .16s ease,box-shadow .16s ease}
+.edu:hover{transform:translate(-3px,-3px);box-shadow:var(--shadow-lg)}
+.edu.featured{border-width:2px}
+.edu.featured .flag{position:absolute;top:-1.5px;left:-1.5px;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;background:var(--red);color:#fff;padding:3px 8px}
+.edu.featured h3{padding-top:12px}
+.edu h3{font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin-bottom:4px}
+.edu .sub{color:var(--blue);font-size:.84rem;font-family:'Space Mono',monospace}
+.edu p{font-size:.85rem;color:var(--dim);margin-top:8px}
+.cred-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.cred{font-family:'Space Mono',monospace;font-size:.74rem;padding:8px 14px;background:var(--card);border:1.5px solid var(--line);color:var(--dim)}
+.cred b{color:var(--ink);font-weight:700}
 
 /* ---------- CONTACT ---------- */
-.contact{text-align:center;background:linear-gradient(180deg,var(--bg),var(--mist))}
-.contact h2{margin-bottom:14px}
-.contact p{color:var(--ink-soft);max-width:540px;margin:0 auto 32px}
-.contact-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
-footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.72rem;color:var(--ink-soft);border-top:1px solid var(--line)}
+.contact{text-align:center}
+.contact .reframe{max-width:26ch;margin:0 auto 30px}
+.contact .rf-line{font-size:clamp(1.7rem,4.6vw,2.8rem)}
+.contact p{color:var(--dim);max-width:52ch;margin:0 auto 30px;font-size:1.05rem}
+.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.sign{margin-top:44px;font-family:'Caveat',cursive;font-weight:700;font-size:2.2rem;color:var(--ink)}
+footer{padding:30px 0;text-align:center;font-family:'Space Mono',monospace;font-size:.72rem;color:var(--dim);border-top:2px solid var(--line)}
 
-/* ---------- DARK MODE ---------- */
-@media(prefers-color-scheme:dark){
-  :root{
-    --bg:#0F0E1A;--ink:#F3F2FA;--ink-soft:#A9A7C4;--mist:#1C1A33;
-    --card:#17162A;--line:#2B2947;--icon-tint:#B8B6D6;
-  }
-  .badge-ieee{background:#20223F;color:#A9A7FF;border-color:#33356A}
-  .badge-award{background:#3A2E12;color:#F5C871;border-color:#5C4A1F}
-  .badge-msc{background:#2A1F45;color:#C4A6FF;border-color:#443066}
-  .badge-live{background:#12331F;color:#6FE39A;border-color:#1F5C36}
-  .nav-cta{background:var(--indigo)}
-  .btn-ghost{background:var(--card)}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-art{max-width:220px;justify-self:start;order:-1}
+}
+@media(max-width:800px){
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .pg{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -209,126 +235,132 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
 
 <nav>
   <div class="wrap nav-inner">
-    <a class="logo" href="#top">seema<span>.ai</span></a>
+    <a class="logo" href="#top" aria-label="Seema Portfolio home">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M24 20 V76 H80" stroke="#16130F" stroke-width="7" stroke-linecap="round"/>
+        <path d="M30 66 L44 54 L54 60 L66 40" stroke="#16130F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M66 40 L86 14" stroke="#D33A2C" stroke-width="7" stroke-linecap="round"/>
+        <path d="M86 14 L86 26 M86 14 L74 14" stroke="#D33A2C" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Seema Portfolio
+    </a>
     <ul class="nav-links">
       <li><a href="#fit">What I Do</a></li>
-      <li><a href="#lab">Projects</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
+      <li><a href="#lab">Work</a></li>
+      <li><a href="#achievements">Wins</a></li>
+      <li><a href="#experience">Track Record</a></li>
       <li><a class="nav-cta" href="mailto:seemaaashikab@gmail.com">Contact</a></li>
     </ul>
   </div>
 </nav>
 
-<header class="hero" id="top">
-  <canvas id="net" aria-hidden="true"></canvas>
-  <div class="wrap hero-content">
-    <p class="kicker">Seema Aashikab Anees Ahmed · <b>Dubai, UAE</b></p>
-    <h1>I build ML, then I make it <span class="grad">pay off for the business.</span></h1>
-    <p class="lede">I'm a data scientist with real ML depth <b>and</b> a structured problem-solver who turns analysis into decisions the business acts on. I diagnose where value leaks, quantify it, and drive the change that captures it.</p>
-    <p class="proof">
-      <span>2x IEEE-published</span>
-      <span>National hackathon winner</span>
-      <span>Banking-sector experience</span>
-    </p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#lab">See the work</a>
-      <a class="btn btn-ghost" href="mailto:seemaaashikab@gmail.com">Get in touch</a>
-    </div>
-    <div class="now" role="status">
-      <span class="pulse" aria-hidden="true"></span>
-      <span><b>Now:</b> MSc Data Science, Heriot-Watt University Dubai: course completed, graduating <b>November 2026</b></span>
-      <span class="sep">|</span>
-      <span>Freelance Data &amp; Analytics Consultant, Dubai</span>
-      <span class="sep">|</span>
-      <span><b>Open to Data Science, Analytics, and Strategy/Operations roles</b> · UAE resident</span>
-    </div>
+<header id="top">
+  <div class="wrap">
+    <section class="hero">
+      <div class="hook">This is not a résumé.<br>It's how I <span class="tic">see data</span>.</div>
+      <div class="hook-sub">// the obvious read is rarely the right one</div>
+      <div class="hero-grid">
+        <div>
+          <div class="intro">Seema Aashikab · Dubai, UAE</div>
+          <div class="reframe">
+            <div class="rf-line rf-not"><span class="lead">This is not a</span> <span class="word">model.</span></div>
+            <div class="rf-line rf-is"><span class="lead">It's</span> <span class="word"><span class="under">revenue protected.</span></span> <span class="lead">Reputation</span> <span class="word"><span class="under">earned.</span></span></div>
+          </div>
+          <p class="lede">A data scientist with <b>real ML depth</b>, 2× IEEE-published, who turns analysis into decisions the business acts on. I diagnose where value leaks, quantify it, and drive the change that captures it.</p>
+          <div class="credos">
+            <span><b>2×</b> IEEE published</span>
+            <span><b>1st</b> national hackathon</span>
+            <span><b>banking</b> sector</span>
+            <span><b>MSc</b> data science</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="#lab">See the work</a>
+            <a class="btn btn-ghost" href="mailto:seemaaashikab@gmail.com">Get in touch</a>
+          </div>
+          <div class="now">
+            <span class="led" aria-hidden="true"></span>
+            <span><b>Now:</b> MSc Data Science, Heriot-Watt Dubai · course completed, graduating <b>Nov 2026</b></span>
+            <span class="sep">|</span>
+            <span><b>Open to DS, Analytics &amp; Strategy roles</b></span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M42 30 V152 H172" stroke="#16130F" stroke-width="7" stroke-linecap="round"/>
+            <path d="M60 122 L90 100 L112 112 L136 80" stroke="#16130F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M136 80 L180 30" stroke="#D33A2C" stroke-width="8" stroke-linecap="round"/>
+            <path d="M180 30 L180 52 M180 30 L158 30" stroke="#D33A2C" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
   </div>
 </header>
 
-<section class="fit" id="fit">
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat red"><b>99.4M</b><small>AED recoverable revenue found in 42M+ raw events</small></div>
+    <div class="stat"><b>40%</b><small>reporting time cut across 5+ business units</small></div>
+    <div class="stat blue"><b>500K+</b><small>research records queried and validated</small></div>
+    <div class="stat red"><b>1st</b><small>place, Smart India Hackathon 2023</small></div>
+  </div>
+</div>
+
+<section class="practice" id="fit">
   <div class="wrap">
-    <span class="eyebrow">What I Do</span>
-    <h2>Diagnose. Build. Get it adopted.</h2>
-    <p class="value-lead">I trace fuzzy business problems down to a number, <b>build the ML or analytics that moves it</b>, and drive the rollout so the fix actually sticks across teams. ML depth is the engine; business impact is the point.</p>
-    <div class="fit-grid">
-      <div class="role">
-        <span class="r-num">01</span>
+    <h2 class="sec-title">What I actually <span class="hand">do</span></h2>
+    <p class="value-lead">I trace fuzzy business problems down to a number, <b>build the ML or analytics that moves it</b>, and drive the rollout so the fix sticks across teams. Same puzzle everyone else is looking at. I just refuse the obvious answer.</p>
+    <div class="pg">
+      <div class="p">
+        <div class="tab">deep, not shallow</div>
         <h3>Data Science &amp; ML</h3>
-        <p class="r-desc">Production-grade models on messy, real-world data, not notebooks that die on a laptop.</p>
-        <div class="proof-chips">
-          <span class="pc"><b>2 IEEE papers</b>, deep learning</span>
-          <span class="pc"><b>70K records + MRI</b>, 3D-CNN fusion</span>
-          <span class="pc"><b>XGBoost / CNN-LSTM</b> forecasting</span>
-          <span class="pc"><b>Flask + Docker on AWS</b>, live monitoring</span>
-          <span class="pc"><b>LangChain / LangGraph</b> agent build</span>
-        </div>
+        <p>Production-grade models on messy, real-world data: multimodal deep learning, time-series forecasting, LLM agents, and 2× IEEE-published research.</p>
+        <div class="verbs">built · benchmarked · shipped</div>
       </div>
-      <div class="role">
-        <span class="r-num">02</span>
+      <div class="p">
+        <div class="tab">decisions, not decoration</div>
         <h3>Analytics That Decides</h3>
-        <p class="r-desc">Raw event data turned into revenue-weighted decisions: analytics engineering, not toy dashboards.</p>
-        <div class="proof-chips">
-          <span class="pc"><b>42M+ events</b> to one decision</span>
-          <span class="pc"><b>AED 99.4M</b> recoverable revenue found</span>
-          <span class="pc"><b>500K+ records</b> validated, IIT Kharagpur</span>
-          <span class="pc"><b>Power BI, 5+ units</b>, 40% time cut</span>
-        </div>
+        <p>Raw event data turned into revenue-weighted decisions. 42M+ events into one number leadership can act on. Analytics engineering, not dashboards for show.</p>
+        <div class="verbs">diagnosed · quantified · prioritised</div>
       </div>
-      <div class="role">
-        <span class="r-num">03</span>
-        <h3>Turning Ambiguity into Decisions</h3>
-        <p class="r-desc">I take poorly-defined problems, structure them into decisions, and drive the human side of adoption in a live bank.</p>
-        <div class="proof-chips">
-          <span class="pc"><b>Design to adoption</b> in a live bank</span>
-          <span class="pc"><b>3 departments</b> trained through change</span>
-          <span class="pc"><b>Governance</b> turned into decisions</span>
-          <span class="pc"><b>Agile / Jira</b> delivery</span>
-        </div>
+      <div class="p">
+        <div class="tab">adoption, not slideware</div>
+        <h3>Ambiguity Into Decisions</h3>
+        <p>I take poorly-defined problems, structure them, and drive the human side of adoption. Trained 3 departments through change in a live bank.</p>
+        <div class="verbs">owned · drove adoption · de-risked</div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="kpis">
-  <div class="wrap kpi-grid">
-    <div class="kpi"><b>AED 99.4M</b><small>recoverable cart-abandonment revenue isolated from 42M+ e-commerce events</small></div>
-    <div class="kpi"><b>40%</b><small>reporting time cut through Power BI automation across 5+ business units</small></div>
-    <div class="kpi"><b>2x</b><small>IEEE publications in deep learning and intelligent diagnostic systems</small></div>
-    <div class="kpi"><b>1st</b><small>place, Smart India Hackathon 2023, AI drone crop-disease prediction</small></div>
-  </div>
-</div>
-
 <section class="lab" id="lab">
   <div class="wrap">
-    <span class="eyebrow">The Lab</span>
-    <h2>Skills x Projects</h2>
-    <p class="lab-hint">Tap or hover a skill and every project built with it lights up. Tap again to reset. <span id="exp-skill-note" hidden style="color:var(--violet);font-weight:500">This one comes from professional work. <a href="#experience">See Experience.</a></span></p>
+    <h2 class="sec-title">The <span class="hand">work</span></h2>
+    <p class="lab-hint">Tap or hover a skill and every project that uses it lights up. Tap again to reset. <span id="exp-skill-note" hidden>That one lives in the day job. <a href="#experience">See the track record.</a></span></p>
 
     <div class="skill-group priority">
       <h4>Data Engineering &amp; Analytics</h4>
       <div class="skill-cloud">
-        <button class="chip" data-skill="sql"><img class="ti" src="https://cdn.simpleicons.org/postgresql/6B6A85" alt="" aria-hidden="true">SQL</button>
+        <button class="chip" data-skill="sql"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>SQL</button>
         <button class="chip" data-skill="etl">ETL Pipelines</button>
-        <button class="chip" data-skill="dbt"><img class="ti" src="https://cdn.simpleicons.org/dbt/6B6A85" alt="" aria-hidden="true">dbt</button>
+        <button class="chip" data-skill="dbt"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>dbt</button>
         <button class="chip" data-skill="powerbi">Power BI</button>
         <button class="chip" data-skill="probsolve">Structured Problem-Solving</button>
         <button class="chip" data-skill="stats">Statistical Modelling</button>
         <button class="chip" data-skill="governance">Data Governance</button>
       </div>
     </div>
-    <div class="skill-group">
+    <div class="skill-group priority">
       <h4>Machine Learning &amp; AI</h4>
       <div class="skill-cloud">
-        <button class="chip" data-skill="python"><img class="ti" src="https://cdn.simpleicons.org/python/6B6A85" alt="" aria-hidden="true">Python</button>
-        <button class="chip" data-skill="pytorch"><img class="ti" src="https://cdn.simpleicons.org/pytorch/6B6A85" alt="" aria-hidden="true">PyTorch</button>
-        <button class="chip" data-skill="tensorflow"><img class="ti" src="https://cdn.simpleicons.org/tensorflow/6B6A85" alt="" aria-hidden="true">TensorFlow / Keras</button>
-        <button class="chip" data-skill="sklearn"><img class="ti" src="https://cdn.simpleicons.org/scikitlearn/6B6A85" alt="" aria-hidden="true">Scikit-learn</button>
-        <button class="chip" data-skill="xgboost"><img class="ti" src="https://cdn.simpleicons.org/xgboost/6B6A85" alt="" aria-hidden="true">XGBoost</button>
+        <button class="chip" data-skill="python"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Python</button>
+        <button class="chip" data-skill="pytorch"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>PyTorch</button>
+        <button class="chip" data-skill="tensorflow"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>TensorFlow / Keras</button>
+        <button class="chip" data-skill="sklearn"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Scikit-learn</button>
+        <button class="chip" data-skill="xgboost"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>XGBoost</button>
         <button class="chip" data-skill="deeplearning">Deep Learning / CNN</button>
-        <button class="chip" data-skill="timeseries">Time-Series Forecasting</button>
-        <button class="chip" data-skill="llm"><img class="ti" src="https://cdn.simpleicons.org/langchain/6B6A85" alt="" aria-hidden="true">LLM Agents / LangChain</button>
+        <button class="chip" data-skill="timeseries">Time-Series</button>
+        <button class="chip" data-skill="llm"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>LLM Agents / LangChain</button>
         <button class="chip" data-skill="recsys">Recommender Systems</button>
       </div>
     </div>
@@ -336,25 +368,25 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
       <h4>Visualisation &amp; BI</h4>
       <div class="skill-cloud">
         <button class="chip" data-skill="powerbi">Power BI</button>
-        <button class="chip" data-skill="tableau"><img class="ti" src="https://cdn.simpleicons.org/tableau/6B6A85" alt="" aria-hidden="true">Tableau</button>
-        <button class="chip" data-skill="d3"><img class="ti" src="https://cdn.simpleicons.org/d3dotjs/6B6A85" alt="" aria-hidden="true">D3.js</button>
+        <button class="chip" data-skill="tableau"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Tableau</button>
+        <button class="chip" data-skill="d3"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>D3.js</button>
         <button class="chip" data-skill="dashboards">KPI Dashboards</button>
       </div>
     </div>
     <div class="skill-group">
       <h4>MLOps &amp; Engineering</h4>
       <div class="skill-cloud">
-        <button class="chip" data-skill="docker"><img class="ti" src="https://cdn.simpleicons.org/docker/6B6A85" alt="" aria-hidden="true">Docker</button>
-        <button class="chip" data-skill="aws"><img class="ti" src="https://cdn.simpleicons.org/amazonwebservices/6B6A85" alt="" aria-hidden="true">AWS / SageMaker</button>
-        <button class="chip" data-skill="flask"><img class="ti" src="https://cdn.simpleicons.org/flask/6B6A85" alt="" aria-hidden="true">Flask APIs</button>
-        <button class="chip" data-skill="devops"><img class="ti" src="https://cdn.simpleicons.org/jenkins/6B6A85" alt="" aria-hidden="true">DevOps / Jenkins</button>
-        <button class="chip" data-skill="csharp"><img class="ti" src="https://cdn.simpleicons.org/dotnet/6B6A85" alt="" aria-hidden="true">C# / .NET</button>
+        <button class="chip" data-skill="docker"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Docker</button>
+        <button class="chip" data-skill="aws"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>AWS / SageMaker</button>
+        <button class="chip" data-skill="flask"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Flask APIs</button>
+        <button class="chip" data-skill="devops"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>DevOps / Jenkins</button>
+        <button class="chip" data-skill="csharp"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>C# / .NET</button>
       </div>
     </div>
     <div class="skill-group">
       <h4>Strategy &amp; Delivery</h4>
       <div class="skill-cloud">
-        <button class="chip" data-skill="agile"><img class="ti" src="https://cdn.simpleicons.org/jira/6B6A85" alt="" aria-hidden="true">Agile / Scrum / Jira</button>
+        <button class="chip" data-skill="agile"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Agile / Scrum / Jira</button>
         <button class="chip" data-skill="change">Change Management</button>
         <button class="chip" data-skill="stakeholder">Stakeholder Management</button>
         <button class="chip" data-skill="exec">Executive Communication</button>
@@ -365,173 +397,169 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
     <div class="proj-grid" id="projects">
 
       <article class="proj flagship" data-skills="sql python etl dbt dashboards stats governance probsolve">
-        <span class="badge badge-live">FLAGSHIP · ANALYTICS ENG</span>
-        <h3>Where Do People Quietly Give Up?</h3>
-        <p>End-to-end pipeline turning 42M+ e-commerce events into a business decision. Traced a view → cart → purchase funnel across 9.2M sessions and quantified <b>AED 99.4M in recoverable cart-abandonment revenue</b>, isolating the cart→purchase step (281K sessions) as the highest-value leak. Built as a tested data platform: Python ETL → Postgres → versioned dbt models (staging → intermediate → marts) → Power BI, with 36 automated tests. Caught and fixed a headline metric inflated ~20× by a data-grain bug that passed every schema test, then added reasonableness tests so it couldn't recur.</p>
-        <div class="takeaway"><b>Why it matters</b>Raw event data turned into a defensible, revenue-weighted decision: analytics engineering, not a toy dashboard.</div>
-        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/postgresql/6B6A85" alt="" aria-hidden="true">SQL · Postgres</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/python/6B6A85" alt="" aria-hidden="true">Python · Pandas</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/dbt/6B6A85" alt="" aria-hidden="true">dbt</span><span class="tag">Python ETL</span><span class="tag">Power BI</span></div>
+        <div class="ptop"><span class="badge badge-flag">Flagship · Analytics Eng</span></div>
+        <h3>Where do people quietly give up?</h3>
+        <p>End-to-end pipeline turning 42M+ e-commerce events into a business decision. Traced a view to cart to purchase funnel across 9.2M sessions and quantified AED 99.4M in recoverable cart-abandonment revenue, isolating the cart-to-purchase step (281K sessions) as the highest-value leak. Built as a tested platform (Python ETL to Postgres to versioned dbt models to Power BI) with 36 automated tests. Caught a headline metric inflated ~20× by a data-grain bug that passed every schema test, then added reasonableness tests so it couldn't recur.</p>
+        <div class="stamp">
+          <span class="l">The real question</span>
+          <span class="not">This is not a funnel chart.</span>
+          <span class="is">It's AED 99.4M walking out the door, and where to stand to stop it.</span>
+        </div>
+        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>SQL · Postgres</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Python · Pandas</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>dbt</span><span class="tag">Python ETL</span><span class="tag">Power BI</span></div>
       </article>
 
       <article class="proj flagship" data-skills="sql python sklearn xgboost dashboards stats probsolve">
-        <span class="badge badge-live">FLAGSHIP · BANKING</span>
-        <h3>Can You See a Customer Leaving Before They Do?</h3>
-        <p>The recommendation comes first: protect the at-risk revenue by targeting the highest-value churners flagged <b>before</b> they leave, not after. Backing it, a churn early-warning model (logistic regression, random forest, XGBoost) scores bank customers by likelihood to leave, surfaced in a Power BI dashboard that quantifies revenue-at-risk, connecting directly to my banking-sector experience.</p>
-        <div class="takeaway"><b>Why it matters</b>Early warning plus revenue protection: a retention and operations lever, not just a model.</div>
-        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/postgresql/6B6A85" alt="" aria-hidden="true">SQL</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/python/6B6A85" alt="" aria-hidden="true">Python</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/scikitlearn/6B6A85" alt="" aria-hidden="true">scikit-learn</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/xgboost/6B6A85" alt="" aria-hidden="true">XGBoost</span><span class="tag">Power BI</span></div>
+        <div class="ptop"><span class="badge badge-flag">Flagship · Banking</span></div>
+        <h3>Is a discount even the right answer?</h3>
+        <p>Most churn projects stop at "who will leave." This one answers the question the business actually has: <b>what do we do about it, and would a discount just burn margin on someone who'd have stayed anyway?</b> A churn model (logistic regression, random forest, XGBoost) scores every bank customer, then routes each to the right play instead of one blanket offer. Surfaced in a Power BI dashboard that ties each segment to revenue-at-risk.</p>
+        <div class="matrix" aria-hidden="false">
+          <div class="m q"><b>High value · High risk</b>Proactive retention, human touch</div>
+          <div class="m q"><b>High value · Low risk</b>Protect &amp; grow, no discount needed</div>
+          <div class="m q"><b>Low value · High risk</b>Cheap automated save, or let go</div>
+          <div class="m q"><b>Low value · Low risk</b>Leave alone, spend nothing</div>
+        </div>
+        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>SQL</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Python</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>scikit-learn</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>XGBoost</span><span class="tag">Power BI</span></div>
       </article>
 
       <article class="proj" data-skills="python sql stats dashboards probsolve research">
-        <span class="badge badge-live">STRATEGY · ANALYTICS</span>
+        <div class="ptop"><span class="badge badge-award">Strategy · Analytics</span></div>
         <h3>Airline Customer 360</h3>
-        <p>Consolidated fragmented airline booking, loyalty, and profile data (~130K passenger records) into a single Customer 360 view (one clean row per customer), then turned it into four actionable segments (Frequent Business, Dissatisfied Loyal, At-Risk, Standard), each mapped to a business action. Shipped with BA artefacts: data mappings, user stories with acceptance criteria, and journey maps.</p>
-        <div class="takeaway"><b>Why it matters</b>Fragmented data unified into decisions, with BA artefacts: commercial and operational thinking, not just code.</div>
-        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/python/6B6A85" alt="" aria-hidden="true">Python</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/pandas/6B6A85" alt="" aria-hidden="true">Pandas</span><span class="tag">Segmentation</span><span class="tag">BA Artefacts</span></div>
-      </article>
-
-      <article class="proj" data-skills="stats dashboards stakeholder exec governance research probsolve">
-        <span class="badge badge-live">FREELANCE · 2026</span>
-        <h3>NVOCC Partner Selection for TranzOcean</h3>
-        <p>Strategic partner-selection analysis for a vessel operator on the India-UAE-Gulf corridor. Researched three NVOCC candidates from scratch, built a weighted scoring model across 6 criteria, and delivered a primary and secondary partner recommendation with a 90-day action plan.</p>
-        <div class="takeaway"><b>Why it matters</b>Consulting-grade research turned into a decision leadership can act on, not just a report.</div>
-        <div class="tag-row"><span class="tag">Market Research</span><span class="tag">Weighted Scoring</span><span class="tag">Strategy</span></div>
-      </article>
-
-      <article class="proj" data-skills="python llm timeseries stats">
-        <span class="badge badge-live">ONGOING</span>
-        <h3>Power Price Analyst Agent</h3>
-        <p>LLM agent over structured and unstructured energy market data. Seven LangChain tools expose pandas and NumPy analytics (rolling z-score spike detection, intraday seasonality, cross-zone spreads), plus from-scratch TF-IDF retrieval and a fusion tool that explains price spikes by joining same-day news. Runs on a free local LLM via Ollama, with a pluggable architecture that supports cloud models for comparison.</p>
-        <div class="takeaway"><b>Why it matters</b>Agentic AI built end to end: tool design, retrieval from scratch, and a swappable local-to-cloud LLM backend.</div>
-        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/langchain/6B6A85" alt="" aria-hidden="true">LangChain</span><span class="tag">LangGraph</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/ollama/6B6A85" alt="" aria-hidden="true">Ollama</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/numpy/6B6A85" alt="" aria-hidden="true">Pandas / NumPy</span></div>
+        <p>Airlines know their customers as scattered rows: a booking here, a loyalty tier there, a profile somewhere else. I consolidated fragmented booking, loyalty, and profile data (~130K passenger records) into one clean Customer 360 view, then turned it into four actionable segments (Frequent Business, Dissatisfied Loyal, At-Risk, Standard), each mapped to a concrete commercial action. Shipped with the business-analyst artefacts that make it usable: data mappings, user stories with acceptance criteria, and journey maps.</p>
+        <div class="stamp">
+          <span class="l">The real question</span>
+          <span class="not">This is not a data merge.</span>
+          <span class="is">It's four customer segments a commercial team can act on Monday.</span>
+        </div>
+        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Python</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Pandas</span><span class="tag">Segmentation</span><span class="tag">BA Artefacts</span></div>
       </article>
 
       <article class="proj" data-skills="python xgboost deeplearning timeseries dashboards stats">
-        <span class="badge badge-msc">MSC DISSERTATION · 2026</span>
+        <div class="ptop"><span class="badge badge-msc">MSc · Dissertation</span></div>
         <h3>ML Energy Demand Forecasting</h3>
-        <p>Multi-step time-series forecasting on the UK-DALE dataset with XGBoost and CNN-LSTM, plus MILP-based scheduling optimisation and KPI dashboards.</p>
-        <div class="takeaway"><b>Why it matters</b>Forecasting plus optimisation on real-world data; the method transfers to logistics and demand planning.</div>
-        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/xgboost/6B6A85" alt="" aria-hidden="true">XGBoost</span><span class="tag">CNN-LSTM</span><span class="tag">MILP</span></div>
+        <p>Can you predict tomorrow's energy demand well enough to schedule against it? Multi-step time-series forecasting on the UK-DALE dataset, benchmarking XGBoost against a CNN-LSTM, then feeding the forecast into MILP-based scheduling optimisation and KPI dashboards. The method transfers directly to logistics, staffing, and demand planning, anywhere you must commit resources before you know the number.</p>
+        <div class="stamp">
+          <span class="l">The real question</span>
+          <span class="not">This is not a forecast.</span>
+          <span class="is">It's a schedule you can commit to before the demand arrives.</span>
+        </div>
+        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>XGBoost</span><span class="tag">CNN-LSTM</span><span class="tag">MILP</span><span class="tag">Power BI</span></div>
+      </article>
+
+      <article class="proj" data-skills="python llm timeseries stats">
+        <div class="ptop"><span class="badge">Ongoing</span></div>
+        <h3>Power Price Analyst Agent</h3>
+        <p>LLM agent over structured and unstructured energy market data. Seven LangChain tools expose pandas and NumPy analytics (rolling z-score spike detection, intraday seasonality, cross-zone spreads), plus from-scratch TF-IDF retrieval and a fusion tool that explains price spikes by joining same-day news. Runs on a free local LLM via Ollama, with a pluggable cloud backend.</p>
+        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>LangChain</span><span class="tag">LangGraph</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Ollama</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Pandas / NumPy</span></div>
+      </article>
+
+      <article class="proj" data-skills="stats dashboards stakeholder exec governance research probsolve">
+        <div class="ptop"><span class="badge">Freelance · 2026</span></div>
+        <h3>NVOCC Partner Selection</h3>
+        <p>Strategic partner-selection analysis for a vessel operator on the India-UAE-Gulf corridor. Researched three NVOCC candidates from scratch, built a weighted scoring model across 6 criteria, and delivered a primary and secondary recommendation with a 90-day action plan.</p>
+        <div class="tag-row"><span class="tag">Market Research</span><span class="tag">Weighted Scoring</span><span class="tag">Strategy</span></div>
       </article>
 
       <article class="proj" data-skills="python pytorch sklearn deeplearning stats">
-        <span class="badge badge-msc">MSC · HERIOT-WATT</span>
+        <div class="ptop"><span class="badge badge-msc">MSc · Heriot-Watt</span></div>
         <h3>Multimodal Cardiac Disease Prediction</h3>
-        <p>Hybrid health-AI system fusing 70,000 clinical records with ACDC cardiac MRI volumes. Benchmarked ML classifiers against 3D-CNNs across single and multimodal pipelines.</p>
-        <div class="takeaway"><b>Why it matters</b>Deep learning at scale on messy, multimodal medical data, with honest benchmarking.</div>
-        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/pytorch/6B6A85" alt="" aria-hidden="true">PyTorch</span><span class="tag">3D-CNN</span><span class="tag">Medical AI</span></div>
+        <p>Hybrid health-AI system fusing 70,000 clinical records with ACDC cardiac MRI volumes. Benchmarked ML classifiers against 3D-CNNs across single and multimodal pipelines for earlier CVD detection.</p>
+        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>PyTorch</span><span class="tag">3D-CNN</span><span class="tag">Medical AI</span></div>
       </article>
 
       <article class="proj" data-skills="d3 dashboards sql stats python">
-        <span class="badge badge-msc">MSC · HERIOT-WATT</span>
+        <div class="ptop"><span class="badge badge-msc">MSc · Heriot-Watt</span></div>
         <h3>Does Wealth Make Countries Happy?</h3>
-        <p>Interactive D3.js data story: five bidirectionally-linked visualisations (scatter, choropleth map, bar, trend lines, radar) over 9K+ rows of World Bank, WHO and World Happiness data.</p>
-        <div class="takeaway"><b>Why it matters</b>Data storytelling a hiring manager can click and explore, not just read about.</div>
-        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/d3dotjs/6B6A85" alt="" aria-hidden="true">D3.js v7</span><span class="tag">TopoJSON</span><span class="tag">Data Storytelling</span></div>
+        <p>Interactive D3.js data story: five bidirectionally-linked visualisations (scatter, choropleth, bar, trend, radar) over 9K+ rows of World Bank, WHO and World Happiness data, with full cross-chart filtering.</p>
+        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>D3.js v7</span><span class="tag">TopoJSON</span><span class="tag">Data Storytelling</span></div>
       </article>
 
       <article class="proj" data-skills="stats">
-        <span class="badge badge-ieee">IEEE · PUBLISHED</span>
+        <div class="ptop"><span class="badge badge-ieee">IEEE · Published</span></div>
         <h3>Neuro-Fuzzy Anaemia Diagnosis</h3>
         <p>Fuzzy-logic diagnostic application predicting anaemia presence, type, and severity from Complete Blood Count parameters. Validated by 616 automated unit tests at 97.5% accuracy.</p>
-        <div class="takeaway"><b>Why it matters</b>Peer-reviewed and test-validated, engineering rigour beyond a class project.</div>
         <div class="tag-row"><span class="tag">Fuzzy Logic</span><span class="tag">LabVIEW</span><span class="tag">Unit Testing</span></div>
         <a class="paper-link" href="https://www.researchgate.net/publication/383172910_Neuro-fuzzy_based_Anaemia_diagnosis_using_LabVIEW" target="_blank" rel="noopener">Read the IEEE paper</a>
       </article>
 
       <article class="proj" data-skills="python tensorflow deeplearning">
-        <span class="badge badge-ieee">IEEE · PUBLISHED</span>
+        <div class="ptop"><span class="badge badge-ieee">IEEE · Published</span></div>
         <h3>Face Mask &amp; Temperature Audit System</h3>
         <p>Real-time COVID compliance monitor: MobileNetV2 CNN for mask detection at 93% accuracy, benchmarked against KNN and SVM, with contactless temperature sensing.</p>
-        <div class="takeaway"><b>Why it matters</b>Peer-reviewed computer vision with proper model benchmarking, deployed on real hardware.</div>
-        <div class="tag-row"><span class="tag">MobileNetV2</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/opencv/6B6A85" alt="" aria-hidden="true">OpenCV</span><span class="tag">LabVIEW</span></div>
+        <div class="tag-row"><span class="tag">MobileNetV2</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>OpenCV</span><span class="tag">LabVIEW</span></div>
         <a class="paper-link" href="https://www.researchgate.net/publication/367142030_Human_Body_Temperature_and_Face_Mask_Audit_System_for_COVID_Protocol" target="_blank" rel="noopener">Read the IEEE paper</a>
       </article>
 
       <article class="proj" data-skills="python deeplearning">
-        <span class="badge badge-award">SIH 2023 WINNER</span>
+        <div class="ptop"><span class="badge badge-award">SIH 2023 Winner</span></div>
         <h3>Drone-Based Cotton Disease Prediction</h3>
         <p>National first place at Smart India Hackathon 2023: AI system combining drone imagery with environmental data to predict crop disease before visible spread.</p>
-        <div class="takeaway"><b>Why it matters</b>Won first place against national competition, built and pitched under deadline.</div>
         <div class="tag-row"><span class="tag">Computer Vision</span><span class="tag">Drones</span><span class="tag">Env. Data</span></div>
       </article>
 
       <article class="proj" data-skills="python sql recsys stats etl">
+        <div class="ptop"><span class="badge">Personal</span></div>
         <h3>Book &amp; Movie Analytics Engine</h3>
         <p>Complete analytics and recommendation system in Python: consumption patterns by country and continent, from data cleaning through analysis to recommendation logic.</p>
-        <div class="takeaway"><b>Why it matters</b>End-to-end ownership of an analytics pipeline, no hand-offs.</div>
-        <div class="tag-row"><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/python/6B6A85" alt="" aria-hidden="true">Python</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/pandas/6B6A85" alt="" aria-hidden="true">Pandas</span><span class="tag">Recommenders</span></div>
+        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Python</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Pandas</span><span class="tag">Recommenders</span></div>
       </article>
 
       <article class="proj" data-skills="python recsys deeplearning sklearn">
-        <span class="badge badge-live">IN PROGRESS</span>
-        <h3>AI Stylist, Outfit Recommendation App</h3>
+        <div class="ptop"><span class="badge">In Progress</span></div>
+        <h3>AI Stylist Outfit Recommender</h3>
         <p>Personal-styling AI that recommends outfits tailored to the individual. Recommendation modelling applied to fashion, currently in active development.</p>
-        <div class="takeaway"><b>Why it matters</b>Product thinking: taking recommender systems from theory toward a usable app.</div>
-        <div class="tag-row"><span class="tag">Recommenders</span><span class="tag"><img class="ti" src="https://cdn.simpleicons.org/python/6B6A85" alt="" aria-hidden="true">Python</span><span class="tag">ML</span></div>
+        <div class="tag-row"><span class="tag">Recommenders</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Python</span><span class="tag">ML</span></div>
       </article>
     </div>
 
     <p class="more-label">Also built</p>
     <div class="mini-grid" id="minis">
-      <div class="mini" data-skills="csharp sql">
-        <h3>Custom Web Browser in C#</h3>
-        <p>Manual HTTP handling, async/await, Entity Framework and LINQ persistence, SOLID architecture.</p>
-      </div>
-      <div class="mini" data-skills="etl sql">
-        <h3>Auction Inventory System</h3>
-        <p>Inventory management for auction operations: item cataloguing and status tracking through listing and sale.</p>
-      </div>
-      <div class="mini" data-skills="etl">
-        <h3>RFID Inventory Management</h3>
-        <p>Automated tracking with real-time sync. Cut manual errors and improved shipping accuracy.</p>
-      </div>
-      <div class="mini" data-skills="sql python dashboards">
-        <h3>Wonders of Rock · IIT Kharagpur</h3>
-        <p>Raw geological data turned into structured databases, an analytical dashboard, and a web page.</p>
-      </div>
+      <div class="mini" data-skills="csharp sql"><h3>Custom Web Browser in C#</h3><p>Manual HTTP handling, async/await, Entity Framework and LINQ persistence, SOLID architecture.</p></div>
+      <div class="mini" data-skills="etl sql"><h3>Auction Inventory System</h3><p>Inventory management for auction operations: cataloguing and status tracking through listing and sale.</p></div>
+      <div class="mini" data-skills="etl"><h3>RFID Inventory Management</h3><p>Automated tracking with real-time sync. Cut manual errors and improved shipping accuracy.</p></div>
+      <div class="mini" data-skills="sql python dashboards"><h3>Wonders of Rock · IIT KGP</h3><p>Raw geological data turned into structured databases, an analytical dashboard, and a web page.</p></div>
     </div>
   </div>
 </section>
 
 <section id="achievements">
   <div class="wrap">
-    <span class="eyebrow">Recognition</span>
-    <h2>Achievements</h2>
+    <h2 class="sec-title">Wins &amp; <span class="hand">recognition</span></h2>
     <div class="ach-grid">
       <div class="ach">
-        <span class="ach-icon" aria-hidden="true">🏆</span>
-        <span class="ach-meta">Smart India Hackathon 2023</span>
+        <span class="ico" aria-hidden="true">🏆</span>
+        <span class="m">Smart India Hackathon 2023</span>
         <h3>National First Place</h3>
         <p>Won first place against national competition for a drone-based cotton disease prediction system, built and pitched under deadline.</p>
       </div>
       <div class="ach">
-        <span class="ach-icon" aria-hidden="true">📄</span>
-        <span class="ach-meta">IEEE · Published Author</span>
+        <span class="ico" aria-hidden="true">📄</span>
+        <span class="m">IEEE · Published Author</span>
         <h3>Neuro-Fuzzy Anaemia Diagnosis</h3>
         <p>Peer-reviewed fuzzy-logic diagnostic system predicting anaemia type and severity from CBC parameters, validated by 616 automated unit tests at 97.5% accuracy.</p>
-        <a class="ach-link" href="https://www.researchgate.net/publication/383172910_Neuro-fuzzy_based_Anaemia_diagnosis_using_LabVIEW" target="_blank" rel="noopener">Read the paper</a>
+        <a class="paper-link" href="https://www.researchgate.net/publication/383172910_Neuro-fuzzy_based_Anaemia_diagnosis_using_LabVIEW" target="_blank" rel="noopener">Read the paper</a>
       </div>
       <div class="ach">
-        <span class="ach-icon" aria-hidden="true">📄</span>
-        <span class="ach-meta">IEEE · Published Author</span>
-        <h3>Face Mask &amp; Temperature Audit System</h3>
-        <p>Peer-reviewed real-time COVID-compliance monitor using a MobileNetV2 CNN for mask detection at 93% accuracy, benchmarked against KNN and SVM, with contactless temperature sensing.</p>
-        <a class="ach-link" href="https://www.researchgate.net/publication/367142030_Human_Body_Temperature_and_Face_Mask_Audit_System_for_COVID_Protocol" target="_blank" rel="noopener">Read the paper</a>
+        <span class="ico" aria-hidden="true">📄</span>
+        <span class="m">IEEE · Published Author</span>
+        <h3>Face Mask &amp; Temperature Audit</h3>
+        <p>Peer-reviewed real-time COVID-compliance monitor using a MobileNetV2 CNN at 93% accuracy, benchmarked against KNN and SVM, with contactless temperature sensing.</p>
+        <a class="paper-link" href="https://www.researchgate.net/publication/367142030_Human_Body_Temperature_and_Face_Mask_Audit_System_for_COVID_Protocol" target="_blank" rel="noopener">Read the paper</a>
       </div>
       <div class="ach">
-        <span class="ach-icon" aria-hidden="true">🎓</span>
-        <span class="ach-meta">McKinsey.org</span>
+        <span class="ico" aria-hidden="true">🎓</span>
+        <span class="m">McKinsey.org</span>
         <h3>Forward Program</h3>
         <p>Completed McKinsey's professional development program covering problem-solving, communication, adaptability, and the digital toolkit.</p>
       </div>
       <div class="ach">
-        <span class="ach-icon" aria-hidden="true">🌱</span>
-        <span class="ach-meta">Young Indians · CII Youth Wing</span>
+        <span class="ico" aria-hidden="true">🌱</span>
+        <span class="m">Young Indians · CII Youth Wing</span>
         <h3>Innovation Chair</h3>
         <p>Leadership role driving innovation initiatives within Young Indians, the youth wing of the Confederation of Indian Industry.</p>
       </div>
       <div class="ach">
-        <span class="ach-icon" aria-hidden="true">🎖️</span>
-        <span class="ach-meta">Academic</span>
+        <span class="ico" aria-hidden="true">🎖️</span>
+        <span class="m">Academic</span>
         <h3>First Class with Distinction</h3>
         <p>Graduated B.E. Electronics &amp; Communication with an 8.82 CGPA and an IoT specialisation from Anna University.</p>
       </div>
@@ -539,28 +567,27 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
   </div>
 </section>
 
-<section id="experience">
+<section class="exp" id="experience">
   <div class="wrap">
-    <span class="eyebrow">Track Record</span>
-    <h2>Experience</h2>
+    <h2 class="sec-title">Track <span class="hand">record</span></h2>
     <div class="timeline">
       <div class="job current">
-        <span class="when">APR 2025 · FEB 2026</span>
+        <span class="when">Apr 2025 to Feb 2026</span>
         <h3>Freelance Data &amp; Analytics Consultant</h3>
         <p class="co"><b>Self-Employed</b> · Dubai</p>
       </div>
       <div class="job">
-        <span class="when">SEP 2024 · FEB 2025</span>
+        <span class="when">Sep 2024 to Feb 2025</span>
         <h3>Data &amp; Digital Transformation Consultant</h3>
         <p class="co"><b>Emirates Islamic Bank</b> · Dubai</p>
       </div>
       <div class="job">
-        <span class="when">JUN 2023 · MAY 2024</span>
+        <span class="when">Jun 2023 to May 2024</span>
         <h3>Project Engineer Intern</h3>
         <p class="co"><b>Soliton Technologies</b> · India</p>
       </div>
       <div class="job">
-        <span class="when">JUN 2022 · SEP 2022</span>
+        <span class="when">Jun 2022 to Sep 2022</span>
         <h3>Data Analyst Intern</h3>
         <p class="co"><b>Indian Institute of Technology Kharagpur</b> · India</p>
       </div>
@@ -568,156 +595,84 @@ footer{padding:34px 0;text-align:center;font-family:var(--font-mono);font-size:.
   </div>
 </section>
 
-<section class="edu-wrap" id="education">
+<section id="education">
   <div class="wrap">
-    <span class="eyebrow">Foundations</span>
-    <h2>Education &amp; Credentials</h2>
+    <h2 class="sec-title">Education &amp; <span class="hand">credentials</span></h2>
     <div class="edu-grid">
       <div class="edu featured">
-        <span class="live-tag">COMPLETED · GRADUATING NOV 2026</span>
+        <span class="flag">In Progress</span>
         <h3>MSc Data Science</h3>
-        <div class="sub">Heriot-Watt University, Dubai · 2025 to 2026</div>
-        <p>Course completed; graduating <b>November 2026</b>. Modules: AI and Machine Learning, Big Data Management and Governance, Statistical Modelling and Analysis, DevOps. Dissertation: ML-driven energy demand forecasting.</p>
+        <div class="sub">Heriot-Watt University, Dubai · 2025-2026</div>
+        <p>Course completed; graduating <b>November 2026</b>. Modules: AI &amp; Machine Learning, Big Data Management &amp; Governance, Statistical Modelling, DevOps. Dissertation: ML-driven energy demand forecasting.</p>
       </div>
       <div class="edu">
         <h3>B.E. Electronics &amp; Communication</h3>
-        <div class="sub">Anna University · 2020 to 2024</div>
+        <div class="sub">Anna University · 2020-2024</div>
         <p>Sri Ramakrishna Engineering College. IoT specialisation. First Class with Distinction, 8.82 CGPA.</p>
       </div>
       <div class="edu">
         <h3>Google Data Analytics Certificate</h3>
         <div class="sub">Coursera · Google</div>
-        <p>Professional certification covering the full analytics lifecycle, from data cleaning through visualisation and stakeholder communication.</p>
+        <p>Full analytics lifecycle, from data cleaning through visualisation and stakeholder communication.</p>
       </div>
     </div>
     <div class="cred-row">
       <span class="cred"><b>McKinsey.org</b> · Forward Program</span>
       <span class="cred"><b>Innovation Chair</b> · Young Indians (CII)</span>
-      <span class="cred"><b>IELTS 7.5</b> · CEFR C1 Academic</span>
+      <span class="cred"><b>IELTS 7.5</b> · CEFR C1</span>
       <span class="cred"><b>BEC</b> · Cambridge Business English</span>
-      <span class="cred"><b>Winner</b> · Smart India Hackathon 2023</span>
-      <span class="cred"><b>2x IEEE</b> · Published Author</span>
+      <span class="cred"><b>2× IEEE</b> · Published Author</span>
     </div>
   </div>
 </section>
 
 <section class="contact" id="contact">
   <div class="wrap">
-    <span class="eyebrow">Let's Build</span>
-    <h2>Hiring for Data Science, Analytics or Strategy?</h2>
+    <div class="reframe">
+      <div class="rf-line rf-not"><span class="lead">This is not the</span> <span class="word">end.</span></div>
+      <div class="rf-line rf-is"><span class="lead">It's</span> <span class="word"><span class="under">where we start.</span></span></div>
+    </div>
     <p>UAE resident, based in Dubai. Whether you need models built, data turned into decisions, or an AI rollout people will actually adopt, let's talk.</p>
     <div class="contact-links">
-      <a class="btn btn-primary" href="mailto:seemaaashikab@gmail.com">seemaaashikab@gmail.com</a>
+      <a class="btn btn-solid" href="mailto:seemaaashikab@gmail.com">seemaaashikab@gmail.com</a>
       <a class="btn btn-ghost" href="https://linkedin.com/in/seema-aashikab-anees-ahmed" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn btn-ghost" href="https://github.com/seemaaashikab" target="_blank" rel="noopener">GitHub</a>
     </div>
+    <div class="sign">Seema Aashikab</div>
   </div>
 </section>
 
-<footer>© 2026 Seema Aashikab Anees Ahmed · Designed and built with intent</footer>
+<footer>© 2026 Seema Aashikab Anees Ahmed · Built to think past the obvious</footer>
 
 <script>
-/* ---- Skill to project interaction ---- */
 (function(){
   const chips = document.querySelectorAll('.chip');
   const cards = document.querySelectorAll('[data-skills]');
   let locked = null;
-
   const note = document.getElementById('exp-skill-note');
   function apply(skill){
     let matches = 0;
     cards.forEach(c=>{ if(c.dataset.skills.split(' ').includes(skill)) matches++; });
-    if(matches===0){
-      cards.forEach(c=>c.classList.remove('lit','dim'));
-      note.hidden = false;
-      return;
-    }
-    note.hidden = true;
+    if(matches===0){ cards.forEach(c=>c.classList.remove('lit','dim')); note.hidden=false; return; }
+    note.hidden=true;
     cards.forEach(c=>{
-      const has = c.dataset.skills.split(' ').includes(skill);
-      c.classList.toggle('lit', has);
-      c.classList.toggle('dim', !has);
+      const has=c.dataset.skills.split(' ').includes(skill);
+      c.classList.toggle('lit',has); c.classList.toggle('dim',!has);
     });
   }
-  function clearCards(){ cards.forEach(c=>c.classList.remove('lit','dim')); note.hidden = true; }
-  function reset(){
-    clearCards();
-    chips.forEach(c=>c.classList.remove('active'));
-    locked = null;
-  }
+  function clearCards(){ cards.forEach(c=>c.classList.remove('lit','dim')); note.hidden=true; }
+  function reset(){ clearCards(); chips.forEach(c=>c.classList.remove('active')); locked=null; }
   chips.forEach(chip=>{
-    const skill = chip.dataset.skill;
+    const skill=chip.dataset.skill;
     chip.addEventListener('mouseenter',()=>{ if(!locked) apply(skill); });
     chip.addEventListener('mouseleave',()=>{ if(!locked) clearCards(); });
     chip.addEventListener('click',()=>{
       if(locked===skill){ reset(); return; }
       chips.forEach(c=>c.classList.remove('active'));
-      chip.classList.add('active');
-      locked = skill;
-      apply(skill);
+      chip.classList.add('active'); locked=skill; apply(skill);
+      if(typeof gtag==='function'){ gtag('event','skill_filter',{skill:skill}); }
     });
   });
-})();
-
-/* ---- Icon tint for dark mode (Simple Icons currentColor swap) ---- */
-(function(){
-  const dark = window.matchMedia('(prefers-color-scheme: dark)');
-  function tint(){
-    const hex = dark.matches ? 'B8B6D6' : '6B6A85';
-    document.querySelectorAll('img.ti').forEach(img=>{
-      img.src = img.src.replace(/\/([0-9A-Fa-f]{6})(?=$|\?)/, '/'+hex);
-    });
-  }
-  tint();
-  dark.addEventListener('change', tint);
-})();
-
-/* ---- Hero particle network ---- */
-(function(){
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const canvas = document.getElementById('net');
-  const ctx = canvas.getContext('2d');
-  let w,h,nodes=[],raf;
-  const N = 42, LINK = 130;
-
-  function size(){
-    const r = canvas.parentElement.getBoundingClientRect();
-    w = canvas.width = r.width * devicePixelRatio;
-    h = canvas.height = r.height * devicePixelRatio;
-  }
-  function init(){
-    nodes = Array.from({length:N},()=>({
-      x:Math.random()*w, y:Math.random()*h,
-      vx:(Math.random()-.5)*.35*devicePixelRatio,
-      vy:(Math.random()-.5)*.35*devicePixelRatio
-    }));
-  }
-  function draw(){
-    ctx.clearRect(0,0,w,h);
-    for(const n of nodes){
-      n.x+=n.vx; n.y+=n.vy;
-      if(n.x<0||n.x>w) n.vx*=-1;
-      if(n.y<0||n.y>h) n.vy*=-1;
-    }
-    for(let i=0;i<N;i++){
-      for(let j=i+1;j<N;j++){
-        const a=nodes[i],b=nodes[j];
-        const d=Math.hypot(a.x-b.x,a.y-b.y)/devicePixelRatio;
-        if(d<LINK){
-          ctx.strokeStyle=`rgba(124,58,237,${(1-d/LINK)*.28})`;
-          ctx.lineWidth=devicePixelRatio;
-          ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();
-        }
-      }
-    }
-    for(const n of nodes){
-      ctx.fillStyle='rgba(79,70,229,.5)';
-      ctx.beginPath();ctx.arc(n.x,n.y,2.2*devicePixelRatio,0,Math.PI*2);ctx.fill();
-    }
-    if(!reduce) raf = requestAnimationFrame(draw);
-  }
-  size(); init(); draw();
-  window.addEventListener('resize',()=>{cancelAnimationFrame(raf);size();init();draw();});
 })();
 </script>
 </body>
