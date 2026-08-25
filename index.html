@@ -129,9 +129,6 @@ section{padding:78px 0}
 .chip{font-family:'Space Mono',monospace;font-size:.76rem;padding:7px 13px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;transition:all .12s ease;user-select:none;display:inline-flex;align-items:center;gap:7px}
 .chip:hover,.chip:focus-visible{background:var(--highlight)}
 .chip.active{background:var(--ink);color:#fff}
-.chip .ti{width:14px;height:14px;flex:none;color:var(--dim)}
-.chip:hover .ti,.chip:focus-visible .ti{color:var(--red)}
-.chip.active .ti{color:#fff}
 .skill-group.priority .chip{border-color:var(--red)}
 
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px;margin-top:38px}
@@ -152,7 +149,6 @@ section{padding:78px 0}
 .proj p b{color:var(--ink);font-weight:600}
 .tag-row{display:flex;flex-wrap:wrap;gap:6px}
 .tag{font-family:'Space Mono',monospace;font-size:.66rem;padding:3px 8px;border:1px solid var(--hair);background:var(--paper);color:#57534A;display:inline-flex;align-items:center;gap:5px}
-.tag .ti{width:12px;height:12px;flex:none;color:#8A8578}
 .stamp{border:1.5px dashed var(--hair);padding:12px 14px;background:var(--paper)}
 .stamp .l{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:6px}
 .stamp .not{color:var(--dim);text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px;font-size:.86rem}
@@ -341,9 +337,9 @@ footer{padding:30px 0;text-align:center;font-family:'Space Mono',monospace;font-
     <div class="skill-group priority">
       <h4>Data Engineering &amp; Analytics</h4>
       <div class="skill-cloud">
-        <button class="chip" data-skill="sql"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>SQL</button>
+        <button class="chip" data-skill="sql">SQL</button>
         <button class="chip" data-skill="etl">ETL Pipelines</button>
-        <button class="chip" data-skill="dbt"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>dbt</button>
+        <button class="chip" data-skill="dbt">dbt</button>
         <button class="chip" data-skill="powerbi">Power BI</button>
         <button class="chip" data-skill="probsolve">Structured Problem-Solving</button>
         <button class="chip" data-skill="stats">Statistical Modelling</button>
@@ -353,14 +349,14 @@ footer{padding:30px 0;text-align:center;font-family:'Space Mono',monospace;font-
     <div class="skill-group priority">
       <h4>Machine Learning &amp; AI</h4>
       <div class="skill-cloud">
-        <button class="chip" data-skill="python"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Python</button>
-        <button class="chip" data-skill="pytorch"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>PyTorch</button>
-        <button class="chip" data-skill="tensorflow"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>TensorFlow / Keras</button>
-        <button class="chip" data-skill="sklearn"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Scikit-learn</button>
-        <button class="chip" data-skill="xgboost"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>XGBoost</button>
+        <button class="chip" data-skill="python">Python</button>
+        <button class="chip" data-skill="pytorch">PyTorch</button>
+        <button class="chip" data-skill="tensorflow">TensorFlow / Keras</button>
+        <button class="chip" data-skill="sklearn">Scikit-learn</button>
+        <button class="chip" data-skill="xgboost">XGBoost</button>
         <button class="chip" data-skill="deeplearning">Deep Learning / CNN</button>
         <button class="chip" data-skill="timeseries">Time-Series</button>
-        <button class="chip" data-skill="llm"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>LLM Agents / LangChain</button>
+        <button class="chip" data-skill="llm">LLM Agents / LangChain</button>
         <button class="chip" data-skill="recsys">Recommender Systems</button>
       </div>
     </div>
@@ -368,25 +364,25 @@ footer{padding:30px 0;text-align:center;font-family:'Space Mono',monospace;font-
       <h4>Visualisation &amp; BI</h4>
       <div class="skill-cloud">
         <button class="chip" data-skill="powerbi">Power BI</button>
-        <button class="chip" data-skill="tableau"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Tableau</button>
-        <button class="chip" data-skill="d3"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>D3.js</button>
+        <button class="chip" data-skill="tableau">Tableau</button>
+        <button class="chip" data-skill="d3">D3.js</button>
         <button class="chip" data-skill="dashboards">KPI Dashboards</button>
       </div>
     </div>
     <div class="skill-group">
       <h4>MLOps &amp; Engineering</h4>
       <div class="skill-cloud">
-        <button class="chip" data-skill="docker"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Docker</button>
-        <button class="chip" data-skill="aws"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>AWS / SageMaker</button>
-        <button class="chip" data-skill="flask"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Flask APIs</button>
-        <button class="chip" data-skill="devops"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>DevOps / Jenkins</button>
-        <button class="chip" data-skill="csharp"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>C# / .NET</button>
+        <button class="chip" data-skill="docker">Docker</button>
+        <button class="chip" data-skill="aws">AWS / SageMaker</button>
+        <button class="chip" data-skill="flask">Flask APIs</button>
+        <button class="chip" data-skill="devops">DevOps / Jenkins</button>
+        <button class="chip" data-skill="csharp">C# / .NET</button>
       </div>
     </div>
     <div class="skill-group">
       <h4>Strategy &amp; Delivery</h4>
       <div class="skill-cloud">
-        <button class="chip" data-skill="agile"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Agile / Scrum / Jira</button>
+        <button class="chip" data-skill="agile">Agile / Scrum / Jira</button>
         <button class="chip" data-skill="change">Change Management</button>
         <button class="chip" data-skill="stakeholder">Stakeholder Management</button>
         <button class="chip" data-skill="exec">Executive Communication</button>
@@ -405,7 +401,7 @@ footer{padding:30px 0;text-align:center;font-family:'Space Mono',monospace;font-
           <span class="not">This is not a funnel chart.</span>
           <span class="is">It's AED 99.4M walking out the door, and where to stand to stop it.</span>
         </div>
-        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>SQL · Postgres</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Python · Pandas</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>dbt</span><span class="tag">Python ETL</span><span class="tag">Power BI</span></div>
+        <div class="tag-row"><span class="tag">SQL · Postgres</span><span class="tag">Python · Pandas</span><span class="tag">dbt</span><span class="tag">Python ETL</span><span class="tag">Power BI</span></div>
       </article>
 
       <article class="proj flagship" data-skills="sql python sklearn xgboost dashboards stats probsolve">
@@ -418,7 +414,7 @@ footer{padding:30px 0;text-align:center;font-family:'Space Mono',monospace;font-
           <div class="m q"><b>Low value · High risk</b>Cheap automated save, or let go</div>
           <div class="m q"><b>Low value · Low risk</b>Leave alone, spend nothing</div>
         </div>
-        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>SQL</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Python</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>scikit-learn</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>XGBoost</span><span class="tag">Power BI</span></div>
+        <div class="tag-row"><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Power BI</span></div>
       </article>
 
       <article class="proj" data-skills="python sql stats dashboards probsolve research">
@@ -430,7 +426,7 @@ footer{padding:30px 0;text-align:center;font-family:'Space Mono',monospace;font-
           <span class="not">This is not a data merge.</span>
           <span class="is">It's four customer segments a commercial team can act on Monday.</span>
         </div>
-        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Python</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Pandas</span><span class="tag">Segmentation</span><span class="tag">BA Artefacts</span></div>
+        <div class="tag-row"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Segmentation</span><span class="tag">BA Artefacts</span></div>
       </article>
 
       <article class="proj" data-skills="python xgboost deeplearning timeseries dashboards stats">
@@ -442,14 +438,14 @@ footer{padding:30px 0;text-align:center;font-family:'Space Mono',monospace;font-
           <span class="not">This is not a forecast.</span>
           <span class="is">It's a schedule you can commit to before the demand arrives.</span>
         </div>
-        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>XGBoost</span><span class="tag">CNN-LSTM</span><span class="tag">MILP</span><span class="tag">Power BI</span></div>
+        <div class="tag-row"><span class="tag">XGBoost</span><span class="tag">CNN-LSTM</span><span class="tag">MILP</span><span class="tag">Power BI</span></div>
       </article>
 
       <article class="proj" data-skills="python llm timeseries stats">
         <div class="ptop"><span class="badge">Ongoing</span></div>
         <h3>Power Price Analyst Agent</h3>
         <p>LLM agent over structured and unstructured energy market data. Seven LangChain tools expose pandas and NumPy analytics (rolling z-score spike detection, intraday seasonality, cross-zone spreads), plus from-scratch TF-IDF retrieval and a fusion tool that explains price spikes by joining same-day news. Runs on a free local LLM via Ollama, with a pluggable cloud backend.</p>
-        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>LangChain</span><span class="tag">LangGraph</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Ollama</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Pandas / NumPy</span></div>
+        <div class="tag-row"><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">Ollama</span><span class="tag">Pandas / NumPy</span></div>
       </article>
 
       <article class="proj" data-skills="stats dashboards stakeholder exec governance research probsolve">
@@ -463,14 +459,14 @@ footer{padding:30px 0;text-align:center;font-family:'Space Mono',monospace;font-
         <div class="ptop"><span class="badge badge-msc">MSc · Heriot-Watt</span></div>
         <h3>Multimodal Cardiac Disease Prediction</h3>
         <p>Hybrid health-AI system fusing 70,000 clinical records with ACDC cardiac MRI volumes. Benchmarked ML classifiers against 3D-CNNs across single and multimodal pipelines for earlier CVD detection.</p>
-        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>PyTorch</span><span class="tag">3D-CNN</span><span class="tag">Medical AI</span></div>
+        <div class="tag-row"><span class="tag">PyTorch</span><span class="tag">3D-CNN</span><span class="tag">Medical AI</span></div>
       </article>
 
       <article class="proj" data-skills="d3 dashboards sql stats python">
         <div class="ptop"><span class="badge badge-msc">MSc · Heriot-Watt</span></div>
         <h3>Does Wealth Make Countries Happy?</h3>
         <p>Interactive D3.js data story: five bidirectionally-linked visualisations (scatter, choropleth, bar, trend, radar) over 9K+ rows of World Bank, WHO and World Happiness data, with full cross-chart filtering.</p>
-        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>D3.js v7</span><span class="tag">TopoJSON</span><span class="tag">Data Storytelling</span></div>
+        <div class="tag-row"><span class="tag">D3.js v7</span><span class="tag">TopoJSON</span><span class="tag">Data Storytelling</span></div>
       </article>
 
       <article class="proj" data-skills="stats">
@@ -485,7 +481,7 @@ footer{padding:30px 0;text-align:center;font-family:'Space Mono',monospace;font-
         <div class="ptop"><span class="badge badge-ieee">IEEE · Published</span></div>
         <h3>Face Mask &amp; Temperature Audit System</h3>
         <p>Real-time COVID compliance monitor: MobileNetV2 CNN for mask detection at 93% accuracy, benchmarked against KNN and SVM, with contactless temperature sensing.</p>
-        <div class="tag-row"><span class="tag">MobileNetV2</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>OpenCV</span><span class="tag">LabVIEW</span></div>
+        <div class="tag-row"><span class="tag">MobileNetV2</span><span class="tag">OpenCV</span><span class="tag">LabVIEW</span></div>
         <a class="paper-link" href="https://www.researchgate.net/publication/367142030_Human_Body_Temperature_and_Face_Mask_Audit_System_for_COVID_Protocol" target="_blank" rel="noopener">Read the IEEE paper</a>
       </article>
 
@@ -500,14 +496,14 @@ footer{padding:30px 0;text-align:center;font-family:'Space Mono',monospace;font-
         <div class="ptop"><span class="badge">Personal</span></div>
         <h3>Book &amp; Movie Analytics Engine</h3>
         <p>Complete analytics and recommendation system in Python: consumption patterns by country and continent, from data cleaning through analysis to recommendation logic.</p>
-        <div class="tag-row"><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Python</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Pandas</span><span class="tag">Recommenders</span></div>
+        <div class="tag-row"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Recommenders</span></div>
       </article>
 
       <article class="proj" data-skills="python recsys deeplearning sklearn">
         <div class="ptop"><span class="badge">In Progress</span></div>
         <h3>AI Stylist Outfit Recommender</h3>
         <p>Personal-styling AI that recommends outfits tailored to the individual. Recommendation modelling applied to fashion, currently in active development.</p>
-        <div class="tag-row"><span class="tag">Recommenders</span><span class="tag"><svg class="ti" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>Python</span><span class="tag">ML</span></div>
+        <div class="tag-row"><span class="tag">Recommenders</span><span class="tag">Python</span><span class="tag">ML</span></div>
       </article>
     </div>
 
@@ -603,7 +599,7 @@ footer{padding:30px 0;text-align:center;font-family:'Space Mono',monospace;font-
         <span class="flag">In Progress</span>
         <h3>MSc Data Science</h3>
         <div class="sub">Heriot-Watt University, Dubai · 2025-2026</div>
-        <p>Course completed; graduating <b>November 2026</b>. Modules: AI &amp; Machine Learning, Big Data Management &amp; Governance, Statistical Modelling, DevOps. Dissertation: ML-driven energy demand forecasting.</p>
+        <p>Course completed; graduating <b>November 2026</b>. Modules: AI &amp; Machine Learning, Big Data Management &amp; Governance, Statistical Modelling, DevOps. Dissertation: ML-driven energy demand forecasting. <b>Class Representative</b> for the MSc Data Science cohort.</p>
       </div>
       <div class="edu">
         <h3>B.E. Electronics &amp; Communication</h3>
